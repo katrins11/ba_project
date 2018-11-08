@@ -1,0 +1,27 @@
+{
+  "name": "ba_project",
+  "version": "1.0.0",
+  "description": "Web Intern",
+  "main": "index.js",
+  "scripts": {
+    "postcss": "gulp css",
+    "postcss-watch": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katrins11/ba_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katrins11/ba_project/issues"
+  },
+  "homepage": "https://github.com/katrins11/ba_project#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "postcss-responsive-type": "^1.0.0"
+  }
+}
