@@ -1,0 +1,24 @@
+body{
+    font-size: 12px;
+}
+@import 'guide.css';
+
+@import 'variables.css';
+@import 'mixins.css';
+
+@import 'header.css';
+@import 'menu.css';
+@import 'footer.css';
+
+
+@import 'herobanner.css';
+@import 'cta.css';
+
+@import 'info_box.css';
+
+@import 'search.css';
+@import 'cards.css';
+
+@import 'slider.css';
+
+@import 'text_box.css';

@@ -20,8 +20,12 @@
   "homepage": "https://github.com/katrins11/ba_project#readme",
   "devDependencies": {
     "autoprefixer": "^9.3.1",
+    "cssnext": "^1.8.4",
     "gulp": "^3.9.1",
     "gulp-postcss": "^8.0.0",
-    "postcss-responsive-type": "^1.0.0"
+    "lost": "^8.3.0",
+    "postcss-import": "^12.0.1",
+    "postcss-responsive-type": "^1.0.0",
+    "precss": "^3.1.2"
   }
 }

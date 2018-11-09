@@ -1,0 +1,59 @@
+[
+    {
+        "id":"", 
+        "companyName":"",
+        "postTitle":"",
+        "importantInfo":{
+            "deadline":"",
+            "date":"",
+            "duration":"",
+            "loction":""
+        },
+        "textBox": [
+            // Type: fx. 1: if about internchip/company , 2:contact/intrested
+            {
+                "type":"1",
+                "title":"",
+                "text":""
+            },
+            {
+                "type":"1",
+                "title":"",
+                "text":""
+            },
+            {
+                "type":"1",
+                "title":"",
+                "text":""
+            },
+            {
+                "type":"1",
+                "title":"",
+                "text":""
+            },
+            {
+                "type":"2",
+                "title":"",
+                "text":""
+            }
+        ],
+        "logo":"",
+        "images": [
+        
+        ],
+        "infoBox":{
+            "employs":"",
+            "clients":"",
+            "projects":"",
+            "companyAge":""
+        },
+        "sosialMedia":{
+            "facebook":"",
+            "instagram":"",
+            "linkedIn":""
+        }
+    },
+    {
+        
+    }
+]
