@@ -1,7 +1,10 @@
 # ba_project
 
-<!-- For running the postCss  -->
+# For running postCSS
 npm run postcss
 
-<!-- For watching the postCss  -->
+# For watching postCSS
 npm run postcss-watch
+
+# For watching all files
+gulp watchAll
