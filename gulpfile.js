@@ -1,20 +1,18 @@
 const gulp = require("gulp"),
       postcss = require("gulp-postcss"),
       autoprefixer = require("autoprefixer"),
-      responsiveType = require("postcss-responsive-type"),
       lost = require("lost"),
       precss = require("precss"),
-      cssnext = require("postcss-responsive-type"),
+      presetEnv = require("postcss-preset-env"),
       postcssImport = require("postcss-import"),
       watch = require('gulp-watch');
 
 gulp.task("css", function() {
   const processors = [
     precss, 
-    cssnext, 
+    presetEnv, 
     lost, 
-    autoprefixer({browsers:['last 2 version']}), 
-    responsiveType,
+    autoprefixer({browsers:['last 2 version']}),
     postcssImport
   ]
   return gulp

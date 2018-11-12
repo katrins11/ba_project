@@ -5,17 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Web Intern</title>
+        
         <!-- css -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-        <header>
-            <?php include('inc/header.php')?>
-        </header>
+        <?php include('inc/header.php')?>
+
         <h2>hallo</h2>
-        <footer>
-            <?php include('inc/footer.php')?>
-        </footer>
+
+        <?php include('inc/footer.php')?>
         
         <!-- script -->
+        <!-- <script src="js/script.js"></script> -->
     </body>
 </html>

@@ -4,6 +4,10 @@ body{
 header {
     color: red;
 }
+h2{
+    color: blue;
+}
+
 @import 'guide.css';
 
 @import 'variables.css';
