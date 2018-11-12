@@ -10,11 +10,11 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-        <?php include('inc/header.php')?>
+        <?php include('header.php')?>
 
         <h2>hallo</h2>
 
-        <?php include('inc/footer.php')?>
+        <?php include('footer.php')?>
         
         <!-- script -->
         <!-- <script src="js/script.js"></script> -->

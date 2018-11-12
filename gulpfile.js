@@ -16,7 +16,7 @@ gulp.task("css", function() {
     postcssImport
   ]
   return gulp
-    .src("./src/CSS/styles.css")
+    .src("./src/css/styles.css")
     .pipe(postcss(processors))
     .pipe(gulp.dest("./build/css"))
 });
@@ -24,17 +24,16 @@ gulp.task("css", function() {
 gulp.task("php", function() {
   return gulp
     .src("./src/*.php")
-    .src(".src/inc/*.php")
     .pipe(gulp.dest("./build"))
 });
 gulp.task("js", function() {
   return gulp
-    .src("./src/JS/script.js")
+    .src("./src/js/script.js")
     .pipe(gulp.dest("./build/js"));
 });
 
 gulp.task('watchAll', function () {
-  gulp.watch("./src/CSS/*", ["css"]);
-  gulp.watch("./src/PHP/*", ["php"]);
-  gulp.watch("./src/JS/*", ["js"]);
+  gulp.watch("./src/css/*", ["css"]);
+  gulp.watch("./src/*", ["php"]);
+  gulp.watch("./src/js/*", ["js"]);
 });
