@@ -14,8 +14,6 @@
   --color-secondary-light-red: #F07F7F;
 
   /* fonts */
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:600,700|Roboto:300,500');
-
   --roboto: 'Roboto', sans-serif;
   --montserrat: 'Montserrat', sans-serif;
 
