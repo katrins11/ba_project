@@ -23,8 +23,9 @@ gulp.task("css", function() {
 
 gulp.task("php", function() {
   return gulp
-    .src("./src/PHP/*.php")
-    .pipe(gulp.dest("./build"));
+    .src("./src/*.php")
+    .src(".src/inc/*.php")
+    .pipe(gulp.dest("./build"))
 });
 gulp.task("js", function() {
   return gulp
