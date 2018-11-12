@@ -16,7 +16,7 @@ gulp.task("css", function() {
     postcssImport
   ]
   return gulp
-    .src("./src/CSS/styles.css")
+    .src("./src/css/styles.css")
     .pipe(postcss(processors))
     .pipe(gulp.dest("./build/css"))
 });

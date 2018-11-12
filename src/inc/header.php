@@ -1,1 +1,4 @@
-The header
+<header>
+    <div class="header"></div>
+
+</header>

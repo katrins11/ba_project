@@ -4,17 +4,47 @@ body{
 header {
     color: red;
 }
+h2{
+    color: blue;
+}
 /* Guide */
 .header{
     color: red;
 }
-/* colors */
-/* mediaquery */
-/* fonts */
-/* margin */
-/* padding */
-/* size */
+/* mediaqueries */
+:root {
+
+  /* colors */
+  --color-black: #333333;
+  --color-white: #FFFFFF;
+  --color-grey: #F2F2F2;
+  --color-primary-yellow: #FFE500;
+  --color-secondary-red: #B40B0B;
+  --color-secondary-light-red: #F07F7F;
+
+  /* fonts */
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:600,700|Roboto:300,500');
+
+  --roboto: 'Roboto', sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
+
+  /* margin */
+  --margin-section: 80px;
+  --grid-gutter: 40px;
+
+
+  /* padding */
+  --padding-text: 80px;
+
+  /* size */
+
+}
 /* Fonts */
+/* Header */
+.header {
+    height: 80px;
+    background-color: blue;
+}
 .btn{
     background-color: green;
 }
