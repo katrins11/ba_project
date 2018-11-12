@@ -15,7 +15,7 @@
         <footer>
             <?php include('inc/footer.php')?>
         </footer>
-        
-        <!-- script -->
+
+        <script src=""></script>
     </body>
 </html>

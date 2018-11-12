@@ -1,6 +1,9 @@
 body{
     font-size: 12px;
 }
+header {
+    color: red;
+}
 /* Guide */
 .header{
     color: red;
