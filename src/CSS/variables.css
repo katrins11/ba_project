@@ -1,12 +1,28 @@
+/* mediaqueries */
+@custom-media --mq-mobile (max-width: 767px);
+@custom-media --mq-tablet (max-width: 1023px);
+@custom-media --mq-desktop (min-width: 1024px);
+
+:root {
 
 /* colors */
-
-/* mediaquery */
+--color-black: #333333;
+--color-white: #FFFFFF;
+--color-grey: #F2F2F2;
+--color-primary-yellow: #FFE500;
+--color-secondary-red: #B40B0B;
+--color-secondary-light-red: #F07F7F;
 
 /* fonts */
 
 /* margin */
+--margin-section: 80px;
+--grid-gutter: 40px;
+
 
 /* padding */
+--padding-text: 80px;
 
 /* size */
+
+}
