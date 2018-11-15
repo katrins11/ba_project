@@ -2,19 +2,11 @@
 
 @lost flexbox flex;
 
-body {
-    font-size: 12px;
-    margin: 0;
-}
-
-h2{
-    color: blue;
-}
-
 @import 'guide.css';
 
 @import 'variables.css';
 @import 'mixins.css';
+@import 'global.css';
 
 @import 'header.css';
 @import 'menu.css';
