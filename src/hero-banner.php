@@ -5,4 +5,5 @@
       <h1>start your future now</h1>
     </div>
   </div>
+  <?php include('info-box.php')?>
 </section>

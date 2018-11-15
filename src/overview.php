@@ -14,7 +14,7 @@
 
         <?php include('hero-banner.php')?>
 
-        <?php include('info-box.php')?>
+        
 
         <?php include('footer.php')?>
         
