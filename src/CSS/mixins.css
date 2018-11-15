@@ -1,5 +1,23 @@
     font-family: var(--montserrat);
 /* Fonts */
+@define-mixin roboto {
+  font-family: var(--roboto);
+  font-weight:700;
+  font-size: 12px;
+}
+
+h1 {
+  .test {
+    @mixin roboto; 
+
+  }
+}
+
+/*@define-mixin montserrat --font-size --font-weight {
+  font-family: var(--montserrat);
+  font-weight: $font-weight;
+  font-size: $font-size;
+}*/
 
 @define-mixin font1 {
     font-family: var(--roboto);

@@ -1,0 +1,15 @@
+.hero-banner {
+  background-color: var(--color-grey);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .tag-line {
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 60px;
+    margin: 0;
+  }
+}

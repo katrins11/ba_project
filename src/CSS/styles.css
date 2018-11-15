@@ -5,10 +5,13 @@
     padding: 0;
 }
 
+@lost flexbox flex;
+
 @import 'guide.css';
 
 @import 'variables.css';
 @import 'mixins.css';
+@import 'global.css';
 
 @import 'header.css';
 @import 'menu.css';

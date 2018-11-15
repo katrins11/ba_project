@@ -1,3 +1,16 @@
-.btn{
-    background-color: green;
+.cta{
+  background-color: var(--color-grey);
+  height: 200px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .section-headline {
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--color-black);
+
+  }
 }
