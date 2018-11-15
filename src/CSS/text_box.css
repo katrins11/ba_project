@@ -1,0 +1,42 @@
+.text-box {
+  width: 100vw;
+  height: 100vh;
+  lost-align: center;
+  lost-utility: clearfix;
+
+  .box {
+    lost-column: 1/2;
+    width: 100vw;
+    height: 100vh;
+
+    &:nth-child(1) {
+      background-color: var(--color-grey);
+      margin: 0;
+    }
+
+    &:nth-child(2) {
+      margin: 0;
+      
+    }
+
+    .text {
+      padding: 80px;
+
+      h2 {
+        font-family: var(--montserrat);
+        font-weight: 500;
+        font-size: 28px;
+        color: var(--color-black);
+      }
+
+      p {
+        font-family: var(--roboto);
+        font-weight: 300;
+        font-size: 12px;
+        color: var(--color-black);
+        line-height: 22px;
+      }
+    }
+
+  }
+}

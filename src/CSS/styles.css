@@ -1,23 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700|Roboto:300,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700|Roboto:300,400');
 
-body{
-    font-size: 12px;
+* {
+    margin: 0;
+    padding: 0;
 }
-header {
-    color: red;
-}
-h2{
-    color: blue;
-}
+
+@lost flexbox flex;
 
 @import 'guide.css';
 
 @import 'variables.css';
 @import 'mixins.css';
+@import 'global.css';
 
 @import 'header.css';
 @import 'menu.css';
-@import 'footer';
+@import 'footer.css';
 
 
 @import 'herobanner.css';
