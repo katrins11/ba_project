@@ -7,9 +7,24 @@
   justify-content: center;
   align-items: center;
 
-    img {
-      @media (--mq-mobile) {
-        width: 300px;
-      }
+  .tag-line {
+    max-width: 500px;
   }
+
+    h1 {
+      font-family: var(--montserrat);
+      font-weight: 700;
+      font-size: 80px;
+      color: black;
+      -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      text-align: center;
+      letter-spacing: 2px;
+
+      @media (--mq-mobile) {
+        font-size: 50px;
+      }
+    }
+
 }

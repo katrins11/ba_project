@@ -1,7 +1,7 @@
 <section>
   <div class="hero-banner">
     <div class="tag-line">
-      <img src="assets/tag-line.svg" alt="tag-line" srcset="">
+      <h1>start your future now</h1>
     </div>
   </div>
 </section>
