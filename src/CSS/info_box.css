@@ -4,19 +4,28 @@
   height: 200px;
   background-color: var(--color-grey);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
 
   .info {
-    width: 200px;
     text-align: center;
-    margin: 0 40px 0 40px;
+    margin: 40px 4%;
+
+    @media (--mq-tablet) {
+      min-width: 200px;
+      margin: 20px 20px;
+    }
 
     h3 {
       color: var(--color-primary-yellow);
       font-family: var(--montserrat);
       font-weight: 500;
       font-size: 30px;
+      
+      @media (--mq-tablet) {
+        font-size: 26px;
+      }
     }
 
     p {
@@ -25,6 +34,9 @@
       font-weight: 200;
       font-size: 18px;
 
+      @media (--mq-tablet) {
+        font-size: 14px;
+      }
     }
   }
 
