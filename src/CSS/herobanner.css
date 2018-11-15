@@ -1,15 +1,15 @@
 .hero-banner {
+  width: calc(100vw - 80px);
+  padding: 20px 40px;
   background-color: var(--color-grey);
-  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  .tag-line {
-    font-family: var(--montserrat);
-    font-weight: 700;
-    font-size: 60px;
-    margin: 0;
+    img {
+      @media (--mq-mobile) {
+        width: 300px;
+      }
   }
 }

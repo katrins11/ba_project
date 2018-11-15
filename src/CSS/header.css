@@ -3,17 +3,14 @@
   position: relative;
 
   .navigation {
+    width: calc(100vw - 80px);
+    padding: 20px 40px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 700;
-    width: 100%;
     display: flex;
     justify-content: space-between;
-  }
-
-  .logo-link {
-    margin: 20px 40px;
   }
     
   .burger-menu {
@@ -22,7 +19,6 @@
     width: 30px;
     display: flex;
     align-self: center;
-    margin: 20px 40px;
 
     &:hover {
       cursor: pointer;
@@ -47,7 +43,7 @@
         font-size: 9px;
         letter-spacing: 2px;
         position: absolute;
-        bottom: -3px;
+        bottom: 5px;
         left: -20px;
         opacity: 0;
         transition: all 0.25s ease-in-out;
@@ -74,5 +70,11 @@
         transform: translateY(18px);
       }
     }
+  }
+
+  /***** Header on scroll styling *****/
+  .header-on-scroll {
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 30px 0px rgba(51,51,51,0.1);
   }
 }

@@ -12,13 +12,7 @@
     <body>
         <?php include('header.php')?>
 
-        <section>
-            <div class="hero-banner">
-                <h1 class="tag-line">
-                 start your future now
-                </h1>
-            </div>
-        </section>
+        <?php include('hero-banner.php')?>
 
         <section>
             <div class="text-box">
