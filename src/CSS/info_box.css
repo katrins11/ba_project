@@ -1,0 +1,37 @@
+.info-box {
+  width: calc(100vw - 80px);
+  margin: 0 40px 0 40px;
+  height: 200px;
+  background-color: var(--color-grey);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .info {
+    width: 200px;
+    text-align: center;
+    margin: 0 40px 0 40px;
+
+    h3 {
+      color: var(--color-primary-yellow);
+      font-family: var(--montserrat);
+      font-weight: 500;
+      font-size: 30px;
+    }
+
+    p {
+      color: var(--color-black);
+      font-family: var(--roboto);
+      font-weight: 200;
+      font-size: 18px;
+
+    }
+  }
+
+  &.hero-info-box {
+    margin-top: -120px;
+    z-index: 22;
+    position: relative;
+    bottom: 140px;
+  }
+}
