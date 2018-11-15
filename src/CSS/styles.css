@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700|Roboto:300,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700|Roboto:300,400');
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 @lost flexbox flex;
 
@@ -10,7 +15,7 @@
 
 @import 'header.css';
 @import 'menu.css';
-@import 'footer';
+@import 'footer.css';
 
 
 @import 'herobanner.css';

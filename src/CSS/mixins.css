@@ -1,4 +1,4 @@
-
+    font-family: var(--montserrat);
 /* Fonts */
 @define-mixin roboto {
   font-family: var(--roboto);
@@ -19,3 +19,8 @@ h1 {
   font-size: $font-size;
 }*/
 
+@define-mixin font1 {
+    font-family: var(--roboto);
+    font-size: 40px;
+    color: green;
+}

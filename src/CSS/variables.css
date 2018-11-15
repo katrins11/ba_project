@@ -17,6 +17,11 @@
   --roboto: 'Roboto', sans-serif;
   --montserrat: 'Montserrat', sans-serif;
 
+  --font-regular: 400;
+  --font-light: 300;
+  --font-semibold: 600;
+  --font-bold: 700;
+
   /* margin */
   --margin-section: 80px;
   --grid-gutter: 40px;
