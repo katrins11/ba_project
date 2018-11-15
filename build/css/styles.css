@@ -1,15 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700|Roboto:300,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700|Roboto:300,400');
 
-body{
-    font-size: 12px;
-}
-
-header {
-    color: red;
-}
-
-h2{
-    color: blue;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 /* Guide */
@@ -34,6 +27,11 @@ h2{
   --roboto: 'Roboto', sans-serif;
   --montserrat: 'Montserrat', sans-serif;
 
+  --font-regular: 400;
+  --font-light: 300;
+  --font-semibold: 600;
+  --font-bold: 700;
+
   /* margin */
   --margin-section: 80px;
   --grid-gutter: 40px;
@@ -46,13 +44,67 @@ h2{
 
 }
 
+font-family: 'Montserrat', sans-serif;
+
+font-family: 'Montserrat', sans-serif;
+
+font-family: var(--montserrat);
+
 /* Fonts */
 
-footer{
-    width: 100vw;
-    height: 200px;
-    background-color: green;
+@define-mixin font1 {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: var(--roboto);
+    font-size: 40px;
+    color: green;
 }
+
+@define-mixin k28 {
+
+}
+
+footer {
+    width: calc(100vw - 80px);
+    padding: 20px 40px;
+    background-color: #FFE500;
+    background-color: #FFE500;
+    background-color: var(--color-primary-yellow);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-derection: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+footer p {
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: var(--montserrat);
+        font-size: 24px;
+        color: #333;
+    }
+
+footer ul {
+        list-style-type: none;
+
+        font-family: 'Roboto', sans-serif;
+
+        font-family: 'Roboto', sans-serif;
+
+        font-family: var(--roboto);
+        font-size: 18px;
+        font-width: 300;
+        font-width: 300;
+        font-width: var(--font-light);
+        color: #333;
+    }
+
+footer ul img {
+            padding-right: 15px;
+        }
 
 .btn{
     background-color: green;
