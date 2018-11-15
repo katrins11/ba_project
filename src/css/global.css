@@ -1,0 +1,36 @@
+body {
+  font-size: 12px;
+  margin: 0;
+}
+
+h2{
+  color: blue;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+.newest-posts {
+
+  .section-headline {
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--color-black);
+    padding: 0 0 40px 80px;
+    margin: 0;
+  }
+
+  .card-container {
+    width: 100vw;
+    lost-align: center;
+    lost-utility: clearfix;
+
+    .card {
+      lost-column: 1/3;
+      background-color: var(--color-grey);
+      height: 560px;
+    }
+  }
+}

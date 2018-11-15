@@ -1,19 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600,700|Roboto:300,500');
 
-body{
-    font-size: 12px;
-}
-header {
-    color: red;
-}
-h2{
-    color: blue;
-}
+@lost flexbox flex;
 
 @import 'guide.css';
 
 @import 'variables.css';
 @import 'mixins.css';
+@import 'global.css';
 
 @import 'header.css';
 @import 'menu.css';
