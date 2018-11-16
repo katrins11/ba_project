@@ -11,10 +11,10 @@
     </head>
     <body>
         <?php include('header.php')?>
-
-        <?php include('hero-banner.php')?>
         
-        <?php include('info-box.php')?>
+        <?php include('cta.php')?>
+
+        <?php include('card.php')?>
 
         <?php include('footer.php')?>
         

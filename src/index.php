@@ -52,13 +52,7 @@
             </div>
         </section>
 
-        <section>
-            <div class="cta">
-                <h1 class="section-headline">
-                 see more oppotunities
-                </h1>
-            </div>
-        </section>
+        <?php include('cta.php')?>
 
         <?php include('footer.php')?>
         
