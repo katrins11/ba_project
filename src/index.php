@@ -8,15 +8,18 @@
         
         <!-- css -->
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
+        <?php include('menu.php')?>
+
         <?php include('header.php')?>
 
         <?php include('hero-banner.php')?>
 
-        <?php include('fifty50.php')?>
+        <?php //include('fifty50.php')?>
 
-        <section>
+        <!-- <section>
             <div class="newest-posts">
                 <h1 class="section-headline">
                     Newest internship oppotunities
@@ -35,7 +38,7 @@
                  see more oppotunities
                 </h1>
             </div>
-        </section>
+        </section> -->
 
         <?php include('footer.php')?>
         
