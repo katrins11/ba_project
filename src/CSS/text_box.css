@@ -1,42 +1,48 @@
-.text-box {
+.fifty50 {
   width: 100vw;
-  height: 100vh;
-  lost-align: center;
-  lost-utility: clearfix;
+  height: calc(100vh - 77px);
+  display: flex;
+  flex-direction: row;
+  @media (--mq-mobile) {
+    height: auto;
+    flex-direction: column;
+  }
 
-  .box {
-    lost-column: 1/2;
-    width: 100vw;
-    height: 100vh;
-
-    &:nth-child(1) {
-      background-color: var(--color-grey);
-      margin: 0;
+  .item {
+    width: 50%;
+    @media (--mq-mobile) {
+      width: 100%;
+      height: auto;
     }
 
-    &:nth-child(2) {
-      margin: 0;
-      
-    }
-
-    .text {
-      padding: 80px;
-
-      h2 {
-        font-family: var(--montserrat);
-        font-weight: 500;
-        font-size: 28px;
-        color: var(--color-black);
-      }
-
-      p {
-        font-family: var(--roboto);
-        font-weight: 300;
-        font-size: 12px;
-        color: var(--color-black);
-        line-height: 22px;
+    &:first-child {
+      background-image: url('../assets/venveo.png');
+      background-size: cover;
+      background-position: center left; 
+      @media (--mq-mobile) {
+        height: 40vh;
       }
     }
 
+    h2, p {
+      color: var(--color-black);
+      padding: 20px 80px;
+      @media (--mq-mobile) {
+        padding: 20px 40px;
+      }
+    }
+
+    h2 {
+      font-family: var(--montserrat);
+      font-weight: 500;
+      font-size: 28px;
+    }
+
+    p {
+      font-family: var(--roboto);
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 22px;
+    }
   }
 }
