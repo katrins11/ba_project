@@ -12,7 +12,7 @@
     <body>
         <?php include('header.php')?>
         
-        <?php include('cta.php')?>
+        <?php include('search.php')?>
 
         <?php include('card.php')?>
 
