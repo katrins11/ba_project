@@ -1,59 +1,35 @@
-[
-    {
-        "id":"", 
-        "companyName":"",
-        "postTitle":"",
+{
+    "company":{
+        "id":"1", 
+        "companyName":"UMWELT",
+        "postTitle":"Post title",
         "importantInfo":{
-            "deadline":"",
-            "date":"",
-            "duration":"",
-            "loction":""
+            "deadline":"01.01.2019",
+            "date":"22.11.2018",
+            "duration":"3 months",
+            "loction":"Copenhagen"
         },
         "textBox": [
-            // Type: fx. 1: if about internchip/company , 2:contact/intrested
             {
                 "type":"1",
-                "title":"",
-                "text":""
-            },
-            {
-                "type":"1",
-                "title":"",
-                "text":""
-            },
-            {
-                "type":"1",
-                "title":"",
-                "text":""
-            },
-            {
-                "type":"1",
-                "title":"",
-                "text":""
-            },
-            {
-                "type":"2",
-                "title":"",
-                "text":""
+                "title":"Title",
+                "text":"text"
             }
         ],
-        "logo":"",
+        "logo":"logo",
         "images": [
-        
+            "hi.png","hola.png"
         ],
         "infoBox":{
-            "employs":"",
-            "clients":"",
-            "projects":"",
-            "companyAge":""
+            "employs":"12",
+            "clients":"1",
+            "projects":"4",
+            "companyAge":"4 years"
         },
         "sosialMedia":{
-            "facebook":"",
-            "instagram":"",
-            "linkedIn":""
+            "facebook":"url.com/url",
+            "instagram":"url.com/url",
+            "linkedIn":"url.com/url"
         }
-    },
-    {
-        
     }
-]
+}

@@ -7,30 +7,19 @@
         <title>Web Intern</title>
         
         <!-- css -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
         <?php include('menu.php')?>
 
         <?php include('header.php')?>
-
+        <!-- <h1 id="company-name"></h1> -->
         <?php include('hero-banner.php')?>
 
-        <?php //include('fifty50.php')?>
-
-        <!-- <section>
-            <div class="newest-posts">
-                <h1 class="section-headline">
-                    Newest internship oppotunities
-                </h1>
-                <div class="card-container">
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                </div>
-            </div>
-        </section>
+        <?php include('slider.php')?>
+        <?php include('fifty50.php')?>
 
 
         <?php include('cta.php')?>
@@ -39,5 +28,12 @@
         
         <!-- script -->
         <!-- <script src="js/script.js"></script> -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></script> -->
+
+        <!-- database -->
+        <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+        <script src="js/data.js"></script>
     </body>
 </html>
