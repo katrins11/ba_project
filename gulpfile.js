@@ -36,7 +36,7 @@ gulp.task("php", function() {
 });
 gulp.task("js", function() {
   return gulp
-    .src("./src/js/script.js")
+    .src("./src/js/*.js")
     .pipe(gulp.dest("./build/js"));
 });
 gulp.task("assets", function() {
