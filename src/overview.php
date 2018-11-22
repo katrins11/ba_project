@@ -11,7 +11,7 @@
     </head>
     <body>
         <?php include('header.php')?>
-        
+
         <?php include('search.php')?>
 
         <?php include('card.php')?>
@@ -21,5 +21,7 @@
         <!-- script -->
         <!-- <script src="js/script.js"></script> -->
         <script src="js/script.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+        <script src="js/data.js"></script>
     </body>
 </html>
