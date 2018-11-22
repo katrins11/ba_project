@@ -7,18 +7,21 @@ const gulp = require("gulp"),
       postcssImport = require("postcss-import"),
       watch = require('gulp-watch'),
       mixins = require('postcss-mixins');
+      simpleVars = require('postcss-simple-vars');
+      postcssNested = require('postcss-nested');
       
 var browserSync = require('browser-sync').create();
 
 gulp.task("css", function() {
   const processors = [
+    precss,
+    simpleVars({ silent: true }),
+    postcssNested,
     mixins,
-    precss, 
-    presetEnv, 
+    presetEnv({stage: 0}), 
     lost, 
     autoprefixer({browsers:['last 2 version']}),
-    postcssImport,
-    
+    postcssImport
   ]
   return gulp
     .src("./src/css/styles.css")

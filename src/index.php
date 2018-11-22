@@ -19,13 +19,17 @@
         <?php include('hero-banner.php')?>
 
         <?php include('slider.php')?>
+      
         <?php include('fifty50.php')?>
-
 
         <?php include('cta.php')?>
 
         <?php include('footer.php')?>
         
+
+        <!-- scripts-->
+        <script src="anime.min.js"></script>
+
         <!-- script -->
         <!-- <script src="js/script.js"></script> -->
         <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -35,5 +39,6 @@
         <!-- database -->
         <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
         <script src="js/data.js"></script>
+
     </body>
 </html>

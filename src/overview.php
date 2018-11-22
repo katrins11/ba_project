@@ -12,7 +12,7 @@
     <body>
         <?php include('header.php')?>
         
-        <?php include('cta.php')?>
+        <?php include('search.php')?>
 
         <?php include('card.php')?>
 
@@ -20,5 +20,6 @@
         
         <!-- script -->
         <!-- <script src="js/script.js"></script> -->
+        <script src="js/script.js"></script>
     </body>
 </html>

@@ -1,4 +1,6 @@
 .hero-banner {
+  overflow: hidden;
+  position: relative;
   width: 100vw;
   background-color: var(--color-grey);
   height: 100vh;
@@ -9,6 +11,10 @@
   .tag-line {
     max-width: 500px;
     z-index: 1;
+  }
+
+  .scene path {
+	fill: var(--color-primary-yellow);
   }
 
   h1 {
@@ -61,6 +67,60 @@
       background-color: rgba(51, 51, 51, 0.4);
     }
 
+  }
+
+  .triangle {
+    position: absolute; 
+    
+    &.one {
+      width: 1000px; 
+      height: 1000px; 
+      bottom: 100px;
+      left: 300px;
+    }
+
+    &.two {
+      width: 400px;
+      height: 400px;
+      bottom: 0;
+      left: 0;
+    }
+  } 
+
+  .spin {
+
+    &.one {
+      animation-name: Spinning;
+      animation-duration: 50s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+
+    &.two {
+      animation-name: Spinning-reverse;
+      animation-duration: 50s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+
+  }
+
+  @keyframes Spinning{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    } 
+  }
+
+    @keyframes Spinning-reverse{
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    } 
   }
 
 }

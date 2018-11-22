@@ -6,7 +6,7 @@
     </div>
 
     <div class="company">
-      <div class=company-name>
+      <div class="company-name">
         <h3>Company</h3>
       </div>
     </div>
