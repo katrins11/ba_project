@@ -29,7 +29,7 @@
         
 
         <!-- scripts-->
-        <script src="anime.min.js"></script>
+        <!-- <script src="anime.min.js"></script> -->
 
         <!-- script -->
         <!-- <script src="js/script.js"></script> -->
