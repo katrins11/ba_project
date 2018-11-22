@@ -30,14 +30,15 @@
                     <div class="card"></div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
         <?php include('cta.php')?>
 
         <?php include('footer.php')?>
         
-        <!-- script -->
-        <!-- <script src="js/script.js"></script> -->
+        <!-- scripts-->
+        <script src="anime.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
