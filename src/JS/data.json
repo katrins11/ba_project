@@ -18,7 +18,9 @@
             ],
             "logo":"logo",
             "images": [
-                "hi.png","hola.png"
+                "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/umwelt%2Fumwelt.png?alt=media&token=63c3dde2-ef36-4a90-8cf4-13e318518289",
+                "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/umwelt%2Fumwelt0.png?alt=media&token=de913685-f0c1-4586-b3df-df2853bd68b5",
+                "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/umwelt%2Fumwelt1.png?alt=media&token=cf5546dc-0807-4e43-aa1f-f7182878277a"
             ],
             "infoBox":{
                 "employs":"12",
