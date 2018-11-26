@@ -1,16 +1,14 @@
-const gulp = require("gulp"),
-      postcss = require("gulp-postcss"),
-      autoprefixer = require("autoprefixer"),
-      lost = require("lost"),
-      precss = require("precss"),
-      presetEnv = require("postcss-preset-env"),
-      postcssImport = require("postcss-import"),
-      watch = require('gulp-watch'),
-      mixins = require('postcss-mixins');
-      simpleVars = require('postcss-simple-vars');
+const gulp = require('gulp'),
+      postcss = require('gulp-postcss'),
+      autoprefixer = require('autoprefixer'),
+      lost = require('lost'),
+      precss = require('precss'),
+      presetEnv = require('postcss-preset-env'),
+      postcssImport = require('postcss-import'),
+      mixins = require('postcss-mixins'),
+      simpleVars = require('postcss-simple-vars'),
       postcssNested = require('postcss-nested');
-      
-var browserSync = require('browser-sync').create();
+
 
 gulp.task("css", function() {
   const processors = [

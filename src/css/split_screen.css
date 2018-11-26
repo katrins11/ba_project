@@ -1,6 +1,5 @@
-.fifty50 {
+.split-screen {
   width: 100vw;
-  /*height: calc(100vh - 77px);*/
   display: flex;
   flex-direction: row;
   @media (--mq-mobile) {
@@ -16,7 +15,6 @@
     }
 
     &:first-child {
-      /*background-image: url('../assets/venveo.png');*/
       background-size: cover;
       background-position: center left; 
       @media (--mq-mobile) {
@@ -51,5 +49,43 @@
       height: 100vh;
       object-fit: cover;
     }
+  }
+}
+
+#paralax {
+  height: 100vh;
+  margin: 0;
+}
+
+.slide {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hh .inner {
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+#pin3 {
+  background-color: var(--color-grey);
+  height: 100vh;
+}
+
+#trigger3 {
+  margin-top: 80px;
+}
+
+.innerText {
+  position: absolute;
+  text-align: left;
+  padding: 80px;
+
+  h2, p {
+    padding: 0 !important;
   }
 }

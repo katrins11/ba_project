@@ -35,3 +35,62 @@ section {
     }
   }
 }
+
+.item {
+  p {
+    &.screen {
+      font-size: 80px !important;
+      text-align: center;
+      width: 500px;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgba(255, 255, 255, 0.9);
+      opacity: 0;
+      visibility: hidden;
+      line-height: 80px !important;
+    }
+  }
+}
+ 
+#paralax {
+  height: 100vh;
+  margin: 0;
+}
+
+.slide {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hh .inner {
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+#pin3 {
+  background-color: var(--color-grey);
+  height: 100vh;
+}
+
+#trigger3 {
+  margin-top: 80px;
+}
+
+.innerText {
+  position: absolute;
+  text-align: left;
+  padding: 80px;
+
+  h2, p {
+    padding: 0 !important;
+  }
+}
+ 
+ 
