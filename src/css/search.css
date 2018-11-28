@@ -1,9 +1,12 @@
 .search-container {
+  width: 100vw;
+  height: 150vh;
+  position: relative;
+  margin-bottom: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
-  margin-bottom: 0;
 
   @media (--mq-mobile) {
     padding-top: 80px;
@@ -53,87 +56,92 @@
         display: none;
       }
 
-     button {
-        border: none;
-        outline: none;
-        height: 40px;
-        background-color: var(--color-primary-yellow);
-        color: var(--color-black);
-        font-family: var(--montserrat);
-        font-weight: 500;
-        font-size: 14px;
-        padding: 0 20px;
-        margin: 10px; 
-        cursor: pointer;
-        position: relative;
-        z-index: 1;
-        background: none;
-        transition: color 0.3s;
-        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-
-        &::before, &::after {
-          content: '';
-          z-index: -1;
-          border-radius: inherit;
-          pointer-events: none;
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          transition: transform 0.3s, opacity 0.3s;
+      button {
+          border: none;
+          outline: none;
+          height: 40px;
+          background-color: var(--color-primary-yellow);
+          color: var(--color-black);
+          font-family: var(--montserrat);
+          font-weight: 500;
+          font-size: 14px;
+          padding: 0 20px;
+          margin: 10px; 
+          cursor: pointer;
+          position: relative;
+          z-index: 1;
+          background: none;
+          transition: color 0.3s;
           transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-        }
 
-        &::before {
-          border: 1px solid #37474f;
-          opacity: 0;
-          transform: scale3d(1.2, 1.2, 1);
-          border-color: var(--color-primary-yellow);
-        }
+          &::before, &::after {
+            content: '';
+            z-index: -1;
+            border-radius: inherit;
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s, opacity 0.3s;
+            transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+          }
 
-        &::after {
-	        background: #fff;
-        }
+          &::before {
+            border: 1px solid #37474f;
+            opacity: 0;
+            transform: scale3d(1.2, 1.2, 1);
+            border-color: var(--color-primary-yellow);
+          }
 
-        &:hover::after {
-          opacity: 0;
-	        transform: scale3d(0.8, 0.8, 1);
-        }
-
-        &:hover::before {
-          opacity: 1;
-          transform: scale3d(1, 1, 1);
-        }
-        
-        &:focus::before {
-          color: var(--color-primary-yellow);
-          opacity: 1;
-          transform: scale3d(1, 1, 1);
-        }
-
-        &:focus::after {
-          color: var(--color-primary-yellow);
-          opacity: 0;
-	        transform: scale3d(0.8, 0.8, 1);
-        }
-
-        &.btn-inverted {
           &::after {
-            background: var(--color-primary-yellow);
+            background: #fff;
+          }
+
+          &:hover::after {
+            opacity: 0;
+            transform: scale3d(0.8, 0.8, 1);
+          }
+
+          &:hover::before {
+            opacity: 1;
+            transform: scale3d(1, 1, 1);
+          }
+        
+          &:focus::before {
+            color: var(--color-primary-yellow);
+            opacity: 1;
+            transform: scale3d(1, 1, 1);
+          }
+
+          &:focus::after {
+            color: var(--color-primary-yellow);
+            opacity: 0;
+            transform: scale3d(0.8, 0.8, 1);
+          }
+
+          &.btn-inverted {
+            &::after {
+              background: var(--color-primary-yellow);
+            }
           }
         }
+
+
+
+
+      .toggle-filter {
+        color: var(--color-black);
+        font-family: var(--roboto);
+        font-weight: 200;
+        font-size: 12px;
       }
-
-
-
-
-    .toggle-filter {
-      color: var(--color-black);
-      font-family: var(--roboto);
-      font-weight: 200;
-      font-size: 12px;
     }
   }
-}
+
+  .resultscontainer {
+    position: relative;
+    display: inline-flex;
+  }
 }

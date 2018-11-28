@@ -33,8 +33,6 @@ function getCardInfo(snapshot) {
     //console.log("loop",posts);
     var htmlCards = "";
 
-    
-
     snapshot.forEach(snap => {
         //posts.push(snap.val().companyName, snap.val().postTitle);
         var name = snap.val().companyName;
@@ -44,7 +42,7 @@ function getCardInfo(snapshot) {
 
         var htmlCard = ' <div class="card">\
                             <a>\
-                                <div class="image"><img src="https://res.cloudinary.com/anne1312/image/upload/v1542898741/office-placholder.jpg" alt="office placholder"></div>\
+                                <div class="image"><img src="assets/office-placholder.jpg" alt="office placholder"></div>\
                                 <div class="company">\
                                     <h3 id="company-name">'+snap.val().companyName+'</h3>\
                                 </div>\
@@ -62,18 +60,8 @@ function getCardInfo(snapshot) {
         htmlCards += htmlCard; 
 
         var compName = document.getElementById("card-container");
-        //compName.innerHTML = htmlCards;
+        compName.innerHTML = htmlCards;
     });
 
 };
 
-// var storageRef = firebase.storage().ref().child("Whatever your path is in Firebase Storage");
-// var imageRef = "Your path in the Realtime Database";
-
-//     storageRef.getDownloadURL().then(function(url) {
-//         imageRef.child("image").set(url);
-//     }); 
-
-//     var task = storageRef.putString("Your base64 string substring variable", 'base64').then(function(snapshot) {
-//          console.log('Uploaded a base64 string!');
-//          });

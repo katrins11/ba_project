@@ -1,4 +1,4 @@
-#card-container {
+.resultscontainer {
   display: flex;
   flex-wrap: wrap;
   lost-utility: clearfix;
