@@ -19,9 +19,9 @@
         <?php include('header.php')?>
         <!-- <h1 id="company-name"></h1> -->
 
-        <?php //include('hero-banner.php')?>
+        <?php include('hero-banner.php')?>
 
-        <?php //include('carousel.php')?>
+        <?php include('carousel.php')?>
 
         <?php include('search.php')?>
       
