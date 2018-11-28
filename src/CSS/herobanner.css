@@ -9,8 +9,8 @@
   align-items: center;
 
   .tag-line {
-    max-width: 500px;
-    z-index: 1;
+    max-width: 50%;
+    z-index: 5;
   }
 
   .scene path {
@@ -20,9 +20,9 @@
   h1 {
     font-family: var(--montserrat);
     font-weight: 700;
-    font-size: 80px;
+    font-size: 120px;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--color-black);
     text-align: center;
     letter-spacing: 2px;
@@ -71,12 +71,14 @@
 
   .triangle {
     position: absolute; 
-    
+
     &.one {
       width: 1000px; 
       height: 1000px; 
       bottom: 100px;
       left: 300px;
+      z-index: 3;
+      opacity: 0.8;
     }
 
     &.two {
@@ -84,10 +86,23 @@
       height: 400px;
       bottom: 0;
       left: 0;
+      z-index: 3;
+      opacity: 0.6;
+      transform: rotate(145deg);
+    }
+
+    &.three {
+      width: 600px;
+      height: 600px;
+      right: 100px;
+      bottom: 300px;
+      z-index: 2;
+      opacity: 0.4;
+      transform: rotate(25deg);
     }
   } 
 
-  .spin {
+  /*.spin {
 
     &.one {
       animation-name: Spinning;
@@ -121,6 +136,6 @@
     100% {
       transform: rotate(0deg);
     } 
-  }
+  }*/
 
 }

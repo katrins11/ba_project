@@ -26,6 +26,7 @@
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.3",
     "cssnext": "^1.8.4",
+    "gsap": "^2.0.2",
     "gulp": "^3.9.1",
     "gulp-babel": "^8.0.0",
     "gulp-postcss": "^8.0.0",

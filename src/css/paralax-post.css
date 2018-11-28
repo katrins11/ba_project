@@ -1,6 +1,7 @@
-.fifty50 {
+.paralax {
   width: 100vw;
   margin-top: 80px;
+
   display: flex;
   flex-direction: row;
   @media (--mq-mobile) {
@@ -16,7 +17,7 @@
     }
 
     &:first-child {
-      /*background-image: url('../assets/venveo.png');*/
+
       background-size: cover;
       background-position: center left; 
       @media (--mq-mobile) {
@@ -48,7 +49,7 @@
     img {
       display: flex;
       width: 100%;
-      height: calc(100vh - 77px);
+      height: 100vh;
       object-fit: cover;
     }
   }
@@ -56,6 +57,21 @@
   .item {
     p {
       &.screen {
+        font-size: 80px !important;
+        text-align: center;
+        width: 500px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--color-black);
+        opacity: 0;
+        visibility: hidden;
+        line-height: 80px !important;
+      }
+
+     &.screen2 {
         font-size: 80px !important;
         text-align: center;
         width: 500px;
@@ -97,12 +113,17 @@
 
   #pin3 {
     background-color: var(--color-grey);
-    height: calc(100vh - 77px);
+    height: 100vh;
   }
 
    #pin4 {
     background-color: var(--color-grey);
     height: 50vh;
+  }
+
+  .right {
+    height: 50vh;
+    position: relative;
   }
 
   #trigger3 {
