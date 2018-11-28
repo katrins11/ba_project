@@ -2,7 +2,7 @@
   <div id="pin2" class="item">
     <img src="https://res.cloudinary.com/anne1312/image/upload/v1542898741/office-placholder.jpg" alt="office placholder"> 
   </div>
-  <div  class="item">
+  <div  class="item about-text">
     <h2>About the concept</h2>
     <p>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
