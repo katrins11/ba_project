@@ -20,71 +20,225 @@
   </div>
 
   <div class="resultscontainer" id="resultscontainer">
-    <div class="eachPost mix web">
-      <a href="#">The Harry Potter</a>
+
+    <div class="card eachPost mix web">
+      <a href="#">
+        <div class="image">
+          <img src="assets/office-placholder.jpg" alt="office placholder">  
+        </div>
+
+        <div class="company">
+            <h3 id="company-name"></h3>
+        </div>
+
+        <div class="text">
+          <h3>Front-end Internship</h3>
+          <div class="info">
+            <p>Deadline: 01.12.18</p>
+            <p>Copenhagen</p>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="eachPost mix ux">
-      <a href="#">A Game of Thrones</a>
+
+    <div class="card eachPost mix ux">
+      <a href="#">
+        <div class="image">
+          <img src="assets/office-placholder.jpg" alt="office placholder">  
+        </div>
+
+        <div class="company">
+            <h3 id="company-name"></h3>
+        </div>
+
+        <div class="text">
+          <h3>Front-end Internship</h3>
+          <div class="info">
+            <p>Deadline: 01.12.18</p>
+            <p>Copenhagen</p>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="eachPost mix web">
-      <a href="#">The Lord of the Rings</a>
+
+    <div class="card eachPost mix ux">
+      <a href="#">
+        <div class="image">
+          <img src="assets/office-placholder.jpg" alt="office placholder">  
+        </div>
+
+        <div class="company">
+            <h3 id="company-name"></h3>
+        </div>
+
+        <div class="text">
+          <h3>Front-end Internship</h3>
+          <div class="info">
+            <p>Deadline: 01.12.18</p>
+            <p>Copenhagen</p>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="eachPost mix web">
-      <a href="#">The Martian</a>
+
+    <div class="card eachPost mix ux">
+      <a href="#">
+        <div class="image">
+          <img src="assets/office-placholder.jpg" alt="office placholder">  
+        </div>
+
+        <div class="company">
+            <h3 id="company-name"></h3>
+        </div>
+
+        <div class="text">
+          <h3>Front-end Internship</h3>
+          <div class="info">
+            <p>Deadline: 01.12.18</p>
+            <p>Copenhagen</p>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="eachPost mix frontend">
-      <a href="#">The Andromeda Strain</a>
+
+    <div class="card eachPost mix web">
+      <a href="#">
+        <div class="image">
+          <img src="assets/office-placholder.jpg" alt="office placholder">  
+        </div>
+
+        <div class="company">
+            <h3 id="company-name"></h3>
+        </div>
+
+        <div class="text">
+          <h3>Front-end Internship</h3>
+          <div class="info">
+            <p>Deadline: 01.12.18</p>
+            <p>Copenhagen</p>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="eachPost mix frontend">
-      <a href="#">To Kill a Mockingbird </a>
+
+    <div class="card eachPost mix web">
+      <a href="#">
+        <div class="image">
+          <img src="assets/office-placholder.jpg" alt="office placholder">  
+        </div>
+
+        <div class="company">
+            <h3 id="company-name"></h3>
+        </div>
+
+        <div class="text">
+          <h3>Front-end Internship</h3>
+          <div class="info">
+            <p>Deadline: 01.12.18</p>
+            <p>Copenhagen</p>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="eachPost mix frontend">
-      <a href="#">Siddhartha</a>
+
+    <div class="card eachPost mix web">
+      <a href="#">
+        <div class="image">
+          <img src="assets/office-placholder.jpg" alt="office placholder">  
+        </div>
+
+        <div class="company">
+            <h3 id="company-name"></h3>
+        </div>
+
+        <div class="text">
+          <h3>Front-end Internship</h3>
+          <div class="info">
+            <p>Deadline: 01.12.18</p>
+            <p>Copenhagen</p>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="eachPost mix frontend">
-      <a href="#">The Count of Monte Cristo</a>
+
+    <div class="card eachPost mix web">
+      <a href="#">
+        <div class="image">
+          <img src="assets/office-placholder.jpg" alt="office placholder">  
+        </div>
+
+        <div class="company">
+            <h3 id="company-name"></h3>
+        </div>
+
+        <div class="text">
+          <h3>Front-end Internship</h3>
+          <div class="info">
+            <p>Deadline: 01.12.18</p>
+            <p>Copenhagen</p>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="eachPost mix frontend">
-      <a href="#">Americanah</a>
+
+    <div class="card eachPost mix frontend">
+      <a href="#">
+        <div class="image">
+          <img src="assets/office-placholder.jpg" alt="office placholder">  
+        </div>
+
+        <div class="company">
+            <h3 id="company-name"></h3>
+        </div>
+
+        <div class="text">
+          <h3>Front-end Internship</h3>
+          <div class="info">
+            <p>Deadline: 01.12.18</p>
+            <p>Copenhagen</p>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="eachPost mix ux">
-      <a href="#">A Thousand Splendid Suns</a>
+
+    <div class="card eachPost mix frontend">
+      <a href="#">
+        <div class="image">
+          <img src="assets/office-placholder.jpg" alt="office placholder">  
+        </div>
+
+        <div class="company">
+            <h3 id="company-name"></h3>
+        </div>
+
+        <div class="text">
+          <h3>Front-end Internship</h3>
+          <div class="info">
+            <p>Deadline: 01.12.18</p>
+            <p>Copenhagen</p>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="eachPost mix frontend">
-      <a href="#">The Namesake</a>
+
+    <div class="card eachPost mix frontend">
+      <a href="#">
+        <div class="image">
+          <img src="assets/office-placholder.jpg" alt="office placholder">  
+        </div>
+
+        <div class="company">
+            <h3 id="company-name"></h3>
+        </div>
+
+        <div class="text">
+          <h3>Front-end Internship</h3>
+          <div class="info">
+            <p>Deadline: 01.12.18</p>
+            <p>Copenhagen</p>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
-
-  <!-- Filtering -->
-  <script src="js/mixitup.min.js"></script>
-  <script>
-    // Search
-    let filterInput = document.getElementById('filter-input');
-    // Add event listener
-    filterInput.addEventListener('keyup', filterNames);
-
-    function filterNames(){
-      // Get value of input
-      let filterValue = document.getElementById('filter-input').value.toLowerCase();
-      // Get names ul
-      let Allposts = document.getElementById('resultscontainer');
-      // Get lis from ul
-      let postItem = Allposts.querySelectorAll('.eachPost');
-      // Loop through collection-item lis
-      for(let i = 0;i < postItem.length;i++){
-        let a = postItem[i].getElementsByTagName('a')[0];
-        // If matched
-        if(a.innerHTML.toLowerCase().indexOf(filterValue) > -1){
-          postItem[i].style.display = '';
-        } else {
-          postItem[i].style.display = 'none';
-        }
-      }
-    }
-    
-    //Filtering
-    var containerEl = document.querySelector('.resultscontainer');
-    var mixer = mixitup(containerEl);
-  </script>
-
 </section>
