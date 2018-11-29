@@ -54,6 +54,6 @@ gulp.task('watchAll', function () {
   gulp.watch("./src/*", ["php"]);
   gulp.watch("./src/js/*", ["js"]);
   gulp.watch("./src/assets/*", ["assets"]);
-  gulp.watch("./src/php/*",["phpHelpers"]);
-  gulp.watch("./src/php/section/*",["phpHelpers"]);
+  gulp.watch("./src/php/*",["phpHelp"]);
+  gulp.watch("./src/php/section/*",["phpHelp"]);
 });

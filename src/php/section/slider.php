@@ -4,7 +4,7 @@
     <img class="item" src="assets/venveo.png" alt="" />
 </section> -->
 
-<div class="owl-carousel owl-theme">
+<section class="owl-carousel owl-theme">
     <div class="item"><img class="item" src="assets/venveo.png" alt="" /></div>
     <div class="item"><img class="item" src="assets/venveo.png" alt="" /></div>
     <div class="item"><h4>3</h4></div>
@@ -17,7 +17,7 @@
     <div class="item"><h4>10</h4></div>
     <div class="item"><h4>11</h4></div>
     <div class="item"><h4>12</h4></div>
-</div>
+</section>
 
 <script>
     // $('.owl-carousel').owlCarousel({
