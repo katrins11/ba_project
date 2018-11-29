@@ -49,6 +49,18 @@ gulp.task("assets", function() {
     .pipe(gulp.dest("./build/assets"));
 });
 
+function buildAll(){
+  gulp.start('php');
+  gulp.start('phpHelp');
+  gulp.start('css');
+  gulp.start('js');
+  gulp.start('assets');
+}
+
+gulp.task("buildAll", function () {
+  buildAll();
+});
+
 gulp.task('watchAll', function () {
   gulp.watch("./src/css/*", ["css"]);
   gulp.watch("./src/*", ["php"]);
