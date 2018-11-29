@@ -18,13 +18,14 @@
 <script src="js/shape-animation.js"></script>
 
 <!-- ScrollMagic-->
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script> 
 <script src="js/paralax-frontpage.js"></script>
-<script src="js/paralax-post-text.js"></script> -->
-<!-- <script src="js/paralax-post-contact.js"></script> -->
+
+<script src="js/paralax-post-text.js"></script>
+<script src="js/paralax-post-contact.js"></script>
 
 <!-- Script -->
 <script src="js/script.js"></script>

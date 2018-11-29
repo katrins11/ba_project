@@ -10,6 +10,10 @@
 
 <?php include('php/slider.php')?>
 
+<?php include('php/info-box.php')?>
+
+<?php include('php/paralax-post-contact.php')?>
+
 <?php include('php/cta.php')?>
 
 <?php include('php/footer.php')?>
