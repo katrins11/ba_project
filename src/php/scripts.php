@@ -24,7 +24,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script> 
 <script src="js/paralax-frontpage.js"></script>
 <script src="js/paralax-post-text.js"></script>
-<!-- <script src="js/paralax-post-contact.js"></script> -->
+<script src="js/paralax-post-contact.js"></script>
 
 <!-- Script -->
 <script src="js/script.js"></script>

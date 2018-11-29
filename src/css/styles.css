@@ -18,11 +18,11 @@
 
 @import 'info_box.css';
 
-@import 'paralax-post.css';
-
 @import 'search.css';
 @import 'cards.css';
 
 @import 'carousel.css';
 
+@import 'paralax-frontpage.css';
 @import 'paralax-post-text.css';
+@import 'paralax-post-contact.css';

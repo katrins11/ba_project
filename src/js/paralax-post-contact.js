@@ -1,48 +1,62 @@
-var controller = new ScrollMagic.Controller();
+var contactController = new ScrollMagic.Controller();
 
-var textWH = window.innerHeight,
+var contactWH = window.innerHeight,
   $left = $('.left'),
-  $innerS1 = $('.innerS1'),
-  $innerS2 = $('.innerS2'),
-  $screenA = $('.screenA'),
-  $screenB = $('.screenB');
+  $innerC1 = $('.innerC1'),
+  $innerC2 = $('.innerC2'),
+  $screenC1 = $('.screenC1'),
+  $screenC2 = $('.screenC2');
 
 $(function() {
   var scene = new ScrollMagic.Scene({
-      triggerElement: "#pin4", 
-      duration: '100%', 
-      offset: textWH*0.92,
+      triggerElement: "#pin-contact", 
+      duration: '120%', 
+      offset: contactWH*0.92,
       triggerHook: "onEnter"
   })
-      .setPin("#pin4")
+      .setPin("#pin-contact")
       .addIndicators({name: "Scene duration"})
-      .addTo(controller);
+      .addTo(contactController);
 });
 
-var contentSlide1 = new TimelineMax();
-  contentSlide1       
-    .to($left, 1, {yPercent: 0, ease: Power4.easeOut})
-    .fromTo($screenA, 1, {yPercent: 0, autoAlpha: 0}, {yPercent: 0, autoAlpha: 1, scale: 1, ease: Power4.easeOut})
-    .from($innerS2, 1, {autoAlpha: 0});
+var contactSlide1 = new TimelineMax();
+contactSlide1
+  .to($left, 1, {yPercent: 0, ease: Power4.easeOut})
+  .fromTo($screenC1, 1, {yPercent: 0, autoAlpha: 0}, {yPercent: 0, autoAlpha: 1, scale: 1, ease: Power4.easeOut})
+  .from($innerC2, 1, {autoAlpha: 0});
 
 new ScrollMagic.Scene({
-  triggerElement: $('body')[0],
-  duration: '100%'
+  triggerElement: $('#trigger-contact')[0],
+  duration: 200
 })
-.setTween(contentSlide1)
+.setTween(contactSlide1)
 .addIndicators({name: "222"})
-.addTo(controller);
+.addTo(contactController);
 
-var contentSlide2 = new TimelineMax();
-  contentSlide2       
-  .to($screenA, 1, {yPercent: 30, autoAlpha: 0, ease: Power4.easeOut})
-  .fromTo($screenB, 1, {yPercent: 20, autoAlpha: 0}, {yPercent: 0, autoAlpha: 1, ease: Power4.easeOut});
+var contactSlide2 = new TimelineMax();
+contactSlide2
+  .to($screenC1, 1, {yPercent: 0, autoAlpha: 0, ease: Power4.easeOut})
+  .fromTo($screenC2, 1, {yPercent: 20, autoAlpha: 0}, {yPercent: 0, autoAlpha: 1, ease: Power4.easeOut})
 
 new ScrollMagic.Scene({
-  triggerElement: $('.innerS2')[0],
-  duration: '100%'
+  triggerElement: $('.innerC2')[0],
+  duration: '50%'
 })
-.setTween(contentSlide2)
+.setTween(contactSlide2)
 .addIndicators({name: "333"})
-.addTo(controller);
+.addTo(contactController);
+
+
+removeScrollMagicContact();
+
+function removeScrollMagicContact() {
+  if ($(window).width() <= 1024 && contactController.enabled()) {
+    console.log("screen smaller than...")
+    contactController.enabled(false);
+    contactController = contactController.destroy(true);
+  } else if (!contactController.enabled()) {
+    contactController.enabled(true);
+    contactController = contactController.destroy(false);
+  }
+}
 

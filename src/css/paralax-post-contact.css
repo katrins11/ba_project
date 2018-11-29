@@ -1,4 +1,4 @@
-.paralax {
+.paralax1 {
   width: 100vw;
   margin-top: 80px;
   display: flex;
@@ -45,7 +45,7 @@
       font-size: 12px;
       line-height: 22px;
 
-      &.screenT1, &.screenT2, &.screenT3 {
+      &.screenC1, &.screenC2 {
         font-size: 80px !important;
         text-align: center;
         width: 500px;
