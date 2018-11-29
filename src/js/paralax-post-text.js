@@ -62,3 +62,18 @@ new ScrollMagic.Scene({
 })
 .setTween(contentSlide3)
 .addTo(controller);
+
+
+
+removeScrollMagic();
+
+function removeScrollMagic() {
+  if ($(window).width() <= 1024 && controller.enabled()) {
+    console.log("screen smaller than...")
+    controller.enabled(false);
+    controller = controller.destroy(true);
+  } else if (!controller.enabled()) {
+    controller.enabled(true);
+    controller = controller.destroy(false);
+  }
+}

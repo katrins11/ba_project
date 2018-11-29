@@ -3,20 +3,26 @@
   margin-top: 80px;
   display: flex;
   flex-direction: row;
+
   @media (--mq-mobile) {
     height: auto;
     flex-direction: column;
   }
 
+  .scrollmagic-pin-spacer {
+    @media (--mq-tablet) {
+      width: 0 !important;
+    }
+  }
+
   .item {
     width: 50%;
-    @media (--mq-mobile) {
+    @media (--mq-tablet) {
       width: 100%;
-      height: auto;
+      height: 100%;
     }
 
     &:first-child {
-      /*background-image: url('../assets/venveo.png');*/
       background-size: cover;
       background-position: center left; 
       @media (--mq-mobile) {
@@ -26,10 +32,6 @@
 
     h2, p {
       color: var(--color-black);
-      padding: 20px 80px;
-      @media (--mq-mobile) {
-        padding: 20px 40px;
-      }
     }
 
     h2 {
@@ -43,18 +45,7 @@
       font-weight: 300;
       font-size: 12px;
       line-height: 22px;
-    }
 
-    img {
-      display: flex;
-      width: 100%;
-      height: calc(100vh - 77px);
-      object-fit: cover;
-    }
-  }
-
-  .item {
-    p {
       &.screen {
         font-size: 80px !important;
         text-align: center;
@@ -64,59 +55,61 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: var(--color-black);
         opacity: 0;
         visibility: hidden;
         line-height: 80px !important;
       }
     }
-  }
- 
-  #paralax {
-    height: 100vh;
-    margin: 0;
-  }
 
-  .slide {
-    height: 100vh;
-    position: relative;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    img {
+      display: flex;
+      width: 100%;
+      height: calc(100vh - 77px);
+      object-fit: cover;
+    }
 
-    &.contact {
-      height: 50vh;
+    &.left {
+      background-color: var(--color-grey);
+      height: calc(100vh - 77px);
+
+      @media (--mq-tablet) {
+        display: none;
+      }
+    }
+
+    &.right {
+      display: flex;
+      position: relative;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 50vw;
+
+      @media (--mq-tablet) {
+        justify-content: unset;
+        width: 100vw;
+      }
+
+      .innerText {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 0 80px;
+        text-align: left;
+
+        @media (--mq-tablet) {
+          visibility: inherit !important;
+          opacity: 1 !important;
+          margin: 80px 0 0 0;
+          height: auto;
+          display: initial;
+          padding: 0 40px;
+        }
+      }
     }
   }
-
-  .hh .inner {
-    margin: 0 auto;
-    max-width: 85%;
-  }
-
-  #pin3 {
-    background-color: var(--color-grey);
-    height: calc(100vh - 77px);
-  }
-
-   #pin4 {
-    background-color: var(--color-grey);
-    height: 50vh;
-  }
-
-  #trigger3 {
-    margin-top: 80px;
-  }
-
-  .innerText {
-    position: absolute;
-    text-align: left;
-    padding: 80px;
-
-    h2, p {
-      padding: 0 !important;
-    }
-  }
- 
 }
