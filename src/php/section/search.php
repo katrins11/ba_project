@@ -7,21 +7,23 @@
     </div>
 
     <div class="filter-btns">
-      <button type="button" class="filter btn-inverted" data-filter="all">See All</button> 
-      <button type="button" class="filter btn-inverted" data-filter=".web">Web</button> 
-      <button type="button" class="filter btn-inverted" data-filter=".ux">UX</button> 
-      <button type="button" class="filter btn-inverted" data-filter=".frontend">Front-end</button> 
-      <button type="button" class="filter btn-inverted" data-filter=".webdesign">Web Design</button> 
-      <button type="button" class="filter btn-inverted" data-filter=".backend">Back-end</button> 
+      <button type="button" class="filter btn-inverted" data-filter="all">All Posts</button> 
+      <button type="button" class="filter btn-inverted" data-filter=".frontend">Front-End</button> 
+      <button type="button" class="filter btn-inverted" data-filter=".backend">Back-End</button> 
+      <button type="button" class="filter btn-inverted" data-filter=".fullstack">Full-stack</button> 
+      <button type="button" class="filter btn-inverted" data-filter=".appdevelopment">App Development</button> 
+      <button type="button" class="filter btn-inverted" data-filter=".ui">UI</button> 
+      <button type="button" class="filter btn-inverted" data-filter=".ux">UX</button>       
+      <button type="button" class="filter btn-inverted" data-filter=".webdesign">Web Design</button>       
       <button type="button" class="filter btn-inverted" data-filter=".database">Database</button> 
-      <button type="button" class="filter btn-inverted" data-filter=".cms">CMS</button> 
-      <button type="button" class="filter btn-inverted" data-filter=".animation">Animation</button> 
+      <button type="button" class="filter btn-inverted" data-filter=".projectmanagement">Project Management</button> 
     </div>
   </div>
 
   <div class="resultscontainer" id="resultscontainer">
 
-    <div class="card eachPost mix web">
+    <!-- <div class="card eachPost mix web">
+      Hi
       <a href="#">
         <div class="image">
           <img src="assets/office-placholder.jpg" alt="office placholder">  
@@ -239,6 +241,7 @@
           </div>
         </div>
       </a>
-    </div>
+    </div> -->
   </div>
+
 </section>

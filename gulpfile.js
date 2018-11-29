@@ -9,6 +9,17 @@ const gulp = require('gulp'),
       simpleVars = require('postcss-simple-vars'),
       postcssNested = require('postcss-nested');
 
+gulp.task("php", function() {
+  return gulp
+    .src("./src/*.php")
+    .pipe(gulp.dest("./build"))
+});
+
+gulp.task("phpHelp", function() {
+  return gulp
+    .src(["./src/php/*.php", "./src/php/section/*.php"])
+    .pipe(gulp.dest("./build/php"))
+});
 
 gulp.task("css", function() {
   const processors = [
@@ -27,11 +38,6 @@ gulp.task("css", function() {
     .pipe(gulp.dest("./build/css"))
 });
 
-gulp.task("php", function() {
-  return gulp
-    .src("./src/*.php")
-    .pipe(gulp.dest("./build"))
-});
 gulp.task("js", function() {
   return gulp
     .src("./src/js/*.js")
@@ -48,4 +54,6 @@ gulp.task('watchAll', function () {
   gulp.watch("./src/*", ["php"]);
   gulp.watch("./src/js/*", ["js"]);
   gulp.watch("./src/assets/*", ["assets"]);
+  gulp.watch("./src/php/*",["phpHelpers"]);
+  gulp.watch("./src/php/section/*",["phpHelpers"]);
 });
