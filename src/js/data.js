@@ -13,9 +13,9 @@ var ref = database.ref('post');
 ref.on('value', gotData, errData);
 
 function gotData(data){
-    console.log("data", data.val().companyName);
+    console.log("data", data.val()[0].companyName);
     //var compName = document.getElementById("company-name");
-    //compName.innerHTML = data.val().companyName;
+    // compName.innerHTML = data.val().companyName;
 }
 function errData(err){
     console.log("ERROR");
@@ -24,44 +24,41 @@ function errData(err){
 
 
 firebase.database().ref('post').on('value', function(snapshot) {
-    console.log(snapshot.val());
-    console.log("getCardInfo",getCardInfo(snapshot));
+    console.log("hi", snapshot.val());
+    getCardInfo(snapshot);
 });
 
 function getCardInfo(snapshot) {
     //var posts = [];
     //console.log("loop",posts);
     var htmlCards = "";
+    var compName = document.getElementById("resultscontainer");
 
     snapshot.forEach(snap => {
         //posts.push(snap.val().companyName, snap.val().postTitle);
-        var name = snap.val().companyName;
-        var postTitle = snap.val().postTitle;
-        var deadline = snap.val().importantInfo.deadline;
-        var loction = snap.val().importantInfo.loction;
+        var filterItem = '';
+        var filterItems = '';
+        for (var i = 0; i < snap.val().filter.length; i++) {
+            filterItem = snap.val().filter[i] + " ";
+            filterItems += filterItem;
+        }
 
-        var htmlCard = ' <div class="card eachPost mix web">\
-                            <a>\
-                                <div class="image"><img src="assets/office-placholder.jpg" alt="office placholder"></div>\
-                                <div class="company">\
-                                    <h3 id="company-name">'+snap.val().companyName+'</h3>\
+        var htmlCard = '<a class="eachPost mix '+filterItems+'" data-companyID="'+snap.val().id+'">\
+                            <div class="postImage"><img src="'+snap.val().images[0]+'" alt="office placholder"></div>\
+                            <div class="company">\
+                                <h3 id="company-name">'+snap.val().companyName+'</h3>\
+                            </div>\
+                            <div class="text">\
+                                <h3>'+snap.val().postTitle+'</h3>\
+                                <div class="info">\
+                                    <p>'+snap.val().importantInfo.deadline+'</p>\
+                                    <p>'+snap.val().importantInfo.loction+'</p>\
                                 </div>\
-                                <div class="text">\
-                                    <h3>'+snap.val().postTitle+'</h3>\
-                                    <div class="info">\
-                                        <p>'+snap.val().importantInfo.deadline+'</p>\
-                                        <p>'+snap.val().importantInfo.loction+'</p>\
-                                    </div>\
-                                </div>\
-                            </a>\
-                        </div>'
-
+                            </div>\
+                        </a>';
 
         htmlCards += htmlCard; 
-
-        var compName = document.getElementById("resultscontainer");
         compName.innerHTML = htmlCards;
     });
-
 };
 

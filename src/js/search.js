@@ -23,5 +23,5 @@ function filterNames(){
 }
 
 /* *** FILTERING *** */
-var containerEl = document.querySelector('.resultscontainer');
-var mixer = mixitup(containerEl);
+var containerElem = document.querySelector('#resultscontainer');
+var mixer = mixitup(containerElem);
