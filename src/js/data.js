@@ -40,7 +40,7 @@ function getCardInfo(snapshot) {
         var deadline = snap.val().importantInfo.deadline;
         var loction = snap.val().importantInfo.loction;
 
-        var htmlCard = ' <div class="card">\
+        var htmlCard = ' <div class="card eachPost mix web">\
                             <a>\
                                 <div class="image"><img src="assets/office-placholder.jpg" alt="office placholder"></div>\
                                 <div class="company">\
@@ -59,7 +59,7 @@ function getCardInfo(snapshot) {
 
         htmlCards += htmlCard; 
 
-        var compName = document.getElementById("card-container");
+        var compName = document.getElementById("resultscontainer");
         compName.innerHTML = htmlCards;
     });
 
