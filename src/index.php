@@ -23,7 +23,6 @@
 
         <?php include('carousel.php')?>
 
-        <?php include('search.php')?>
       
         <?php include('fifty50.php')?>
 

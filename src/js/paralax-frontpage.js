@@ -4,7 +4,7 @@ var controller = new ScrollMagic.Controller();
 $(function() {
   var scene = new ScrollMagic.Scene({
     triggerElement: "#pin2", 
-    duration: 1800, 
+    duration: 650, 
     offset: 820,
     triggerHook: "onEnter"
   })
