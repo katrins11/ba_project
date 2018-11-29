@@ -12,7 +12,7 @@ var textWH = window.innerHeight,
 $(function() {
   var scene = new ScrollMagic.Scene({
     triggerElement: "#pin3", 
-    duration: '209%', 
+    duration: '140%', 
     offset: textWH*0.915,
     triggerHook: "onEnter"
   })

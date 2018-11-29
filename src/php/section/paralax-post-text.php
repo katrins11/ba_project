@@ -1,6 +1,6 @@
 <section id="trigger3" class="paralax">
   <div id="pin3" class="item left">
-    <p class="screen screenA">1508</p>
+    <p class="screen screenA"><img src="assets/1508_logo.png" alt="logo placholder"></p>
     <p class="screen screenB">The Position</p>
     <p class="screen screenC">Expectations</p>
   </div>
