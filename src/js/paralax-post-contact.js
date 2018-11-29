@@ -4,15 +4,13 @@ var textWH = window.innerHeight,
   $left = $('.left'),
   $innerS1 = $('.innerS1'),
   $innerS2 = $('.innerS2'),
-  $innerS3 = $('.innerS3'),
   $screenA = $('.screenA'),
-  $screenB = $('.screenB'),
-  $screenC = $('.screenC');
+  $screenB = $('.screenB');
 
 $(function() {
   var scene = new ScrollMagic.Scene({
       triggerElement: "#pin4", 
-      duration: '450', 
+      duration: '100%', 
       offset: textWH*0.92,
       triggerHook: "onEnter"
   })
@@ -29,7 +27,7 @@ var contentSlide1 = new TimelineMax();
 
 new ScrollMagic.Scene({
   triggerElement: $('body')[0],
-  duration: '100'
+  duration: '100%'
 })
 .setTween(contentSlide1)
 .addIndicators({name: "222"})
@@ -42,7 +40,7 @@ var contentSlide2 = new TimelineMax();
 
 new ScrollMagic.Scene({
   triggerElement: $('.innerS2')[0],
-  duration: '100'
+  duration: '100%'
 })
 .setTween(contentSlide2)
 .addIndicators({name: "333"})
