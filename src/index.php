@@ -6,7 +6,7 @@
 
 <?php include('php/hero-banner.php')?>
 
-<?php include('php/fifty50.php')?>
+<?php include('php/paralax-frontpage.php')?>
 
 <?php include('php/cta.php')?>
 
