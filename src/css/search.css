@@ -14,9 +14,7 @@
     .search-field {
       position: relative;
       width: 50%;
-      @media (--mq-tablet) {
-        width: 75%;
-      }
+      @media (--mq-tablet) { width: 75%; }
 
       input {
         width: 100%;
@@ -38,19 +36,14 @@
       }
     }
 
-
     .filter-btns {
       width: 50%;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
 
-      @media (--mq-tablet) {
-        width: 75%;
-      }
-      @media (--mq-mobile) {
-        display: none;
-      }
+      @media (--mq-tablet) { width: 75%; }
+      @media (--mq-mobile) { display: none; }
 
       button {
         border: none;
