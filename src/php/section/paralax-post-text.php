@@ -2,9 +2,9 @@
   <!-- <p class="screenA"><img src="assets/1508_logo.png" alt="logo placholder"></p> -->
 
   <div id="pin-text" class="item left">
-    <p class="screenT1"><img src="assets/1508_logo.png" alt="logo placholder"></p>
-    <p class="screenT2">The Position</p>
-    <p class="screenT3">Expectations</p>
+    <p class="screen screenT1"><img src="assets/1508_logo.png" alt="logo placholder"></p>
+    <p class="screen screenT2">The Position</p>
+    <p class="screen screenT3">Expectations</p>
   </div>
 
   <div class="item right">
