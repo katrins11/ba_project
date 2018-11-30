@@ -156,9 +156,3 @@
   </div> -->
 
 </section>
-
-<script>
-  /* *** FILTERING *** */
-  var containerElem = document.querySelector('#resultscontainer');
-  var mixer = mixitup(containerElem);
-</script>
