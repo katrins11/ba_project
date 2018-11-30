@@ -1,4 +1,4 @@
-.info-box {
+#first-infobox-container, #second-infobox-container {
   width: calc(100vw - 80px);
   margin: 0 40px 0 40px;
   height: 200px;
