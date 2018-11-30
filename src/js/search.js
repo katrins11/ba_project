@@ -1,18 +1,15 @@
-/* *** SEARCH *** */
 var overviewPage = document.getElementById("overview-page");
 if(overviewPage) {
+  /* *** SEARCH *** */
   let filterInput = document.getElementById('filter-input');
-  // Add event listener
-  filterInput.addEventListener('keyup', filterNames);
-
-  function filterNames(){
+  filterInput.addEventListener('keyup', function() {
     // Get value of input
     let filterValue = document.getElementById('filter-input').value.toLowerCase();
-    // Get names ul
+    // Get names from list
     let Allposts = document.getElementById('resultscontainer');
-    // Get lis from ul
+    // Get each item from list
     let postItem = Allposts.querySelectorAll('.eachPost');
-    // Loop through collection-item lis
+    // Loop through list
     for(let i = 0;i < postItem.length;i++){
       let a = postItem[i].getElementsByTagName('a')[0];
       // If matched
@@ -22,7 +19,7 @@ if(overviewPage) {
         postItem[i].style.display = 'none';
       }
     }
-  }
+  });
 
   /* *** FILTERING *** */
   var containerElem = document.querySelector('#resultscontainer');
