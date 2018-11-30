@@ -1,5 +1,5 @@
 <section class="search-container">
-  <div class=search-content>
+  <div class="search-content">
     
     <div class="search-field">
       <input type="text" id="filter-input" placeholder="Search for internship oppotunities..."type="text">
@@ -20,228 +20,139 @@
     </div>
   </div>
 
-  <div class="resultscontainer" id="resultscontainer">
+  <div class="resultscontainer" id="resultscontainer"></div>
 
-    <!-- <div class="card eachPost mix web">
-      Hi
-      <a href="#">
-        <div class="image">
-          <img src="assets/office-placholder.jpg" alt="office placholder">  
-        </div>
-
+  <!-- <div class="resultscontainer" id="resultscontainer">
+    <a class="eachPost mix frontend backend" data-companyID="1">
+        <div class="postImage"><img src="assets/venveo.png" alt="office placholder"></div>
         <div class="company">
-            <h3 id="company-name"></h3>
+            <h3 id="company-name">name</h3>
         </div>
-
         <div class="text">
-          <h3>Front-end Internship</h3>
-          <div class="info">
-            <p>Deadline: 01.12.18</p>
-            <p>Copenhagen</p>
-          </div>
+            <h3>text</h3>
+            <div class="info">
+                <p>deadline</p>
+                <p>location</p>
+            </div>
         </div>
-      </a>
-    </div>
-
-    <div class="card eachPost mix ux">
-      <a href="#">
-        <div class="image">
-          <img src="assets/office-placholder.jpg" alt="office placholder">  
-        </div>
-
+    </a>
+    <a class="eachPost mix projectmanagement ui" data-companyID="1">
+        <div class="postImage"><img src="assets/venveo.png" alt="office placholder"></div>
         <div class="company">
-            <h3 id="company-name"></h3>
+            <h3 id="company-name">name</h3>
         </div>
-
         <div class="text">
-          <h3>Front-end Internship</h3>
+            <h3>text</h3>
+            <div class="info">
+                <p>deadline</p>
+                <p>location</p>
+            </div>
+        </div>
+    </a>
+    <a class="eachPost mix frontend ux" data-companyID="1">
+      <div class="postImage"><img src="assets/venveo.png" alt="office placholder"></div>
+      <div class="company">
+          <h3 id="company-name">name</h3>
+      </div>
+      <div class="text">
+          <h3>text</h3>
           <div class="info">
-            <p>Deadline: 01.12.18</p>
-            <p>Copenhagen</p>
+              <p>deadline</p>
+              <p>location</p>
           </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="card eachPost mix ux">
-      <a href="#">
-        <div class="image">
-          <img src="assets/office-placholder.jpg" alt="office placholder">  
-        </div>
-
-        <div class="company">
-            <h3 id="company-name"></h3>
-        </div>
-
-        <div class="text">
-          <h3>Front-end Internship</h3>
+      </div>
+    </a>
+    <a class="eachPost mix webdesign ui" data-companyID="1">
+      <div class="postImage"><img src="assets/venveo.png" alt="office placholder"></div>
+      <div class="company">
+          <h3 id="company-name">name</h3>
+      </div>
+      <div class="text">
+          <h3>text</h3>
           <div class="info">
-            <p>Deadline: 01.12.18</p>
-            <p>Copenhagen</p>
+              <p>deadline</p>
+              <p>location</p>
           </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="card eachPost mix ux">
-      <a href="#">
-        <div class="image">
-          <img src="assets/office-placholder.jpg" alt="office placholder">  
-        </div>
-
-        <div class="company">
-            <h3 id="company-name"></h3>
-        </div>
-
-        <div class="text">
-          <h3>Front-end Internship</h3>
+      </div>
+    </a>
+    <a class="eachPost mix frontend ux" data-companyID="1">
+      <div class="postImage"><img src="assets/venveo.png" alt="office placholder"></div>
+      <div class="company">
+          <h3 id="company-name">name</h3>
+      </div>
+      <div class="text">
+          <h3>text</h3>
           <div class="info">
-            <p>Deadline: 01.12.18</p>
-            <p>Copenhagen</p>
+              <p>deadline</p>
+              <p>location</p>
           </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="card eachPost mix web">
-      <a href="#">
-        <div class="image">
-          <img src="assets/office-placholder.jpg" alt="office placholder">  
-        </div>
-
-        <div class="company">
-            <h3 id="company-name"></h3>
-        </div>
-
-        <div class="text">
-          <h3>Front-end Internship</h3>
+      </div>
+    </a>
+    <a class="eachPost mix appdevelopment ui" data-companyID="1">
+      <div class="postImage"><img src="assets/venveo.png" alt="office placholder"></div>
+      <div class="company">
+          <h3 id="company-name">name</h3>
+      </div>
+      <div class="text">
+          <h3>text</h3>
           <div class="info">
-            <p>Deadline: 01.12.18</p>
-            <p>Copenhagen</p>
+              <p>deadline</p>
+              <p>location</p>
           </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="card eachPost mix web">
-      <a href="#">
-        <div class="image">
-          <img src="assets/office-placholder.jpg" alt="office placholder">  
-        </div>
-
-        <div class="company">
-            <h3 id="company-name"></h3>
-        </div>
-
-        <div class="text">
-          <h3>Front-end Internship</h3>
+      </div>
+    </a>
+    <a class="eachPost mix frontend fullstack" data-companyID="1">
+      <div class="postImage"><img src="assets/venveo.png" alt="office placholder"></div>
+      <div class="company">
+          <h3 id="company-name">name</h3>
+      </div>
+      <div class="text">
+          <h3>text</h3>
           <div class="info">
-            <p>Deadline: 01.12.18</p>
-            <p>Copenhagen</p>
+              <p>deadline</p>
+              <p>location</p>
           </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="card eachPost mix web">
-      <a href="#">
-        <div class="image">
-          <img src="assets/office-placholder.jpg" alt="office placholder">  
-        </div>
-
-        <div class="company">
-            <h3 id="company-name"></h3>
-        </div>
-
-        <div class="text">
-          <h3>Front-end Internship</h3>
+      </div>
+    </a>
+    <a class="eachPost mix frontend projectmanagement" data-companyID="1">
+      <div class="postImage"><img src="assets/venveo.png" alt="office placholder"></div>
+      <div class="company">
+          <h3 id="company-name">name</h3>
+      </div>
+      <div class="text">
+          <h3>text</h3>
           <div class="info">
-            <p>Deadline: 01.12.18</p>
-            <p>Copenhagen</p>
+              <p>deadline</p>
+              <p>location</p>
           </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="card eachPost mix web">
-      <a href="#">
-        <div class="image">
-          <img src="assets/office-placholder.jpg" alt="office placholder">  
-        </div>
-
-        <div class="company">
-            <h3 id="company-name"></h3>
-        </div>
-
-        <div class="text">
-          <h3>Front-end Internship</h3>
+      </div>
+    </a>
+    <a class="eachPost mix database ux" data-companyID="1">
+      <div class="postImage"><img src="assets/venveo.png" alt="office placholder"></div>
+      <div class="company">
+          <h3 id="company-name">name</h3>
+      </div>
+      <div class="text">
+          <h3>text</h3>
           <div class="info">
-            <p>Deadline: 01.12.18</p>
-            <p>Copenhagen</p>
+              <p>deadline</p>
+              <p>location</p>
           </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="card eachPost mix frontend">
-      <a href="#">
-        <div class="image">
-          <img src="assets/office-placholder.jpg" alt="office placholder">  
-        </div>
-
-        <div class="company">
-            <h3 id="company-name"></h3>
-        </div>
-
-        <div class="text">
-          <h3>Front-end Internship</h3>
+      </div>
+    </a>
+    <a class="eachPost mix database ux" data-companyID="1">
+      <div class="postImage"><img src="assets/venveo.png" alt="office placholder"></div>
+      <div class="company">
+          <h3 id="company-name">name</h3>
+      </div>
+      <div class="text">
+          <h3>text</h3>
           <div class="info">
-            <p>Deadline: 01.12.18</p>
-            <p>Copenhagen</p>
+              <p>deadline</p>
+              <p>location</p>
           </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="card eachPost mix frontend">
-      <a href="#">
-        <div class="image">
-          <img src="assets/office-placholder.jpg" alt="office placholder">  
-        </div>
-
-        <div class="company">
-            <h3 id="company-name"></h3>
-        </div>
-
-        <div class="text">
-          <h3>Front-end Internship</h3>
-          <div class="info">
-            <p>Deadline: 01.12.18</p>
-            <p>Copenhagen</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="card eachPost mix frontend">
-      <a href="#">
-        <div class="image">
-          <img src="assets/office-placholder.jpg" alt="office placholder">  
-        </div>
-
-        <div class="company">
-            <h3 id="company-name"></h3>
-        </div>
-
-        <div class="text">
-          <h3>Front-end Internship</h3>
-          <div class="info">
-            <p>Deadline: 01.12.18</p>
-            <p>Copenhagen</p>
-          </div>
-        </div>
-      </a>
-    </div> -->
-  </div>
+      </div>
+    </a>
+  </div> -->
 
 </section>
