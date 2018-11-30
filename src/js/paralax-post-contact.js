@@ -10,8 +10,8 @@ var contactWH = window.innerHeight,
 $(function() {
   var scene = new ScrollMagic.Scene({
       triggerElement: "#pin-contact", 
-      duration: '120%', 
-      offset: contactWH*0.92,
+      duration: '100%', 
+      offset: contactWH*0.915,
       triggerHook: "onEnter"
   })
       .setPin("#pin-contact")
@@ -26,11 +26,11 @@ contactSlide1
   .from($innerC2, 1, {autoAlpha: 0});
 
 new ScrollMagic.Scene({
-  triggerElement: $('#trigger-contact')[0],
-  duration: 200
+  triggerElement: $('.info-box')[0],
+  duration: 100
 })
 .setTween(contactSlide1)
-.addIndicators({name: "222"})
+.addIndicators({name: "1st slide"})
 .addTo(contactController);
 
 var contactSlide2 = new TimelineMax();
@@ -39,11 +39,12 @@ contactSlide2
   .fromTo($screenC2, 1, {yPercent: 20, autoAlpha: 0}, {yPercent: 0, autoAlpha: 1, ease: Power4.easeOut})
 
 new ScrollMagic.Scene({
-  triggerElement: $('.innerC2')[0],
-  duration: '50%'
+  triggerElement: $('.innerC1')[0],
+  duration: '100',
+  triggerHook: "onLeave"
 })
 .setTween(contactSlide2)
-.addIndicators({name: "333"})
+.addIndicators({name: "2nd slide"})
 .addTo(contactController);
 
 

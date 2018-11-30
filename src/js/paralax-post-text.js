@@ -33,7 +33,7 @@ new ScrollMagic.Scene({
   duration: '100%'
 })
 .setTween(textSlide1)
-.addIndicators()
+.addIndicators({name: "1st slide"})
 .addTo(textController);
 
 var textSlide2 = new TimelineMax();
@@ -48,7 +48,7 @@ new ScrollMagic.Scene({
   duration: '100%'
 })
 .setTween(textSlide2)
-.addIndicators()
+.addIndicators({name: "2nd slide"})
 .addTo(textController);
 
 var textSlide3 = new TimelineMax();
@@ -61,6 +61,7 @@ new ScrollMagic.Scene({
   duration: '100%'
 })
 .setTween(textSlide3)
+.addIndicators({name: "3rd slide"})
 .addTo(textController);
 
 
