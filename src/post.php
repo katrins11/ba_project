@@ -4,8 +4,6 @@
 
 <?php include('php/post-hero.php')?>
 
-<?php include('php/info-box.php')?>
-
 <?php include('php/paralax-post-text.php')?>
 
 <?php include('php/slider.php')?>

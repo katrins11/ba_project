@@ -9,8 +9,8 @@ var frontpageWH = window.innerHeight,
 $(function() {
   var scene = new ScrollMagic.Scene({
     triggerElement: "#pin-frontpage", 
-    duration: '170%', 
-    offset: frontpageWH*0.897,
+    duration: '110%', 
+    offset: frontpageWH*0.915,
     triggerHook: "onEnter"
   })
   .setPin("#pin-frontpage")

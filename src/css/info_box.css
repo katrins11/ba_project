@@ -55,8 +55,19 @@
   }
 
   &.hero-info-box {
-    margin-top: -190px;
+    margin-top: -180px;
     z-index: 3;
     position: relative;
+  }
+}
+
+.section-headline {
+  margin: 0 40px 40px 40px;
+
+  h1 {
+    color: var(--color-primary-black);
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 36px;
   }
 }

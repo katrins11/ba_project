@@ -1,8 +1,8 @@
-<section id="trigger-contact" class="paralax1">
+<section id="trigger-contact" class="paralax">
 
   <div id="pin-contact" class="item left">
-    <p class="screenC1">Interested?</p>
-    <p class="screenC2">Contact</p>
+    <p class="screen screenC1">Interested?</p>
+    <p class="screen screenC2">Contact</p>
   </div>
 
   <div class="item right">

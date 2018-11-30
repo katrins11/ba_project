@@ -1,4 +1,4 @@
-<section id="trigger-frontpage" class="paralax2">
+<section id="trigger-frontpage" class="paralax">
 
   <div id="pin-frontpage" class="item left">
     <img src="https://res.cloudinary.com/anne1312/image/upload/v1542898741/office-placholder.jpg" alt="office placholder"> 

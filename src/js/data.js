@@ -88,4 +88,4 @@ function getFrontCardInfo(snapshot) {
         companyPosts.insertAdjacentHTML('beforeend', frontCard);
         i++;
     });
-}
+};

@@ -37,6 +37,7 @@
       font-family: var(--montserrat);
       font-weight: 500;
       font-size: 28px;
+      margin-bottom: 20px;
     }
 
     p {
@@ -45,7 +46,7 @@
       font-size: 12px;
       line-height: 22px;
 
-      &.screenT1, &.screenT2, &.screenT3 {
+      &.screen {
         font-size: 80px !important;
         text-align: center;
         width: 500px;
@@ -90,7 +91,6 @@
 
       .innerText {
         height: 100vh;
-        align-items: center;
         justify-content: center;
         display: flex;
         flex-direction: column;
