@@ -34,9 +34,7 @@ database.ref('post').on('value', function(snapshot) {
     } 
     else if(postPage) {
         console.log("Your are on the PostPage");
-        getFirstInfoboxData(snapshot);
-        getSecondInfoboxData(snapshot);
-        getPost();
+        getPost(snapshot);
     }
 });
 
@@ -101,10 +99,25 @@ function getFrontCardInfo(snapshot) {
 
 //**************** INFO BOX'S *****************//
 
-function getPost() {
+// Get specific post company id
+// post data from that specifik one into post page
+
+function getPost(snapshot) {
     var postPage = document.getElementById("post-page");
     var postID = postPage.getAttribute("data-postId");
     console.log("Post ID:", postID);
+
+    snapshot.forEach(snap => {
+
+        if(snap.val().id == postID){
+            console.log("yes", snap.val());
+            getFirstInfoboxData(snapshot);
+            getSecondInfoboxData(snapshot);
+
+            console.log(postIds);
+        }
+
+    });
 
 }
 
