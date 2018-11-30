@@ -22,6 +22,8 @@ function errData(err) {
 database.ref('post').on('value', function(snapshot) {
     var frontpage = document.getElementById("front-page");
     var overviewPage = document.getElementById("overview-page");
+    var postPage = document.getElementById("post-page");
+
     if(frontpage) {
         console.log("Your are on the FrontPage");
         getFrontCardInfo(snapshot);
@@ -29,7 +31,11 @@ database.ref('post').on('value', function(snapshot) {
     else if(overviewPage) {
         console.log("Your are on the OverviewPage");
         getCardInfo(snapshot);
-    }    
+    } 
+    else if(postPage) {
+        console.log("Your are on the PostPage");
+        getPost(snapshot);
+    }
 });
 
 function getCardInfo(snapshot) {
@@ -89,3 +95,86 @@ function getFrontCardInfo(snapshot) {
         i++;
     });
 };
+
+
+//**************** INFO BOX'S *****************//
+
+// Get specific post company id
+// post data from that specifik one into post page
+
+function getPost(snapshot) {
+    var postPage = document.getElementById("post-page");
+    var postID = postPage.getAttribute("data-postId");
+    console.log("Post ID:", postID);
+
+    snapshot.forEach(snap => {
+
+        if(snap.val().id == postID){
+            console.log("yes", snap.val());
+            getFirstInfoboxData(snapshot);
+            getSecondInfoboxData(snapshot);
+
+            console.log(postIds);
+        }
+
+    });
+
+}
+
+function getFirstInfoboxData(snapshot) { 
+    var infoboxData = document.getElementById("first-infobox-container");
+
+    snapshot.forEach(snap => {
+
+        var htmlInfobox = '<div class="info">\
+                                <h3>'+snap.val().importantInfo.deadline+'</h3>\
+                                <p>Deadline</p>\
+                            </div>\
+                            <div class="info">\
+                                <h3>'+snap.val().importantInfo.duration+'</h3>\
+                                <p>Duration</p>\
+                            </div>\
+                            <div class="info">\
+                                <h3>'+snap.val().importantInfo.loction+'</h3>\
+                                <p>Location</p>\
+                            </div>\
+                            <div class="info">\
+                                <h3>'+snap.val().importantInfo.date+'</h3>\
+                                <p>Date</p>\
+                            </div>';
+
+        infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
+    });
+}
+
+function getSecondInfoboxData(snapshot) { 
+    var infoboxData = document.getElementById("second-infobox-container");
+
+    snapshot.forEach(snap => {
+
+        var htmlInfobox = '<div class="info">\
+                                <h3>'+snap.val().infoBox.employs+'</h3>\
+                                <p>Employees</p>\
+                            </div>\
+                            <div class="info">\
+                                <h3>'+snap.val().infoBox.clients+'</h3>\
+                                <p>Clients</p>\
+                            </div>\
+                            <div class="info">\
+                                <h3>'+snap.val().infoBox.projects+'</h3>\
+                                <p>Projects</p>\
+                            </div>\
+                            <div class="info">\
+                                <h3>'+snap.val().infoBox.companyAge+'</h3>\
+                                <p>Years in the field</p>\
+                            </div>';
+
+        infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
+    });
+}
+
+
+
+
+
+

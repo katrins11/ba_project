@@ -3,8 +3,8 @@
     <h1>Company statistics</h1>
   </div>
 
-  <div class="info-box">
-    <div class="info">
+  <div id="second-infobox-container">
+    <!-- <div class="info">
       <h3>80</h3>
       <p>Employees</p>
     </div>
@@ -19,7 +19,7 @@
     <div class="info">
       <h3>15</h3>
       <p>Years in the field</p>
-    </div>
+    </div> -->
   </div>
 </section>
 
