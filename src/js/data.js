@@ -132,8 +132,6 @@ function getPost(snapshot) {
             console.log("yes", snap.val());
             getFirstInfoboxData(snapshot);
             getSecondInfoboxData(snapshot);
-
-            console.log(postIds);
         }
 
     });
