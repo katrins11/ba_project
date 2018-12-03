@@ -156,8 +156,8 @@ function getFirstInfoboxData(snapshot) {
                                 <p>Location</p>\
                             </div>\
                             <div class="info">\
-                                <h3>'+snap.val().importantInfo.date+'</h3>\
-                                <p>Date</p>\
+                                <h3>'+snap.val().importantInfo.created+'</h3>\
+                                <p>Created</p>\
                             </div>';
 
         infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);

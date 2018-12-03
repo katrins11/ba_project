@@ -19,6 +19,6 @@
   </div>
   <div class="info">
     <h3>22.03.19</h3>
-    <p>Date</p>
+    <p>Created</p>
   </div> -->
 </section>
