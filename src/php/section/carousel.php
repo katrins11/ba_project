@@ -1,32 +1,5 @@
-<div class="owl-carousel owl-theme">
-    <div class="item" style="width:70vw; max-height: 90vh; height: 90vh;">
-        <img src="assets/venveo.png" alt="" style="height:100%;">
-    </div>
-    <div class="item" style="width:70vw; max-height: 90vh; height: 90vh;">
-        <img src="assets/venveo.png" alt="" style="height:100%;">
-    </div>
-    <div class="item" style="width:70vw; max-height: 90vh; height: 90vh;">
-        <img src="assets/venveo.png" alt="" style="height:100%;">
-    </div>
-    <div class="item" style="width:70vw; max-height: 90vh; height: 90vh;">
-        <img src="assets/venveo.png" alt="" style="height:100%;">
-    </div>
-    <div class="item" style="width:70vw; max-height: 90vh; height: 90vh;">
-        <img src="assets/venveo.png" alt="" style="height:100%;">
-    </div>
-    <div class="item" style="width:70vw; max-height: 90vh; height: 90vh;">
-        <img src="assets/venveo.png" alt="" style="height:100%;">
-    </div>
-    <div class="item" style="width:70vw; max-height: 90vh; height: 90vh;">
-        <img src="assets/venveo.png" alt="" style="height:100%;">
-    </div>
-    <div class="item" style="width:70vw; max-height: 90vh; height: 90vh;">
-        <img src="assets/venveo.png" alt="" style="height:100%;">
-    </div>
-    <div class="item" style="width:70vw; max-height: 90vh; height: 90vh;">
-        <img src="assets/venveo.png" alt="" style="height:100%;">
-    </div>
-    <div class="item" style="width:70vw; max-height: 90vh; height: 90vh;">
-        <img src="assets/venveo.png" alt="" style="height:100%;">
+<div class="owl-carousel owl-theme" id="owlCarousel">
+    <div class="item">
+        <img src="assets/venveo.png" alt="">
     </div>
 </div>

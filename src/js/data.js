@@ -6,6 +6,7 @@ var config = {
     storageBucket: "theintern-95665.appspot.com",
     messagingSenderId: "705619967315"
 };
+
 firebase.initializeApp(config);
 
 var database = firebase.database();
@@ -29,6 +30,7 @@ database.ref('post').on('value', function(snapshot) {
     else if(overviewPage) {
         console.log("Your are on the OverviewPage");
         getCardInfo(snapshot);
+        getCarouselImg(snapshot);
     }    
 });
 
@@ -38,8 +40,8 @@ function getCardInfo(snapshot) {
     snapshot.forEach(snap => {
         var filterItem = '',
             filterItems = '';
-        for (var i = 0; i < snap.val().filter.length; i++) {
-            filterItem = snap.val().filter[i] + " ";
+        for (var i = 0; i < snap.val().searchFilter.length; i++) {
+            filterItem = snap.val().searchFilter[i] + " ";
             filterItems += filterItem;
         }
         var htmlCard = '<a class="eachPost mix '+filterItems+'" data-companyID="'+snap.val().id+'">\
@@ -51,7 +53,7 @@ function getCardInfo(snapshot) {
                                 <h3>'+snap.val().postTitle+'</h3>\
                                 <div class="info">\
                                     <p>'+snap.val().importantInfo.deadline+'</p>\
-                                    <p>'+snap.val().importantInfo.loction+'</p>\
+                                    <p>'+snap.val().importantInfo.location+'</p>\
                                 </div>\
                             </div>\
                         </a>';
@@ -81,11 +83,29 @@ function getFrontCardInfo(snapshot) {
                                 <h3>'+snap.val().postTitle+'</h3>\
                                 <div class="info">\
                                     <p>'+snap.val().importantInfo.deadline+'</p>\
-                                    <p>'+snap.val().importantInfo.loction+'</p>\
+                                    <p>'+snap.val().importantInfo.location+'</p>\
                                 </div>\
                             </div>\
                          </a>';
         companyPosts.insertAdjacentHTML('beforeend', frontCard);
         i++;
+    });
+};
+
+function getCarouselImg(snapshot) {
+    var carouselDiv = document.querySelector("#owlCarousel .owl-stage-outer .owl-stage");
+    snapshot.forEach(snap => {
+        if(snap.val().id == 4) {
+            console.log(snap.val().images.length);
+            
+            for(var i = 0; i < snap.val().images.length; i++) {
+                console.log(snap.val().images[i]);
+                var carouselImg = '<div class="item">\
+                                      <img src="'+snap.val().images[i]+'" alt="">\
+                                   </div>';
+                carouselDiv.insertAdjacentHTML('beforeend', carouselImg);
+            }
+
+        }
     });
 };
