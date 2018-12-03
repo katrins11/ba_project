@@ -129,63 +129,54 @@ function getPost(snapshot) {
     snapshot.forEach(snap => {
 
         if(snap.val().id == postID){
-            console.log("yes", snap.val());
-            getFirstInfoboxData(snapshot);
-            getSecondInfoboxData(snapshot);
+            getFirstInfoboxData(snap);
+            getSecondInfoboxData(snap);
         }
-
     });
-
 }
 
-function getFirstInfoboxData(snapshot) { 
+function getFirstInfoboxData(snap) { 
     var infoboxData = document.getElementById("first-infobox-container");
 
-    snapshot.forEach(snap => {
+    var htmlInfobox = '<div class="info">\
+                            <h3>'+snap.val().importantInfo.deadline+'</h3>\
+                            <p>Deadline</p>\
+                        </div>\
+                        <div class="info">\
+                            <h3>'+snap.val().importantInfo.duration+'</h3>\
+                            <p>Duration</p>\
+                        </div>\
+                        <div class="info">\
+                            <h3>'+snap.val().importantInfo.location+'</h3>\
+                            <p>Location</p>\
+                        </div>\
+                        <div class="info">\
+                            <h3>'+snap.val().importantInfo.date+'</h3>\
+                            <p>Date</p>\
+                        </div>';
 
-        var htmlInfobox = '<div class="info">\
-                                <h3>'+snap.val().importantInfo.deadline+'</h3>\
-                                <p>Deadline</p>\
-                            </div>\
-                            <div class="info">\
-                                <h3>'+snap.val().importantInfo.duration+'</h3>\
-                                <p>Duration</p>\
-                            </div>\
-                            <div class="info">\
-                                <h3>'+snap.val().importantInfo.location+'</h3>\
-                                <p>Location</p>\
-                            </div>\
-                            <div class="info">\
-                                <h3>'+snap.val().importantInfo.date+'</h3>\
-                                <p>Date</p>\
-                            </div>';
-
-        infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
-    });
+    infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
 }
 
-function getSecondInfoboxData(snapshot) { 
+function getSecondInfoboxData(snap) { 
     var infoboxData = document.getElementById("second-infobox-container");
 
-    snapshot.forEach(snap => {
+    var htmlInfobox = '<div class="info">\
+                            <h3>'+snap.val().statisticInfo.employees+'</h3>\
+                            <p>Employees</p>\
+                        </div>\
+                        <div class="info">\
+                            <h3>'+snap.val().statisticInfo.clients+'</h3>\
+                            <p>Clients</p>\
+                        </div>\
+                        <div class="info">\
+                            <h3>'+snap.val().statisticInfo.projects+'</h3>\
+                            <p>Projects</p>\
+                        </div>\
+                        <div class="info">\
+                            <h3>'+snap.val().statisticInfo.companyAge+'</h3>\
+                            <p>Years in the field</p>\
+                        </div>';
 
-        var htmlInfobox = '<div class="info">\
-                                <h3>'+snap.val().infoBox.employs+'</h3>\
-                                <p>Employees</p>\
-                            </div>\
-                            <div class="info">\
-                                <h3>'+snap.val().infoBox.clients+'</h3>\
-                                <p>Clients</p>\
-                            </div>\
-                            <div class="info">\
-                                <h3>'+snap.val().infoBox.projects+'</h3>\
-                                <p>Projects</p>\
-                            </div>\
-                            <div class="info">\
-                                <h3>'+snap.val().infoBox.companyAge+'</h3>\
-                                <p>Years in the field</p>\
-                            </div>';
-
-        infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
-    });
+    infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
 }
