@@ -8,6 +8,32 @@
         }
     }
 
+    .owl-nav {
+        .owl-prev, .owl-next {
+            position: absolute;
+            width: 13vw;
+            height: 87vh;
+            top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline:0;
+            &:hover {
+                background: rgba(51, 51, 51, 0.3);
+            }
+            span {
+                font-size: 300px;
+                color: white;
+            }
+        }
+        .owl-prev {
+            left: -5px;
+        }
+        .owl-next {
+            right: -5px;
+        }
+    }
+
     .owl-dots {
         display: none;
     }

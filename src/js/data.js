@@ -6,6 +6,7 @@ var config = {
     storageBucket: "theintern-95665.appspot.com",
     messagingSenderId: "705619967315"
 };
+
 firebase.initializeApp(config);
 
 var database = firebase.database();
@@ -31,7 +32,8 @@ database.ref('post').on('value', function(snapshot) {
     else if(overviewPage) {
         console.log("Your are on the OverviewPage");
         getCardInfo(snapshot);
-    } 
+        getCarouselImg(snapshot);
+    }    
     else if(postPage) {
         console.log("Your are on the PostPage");
         getPost(snapshot);
@@ -44,8 +46,8 @@ function getCardInfo(snapshot) {
     snapshot.forEach(snap => {
         var filterItem = '',
             filterItems = '';
-        for (var i = 0; i < snap.val().filter.length; i++) {
-            filterItem = snap.val().filter[i] + " ";
+        for (var i = 0; i < snap.val().searchFilter.length; i++) {
+            filterItem = snap.val().searchFilter[i] + " ";
             filterItems += filterItem;
         }
         var htmlCard = '<a class="eachPost mix '+filterItems+'" data-companyID="'+snap.val().id+'">\
@@ -57,7 +59,7 @@ function getCardInfo(snapshot) {
                                 <h3>'+snap.val().postTitle+'</h3>\
                                 <div class="info">\
                                     <p>'+snap.val().importantInfo.deadline+'</p>\
-                                    <p>'+snap.val().importantInfo.loction+'</p>\
+                                    <p>'+snap.val().importantInfo.location+'</p>\
                                 </div>\
                             </div>\
                         </a>';
@@ -87,7 +89,7 @@ function getFrontCardInfo(snapshot) {
                                 <h3>'+snap.val().postTitle+'</h3>\
                                 <div class="info">\
                                     <p>'+snap.val().importantInfo.deadline+'</p>\
-                                    <p>'+snap.val().importantInfo.loction+'</p>\
+                                    <p>'+snap.val().importantInfo.location+'</p>\
                                 </div>\
                             </div>\
                          </a>';
@@ -96,6 +98,23 @@ function getFrontCardInfo(snapshot) {
     });
 };
 
+function getCarouselImg(snapshot) {
+    var carouselDiv = document.querySelector("#owlCarousel .owl-stage-outer .owl-stage");
+    snapshot.forEach(snap => {
+        if(snap.val().id == 4) {
+            console.log(snap.val().images.length);
+            
+            for(var i = 0; i < snap.val().images.length; i++) {
+                console.log(snap.val().images[i]);
+                var carouselImg = '<div class="item">\
+                                      <img src="'+snap.val().images[i]+'" alt="">\
+                                   </div>';
+                carouselDiv.insertAdjacentHTML('beforeend', carouselImg);
+            }
+
+        }
+    });
+};
 
 //**************** INFO BOX'S *****************//
 
@@ -135,7 +154,7 @@ function getFirstInfoboxData(snapshot) {
                                 <p>Duration</p>\
                             </div>\
                             <div class="info">\
-                                <h3>'+snap.val().importantInfo.loction+'</h3>\
+                                <h3>'+snap.val().importantInfo.location+'</h3>\
                                 <p>Location</p>\
                             </div>\
                             <div class="info">\
@@ -172,9 +191,3 @@ function getSecondInfoboxData(snapshot) {
         infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
     });
 }
-
-
-
-
-
-
