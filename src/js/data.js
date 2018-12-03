@@ -116,7 +116,7 @@ function getCarouselImg(snapshot) {
     });
 };
 
-//**************** INFO BOX'S *****************//
+//**************** POST PAGE *****************//
 
 // Get specific post company id
 // post data from that specifik one into post page
@@ -129,10 +129,23 @@ function getPost(snapshot) {
     snapshot.forEach(snap => {
 
         if(snap.val().id == postID){
+            getHeroData(snap);
             getFirstInfoboxData(snap);
             getSecondInfoboxData(snap);
         }
     });
+}
+
+function getHeroData(snap) { 
+    var heroData = document.getElementById("hero-post-container");
+
+    var htmlHerobox = '<img src='+snap.val().images[0]+' alt="office placholder">\
+                        <div class="hero-overlay"></div>\
+                        <div class="tag-line">\
+                            <h1>'+snap.val().postTitle+'</h1>\
+                        </div>';
+
+    heroData.insertAdjacentHTML('beforeend', htmlHerobox);
 }
 
 function getFirstInfoboxData(snap) { 
