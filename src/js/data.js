@@ -199,4 +199,25 @@ function getTextBoxData(snap) {
     var postLogo = document.getElementById("post-logo");
     var htmlPostLogo = '<img src='+snap.val().logo+' alt="logo placholder">';
     postLogo.insertAdjacentHTML('beforeend', htmlPostLogo);
+
+    var aboutUsText = document.getElementById("about-us");
+    var htmlAboutUs = '<h2>About '+snap.val().companyName+'</h1>\
+                        <p>'+snap.val().internshipText.aboutUs+'</p>';
+    aboutUsText.insertAdjacentHTML('beforeend', htmlAboutUs);
+
+    var introductionText = document.getElementById("introduction");
+    var htmlIntroduction = '<h2>Internship introduction</h1>\
+                        <p>'+snap.val().internshipText.introduction+'</p>';
+    introductionText.insertAdjacentHTML('beforeend', htmlIntroduction);
+
+    var yourProfileText = document.getElementById("your-profile");
+    var htmlYourProfile = '<h2>Your profile</h1>\
+                        <p>'+snap.val().internshipText.yourProfile+'</p>';
+    yourProfileText.insertAdjacentHTML('beforeend', htmlYourProfile);
+
+    var toolsTasksText = document.getElementById("tasks-tools");
+    var htmlToolsTasks = '<h2>Tasks & tools</h1>\
+                        <p>'+snap.val().internshipText.toolsTasks+'</p>';
+    toolsTasksText.insertAdjacentHTML('beforeend', htmlToolsTasks);
+
 }

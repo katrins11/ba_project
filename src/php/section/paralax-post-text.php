@@ -5,7 +5,7 @@
   </div>
 
   <div class="item right">
-    <div class="innerText innerT1">
+    <div id="about-us" class="innerText innerT1">
       <h2>About {companyName}</h1>
       <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -17,8 +17,8 @@
           still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
       </p>
     </div>
-    <div class="innerText innerT2">
-      <h2>Introduction to the internship</h2>
+    <div id="introduction" class="innerText innerT2">
+      <h2>Internship introduction</h2>
       <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
           when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
@@ -29,7 +29,7 @@
           still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
       </p>
     </div>
-    <div class="innerText innerT3">
+    <div id="your-profile" class="innerText innerT3">
       <h2>Your profile</h2>
       <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -41,7 +41,7 @@
           still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
       </p>
     </div>  
-    <div class="innerText innerT4">
+    <div id="tasks-tools" class="innerText innerT4">
       <h2>Tasks & tools</h2>
       <p class="sub-title">Tasks</p>
       <ul>
