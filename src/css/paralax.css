@@ -40,10 +40,6 @@
       margin-bottom: 20px;
     }
 
-    ul {
-      list-style-position: inside;
-    }
-
     p, li {
       font-family: var(--roboto);
       font-weight: 300;
@@ -102,6 +98,12 @@
         position: relative;
         padding: 0 80px;
         text-align: left;
+
+        &:first-child {
+          @media (--mq-tablet) { 
+            margin: 0;
+          }
+        }
         @media (--mq-tablet) {
           visibility: inherit !important;
           opacity: 1 !important;
@@ -137,4 +139,42 @@
   .innerText {
     height: auto;
   }
+
+
+  ul {
+    list-style-position: inside;
+  }
+}
+
+#trigger-contact {
+  
+  ul {
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      line-height: 3;
+      color: var(--color-black);
+      font-family: var(--roboto);
+      font-size: 18px;
+
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--color-black);
+      }
+
+      span {
+        margin-left: 15px;
+      }
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
 }

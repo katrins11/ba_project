@@ -10,8 +10,8 @@ var textWH = window.innerHeight,
 $(function() {
   var scene = new ScrollMagic.Scene({
     triggerElement: "#pin-text", 
-    duration: '140%', 
-    offset: textWH*0.915,
+    duration: textWH*2, 
+    offset: textWH*0.895,
     triggerHook: "onEnter"
   })
   .setPin("#pin-text")

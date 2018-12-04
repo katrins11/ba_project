@@ -6,5 +6,5 @@
   </div> -->
 </section>
 
-<section id="first-infobox-container" class="hero-info-box">
+<section id="first-infobox-container" class="hero-info-box section-watch">
 </section>

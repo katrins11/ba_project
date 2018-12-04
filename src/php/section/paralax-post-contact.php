@@ -18,13 +18,43 @@
     <div class="innerText innerC2">
       <h2>Lets get in touch</h2>
       <ul>
-        <li><img src="assets/mail.svg" alt=""><span>company@intern.com</span></li>
-        <li><img src="assets/call.svg" alt=""><span>+45 67 56 28 90</span></li>
-        <li><img src="assets/location.svg" alt=""><span>Luthergade 45, 2450 Copenhagen</span></li>
+        <li>
+          <img src="assets/mail.svg" alt="">
+          <span>company@intern.com</span>
+        </li>
+        <li>
+          <img src="assets/call.svg" alt="">
+          <span>+45 67 56 28 90</span>
+        </li>
+        <li>
+          <img src="assets/location.svg" alt="">
+          <span>Luthergade 45, 2450 Copenhagen</span>
+        </li>
       </ul>
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-facebook"></a>
+
+      <ul>
+        <li>
+          <a href="#" class="fa fa-facebook">
+            <img src="assets/facebook.svg" alt="">
+            <span>Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="fa fa-facebook">
+            <img src="assets/instagram.svg" alt="">
+            <span>Instagram</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="fa fa-facebook">
+            <img src="assets/linkedin.svg" alt="">
+            <span>LinkedIn</span>
+          </a>
+        </li>
+      </ul>
+
+
+
 
     </div>
   </div>
