@@ -1,4 +1,4 @@
-<section class="cta">
+<section class="cta section-watch">
   <a>
     <h1 class="section-headline">
       see more oppotunities

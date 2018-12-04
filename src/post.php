@@ -3,7 +3,7 @@
 
         <?php include('php/header.php')?>
 
-        <?php include('php/post-hero.php')?>
+        <?php include('php/hero-post.php')?>
 
         <?php include('php/paralax-post-text.php')?>
 
