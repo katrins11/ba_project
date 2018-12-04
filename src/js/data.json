@@ -7,16 +7,20 @@
             "searchFilter": ["frontend", "webdesign"],
             "importantInfo":{
                 "deadline":"01.01.2019",
-                "date":"22.11.2018",
+                "created":"22.11.2018",
                 "duration":"3 months",
                 "location":"Copenhagen"
             },
-            "internshipText": [
-                {
-                    "firstTitle":"FrontEnd and Designer",
-                    "firstText":"At Umwelt we are always looking for talented people to become part of the family. Don’t see an open position that matches your skills? Apply anyway. Send us your resumé and tell us about your talents."
-                }
-            ],
+            "internshipText": {
+                "introduction":"",
+                "yourProfile":"",
+                "aboutUs":"At Umwelt we are always looking for talented people to become part of the family. Don’t see an open position that matches your skills? Apply anyway. Send us your resumé and tell us about your talents.",
+                "toolsTasks":[
+                    "",
+                    "",
+                    ""
+                ]
+            },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/umwelt%2FUmWelt.png?alt=media&token=b1043b13-8738-4c35-8813-d76ed0f9add1",
             "images": [
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/umwelt%2Fumwelt.png?alt=media&token=63c3dde2-ef36-4a90-8cf4-13e318518289",
@@ -24,16 +28,22 @@
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/umwelt%2Fumwelt1.png?alt=media&token=cf5546dc-0807-4e43-aa1f-f7182878277a"
             ],
             "statisticInfo":{
-                "employs":"28",
+                "employees":"28",
                 "clients":"20",
                 "projects":"35",
-                "companyAge":"22 years"
+                "companyAge":"22"
             },
-            "socialMedia":{
-                "facebook":"https://www.facebook.com/umweltdk",
-                "instagram":"https://www.instagram.com/umweltdk/",
-                "linkedIn":"https://www.linkedin.com/company/umwelt-a-s/"
-            }
+            "contact":{
+                "interested":"",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/umweltdk",
+                    "instagram":"https://www.instagram.com/umweltdk/",
+                    "linkedIn":"https://www.linkedin.com/company/umwelt-a-s/",
+                    "phoneNumber":"",
+                    "email":"",
+                    "address":""
+                }
+            }   
         },
         {
             "id":"2", 
@@ -42,16 +52,20 @@
             "searchFilter": ["webdesign","fullstack"],
             "importantInfo":{
                 "deadline":"01.01.2019",
-                "date":"22.11.2018",
+                "created":"22.11.2018",
                 "duration":"3 months",
                 "location":"Copenhagen"
             },
-            "internshipText": [
-                {
-                    "firstTitle":"Title",
-                    "firstText":"Text"
-                }
-            ],
+            "internshipText": {
+                "introduction":"",
+                "yourProfile":"",
+                "aboutUs":"",
+                "toolsTasks":[
+                    "",
+                    "",
+                    ""
+                ]
+            },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/1508%2F1508.png?alt=media&token=29c5fb6f-b4c8-406f-b466-372075a97ea1",
             "images": [
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/1508%2F1508IMG0.png?alt=media&token=54efcc6a-0c3c-46ca-901f-408a88a19d9b",
@@ -59,16 +73,22 @@
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/1508%2F1508IMG2.png?alt=media&token=e4df5bc3-5363-45bc-afc3-ecae7c41b10d"
             ],
             "statisticInfo":{
-                "employs":"30",
+                "employees":"30",
                 "clients":"12",
                 "projects":"18",
                 "companyAge":"18 years"
             },
-            "socialMedia":{
-                "facebook":"https://www.facebook.com/1508dk/?ref=br_rs",
-                "instagram":"https://www.instagram.com/1508dk/",
-                "linkedIn":"https://www.linkedin.com/company/1508-as/"
-            }
+            "contact":{
+                "interested":"",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/1508dk/?ref=br_rs",
+                    "instagram":"https://www.instagram.com/1508dk/",
+                    "linkedIn":"https://www.linkedin.com/company/1508-as/",
+                    "phoneNumber":"",
+                    "email":"",
+                    "address":""
+                }
+            }  
         },
         {
             "id":"3", 
@@ -77,31 +97,41 @@
             "searchFilter": ["frontend"],
             "importantInfo":{
                 "deadline":"01.01.2019",
-                "date":"22.11.2018",
+                "created":"22.11.2018",
                 "duration":"3 months",
                 "location":"Copenhagen"
             },
-            "internshipText": [
-                {
-                    "firstTitle":"Title",
-                    "firstText":"text"
-                }
-            ],
+            "internshipText": {
+                "introduction":"",
+                "yourProfile":"",
+                "aboutUs":"Text",
+                "toolsTasks":[
+                    "",
+                    "",
+                    ""
+                ]
+            },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/cabana%2Fcabana-logo.png?alt=media&token=18894bbf-2412-45ab-9b5d-ae6802e56a1d",
             "images": [
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/cabana%2FcabanaIMG0.png?alt=media&token=cb9c09dd-85a3-4d9b-a518-b1420c3d28db",
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/cabana%2FcabanaIMG1.png?alt=media&token=b964934c-011f-4e5c-b149-32afe3618c52"
             ],
             "statisticInfo":{
-                "employs":"12",
+                "employees":"12",
                 "clients":"3",
                 "projects":"4",
                 "companyAge":"8 years"
             },
-            "socialMedia":{
-                "facebook":"https://www.facebook.com/Cabana.dk/",
-                "instagram":"https://www.instagram.com/cabanadk/",
-                "linkedIn":"https://www.linkedin.com/showcase/cabana-a-s-cases/about/"
+            "contact":{
+                "interested":"",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/Cabana.dk/",
+                    "instagram":"https://www.instagram.com/cabanadk/",
+                    "linkedIn":"https://www.linkedin.com/showcase/cabana-a-s-cases/about/",
+                    "phoneNumber":"",
+                    "email":"",
+                    "address":""
+                }
             }
         },
         {
@@ -111,16 +141,21 @@
             "searchFilter": ["frontend"],
             "importantInfo":{
                 "deadline":"01.01.2019",
-                "date":"29.11.2018",
+                "created":"29.11.2018",
                 "duration":"3 months",
                 "location":"Copenhagen"
             },
-            "internshipText": [
-                {
-                    "firstTitle":"Your Internship",
-                    "firstText":"During your internship as Frontend Developer, you will be assigned a mentor, who will assure a structured and prepared internship, with daily feedback and back-and-forth regarding various tasks and procedures. Together you will have an on-going dialogue regarding your projects, so we can shape your internship from your interests. You will be part of a team with experienced frontend developers. Here you will experience how the development process works in teams who master the SCRUM process."
-                }
-            ],
+            "internshipText":{
+                "introduction":"During your internship as Frontend Developer, you will be assigned a mentor, who will assure a structured and prepared internship, with daily feedback and back-and-forth regarding various tasks and procedures. Together you will have an on-going dialogue regarding your projects, so we can shape your internship from your interests.You will be part of a team with experienced frontend developers. Here you will experience how the development process works in teams who master the SCRUM process. The internship is set at 37 hours a week. Throughout your internship we’re offering you: An appetising breakfast and lunch scheme. Great coffee, soft drinks and fresh fruit. Lots of social activities. An informal work environment. Talented colleagues. A professionally ambitious and inspiring environment where we focus on your personal and professional development. Denmark’s most interesting clients. The possibility for monetary acknowledgment.",
+                "yourProfile":"You are most likely studying Multimedia Design, Information Technology or Web Development (PBA) with interest in frontend development. It is crucial that you are talented and have the “can do” spirit to take on a steep learning curve. Moreover, it’s a plus if you have experience within: Converting design into HTML/CSS, Animations, JavaScript programing, Angular, React or other MVC frameworks.",
+                "aboutUs":"We are a digital agency with 150+ employees and offices in Copenhagen and Aarhus. We work with strategy, implementation of platforms and digital marketing. We thrive on optimising and creating results for and with our clients. And we are confident that our great results are achieved when we combine a professional approach with having fun at the same time. We work for some of Scandinavian’s major brands and retailers such as Imerco, HAY, LEGO, Tøjeksperten, Kaufmann, Silvan, Widex, Lemvigh-Müller, and Nemlig.com.",
+                "toolsTasks":[
+                    "HTML/CSS",
+                    "Animations",
+                    "JavaScript programing",
+                    "Angular, React or other MVC frameworks."
+                ]
+            },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/impact%2Fimpact-logo.jpg?alt=media&token=26d5c8c9-cc51-4aa2-a492-58c3ca51dade",
             "images": [
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/impact%2FimpactIMG0.jpeg?alt=media&token=81a70160-697c-4981-a547-8b81cfb47b39",
@@ -129,15 +164,21 @@
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/impact%2FimpactIMG3.jpg?alt=media&token=4d96b8bd-b54d-4a7d-aa5b-51e0dbb54688"
             ],
             "statisticInfo":{
-                "employs":"150",
+                "employees":"150",
                 "clients":"40",
                 "projects":"60",
                 "companyAge":"20 years"
             },
-            "socialMedia":{
-                "facebook":"https://www.facebook.com/impactdigitaldk/",
-                "instagram":"https://www.instagram.com/impact_digital_dk/",
-                "linkedIn":"https://www.linkedin.com/company/impactdigital/"
+            "contact":{
+                "interested":"",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/impactdigitaldk/",
+                    "instagram":"https://www.instagram.com/impact_digital_dk/",
+                    "linkedIn":"https://www.linkedin.com/company/impactdigital/",
+                    "phoneNumber":"",
+                    "email":"",
+                    "address":""
+                }
             }
         },
         {
@@ -145,18 +186,22 @@
             "companyName":"Relesys",
             "postTitle":"Web Design intern",
             "searchFilter": ["webdesign"],
-            "importantInfo":{
+            "importantInfo": {
                 "deadline":"01.01.2019",
-                "date":"29.11.2018",
+                "created":"29.11.2018",
                 "duration":"3 months",
                 "location":"Copenhagen"
             },
-            "internshipText": [
-                {
-                    "firstTitle":"Job description",
-                    "firstText":"Are you looking for a rewarding internship where you can get hands on experience and grow as a designer? Relesys can provide you with exciting work tasks that is aligned with your interest and ambitions, not just coffee making! You will be joining a team with talented Designers, Coordinators and Project Managers. Most of them started as interns back in the days. Come join the school of Relesys and gain in-depth knowledge within design and creative thinking."
-                }
-            ],
+            "internshipText": {
+                "introduction":"Are you looking for a rewarding internship where you can get hands on experience and grow as a designer? Relesys can provide you with exciting work tasks that is aligned with your interest and ambitions, not just coffee making! You will be joining a team with talented Designers, Coordinators and Project Managers. Most of them started as interns back in the days. Come join the school of Relesys and gain in-depth knowledge within design and creative thinking.",
+                "yourProfile":"",
+                "aboutUs":"",
+                "toolsTasks":[
+                    "",
+                    "",
+                    ""
+                ]
+            },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/relesys%2Frelesys_logo.png?alt=media&token=904f742b-0b8f-468d-a31e-2a0874740026",
             "images": [
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/relesys%2Frelesys1.png?alt=media&token=08c92687-ff44-4139-b966-6b8c52422862",
@@ -165,16 +210,22 @@
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/relesys%2Frelesys4.jpg?alt=media&token=fe41a9b1-463e-44b6-931d-6c7ac42805d4",
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/relesys%2Frelesys5.png?alt=media&token=9ccea856-af1e-471a-9a68-df0f0d093b97"
             ],
-            "statisticInfo":{
-                "employs":"11-50",
+            "statisticInfo": {
+                "employees":"11-50",
                 "clients":"20",
                 "projects":"30",
                 "companyAge":"4 years"
             },
-            "socialMedia":{
-                "facebook":"https://www.facebook.com/relesys/",
-                "instagram":"https://www.instagram.com/explore/tags/relesyslab/",
-                "linkedIn":"https://www.linkedin.com/company/relesys/"
+            "contact":{
+                "interested":"",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/relesys/",
+                    "instagram":"https://www.instagram.com/explore/tags/relesyslab/",
+                    "linkedIn":"https://www.linkedin.com/company/relesys/",
+                    "phoneNumber":"",
+                    "email":"",
+                    "address":""
+                }
             }
         },
         {
@@ -182,34 +233,44 @@
             "companyName":"UserTribe",
             "postTitle":"Backend Developer Intern",
             "searchFilter": ["backend"],
-            "importantInfo":{
+            "importantInfo": {
                 "deadline":"01.02.2019",
-                "date":"2.12.2018",
+                "created":"2.12.2018",
                 "duration":"3 months",
                 "location":"Copenhagen"
             },
-            "internshipText": [
-                {
-                    "firstTitle":"Job description",
-                    "firstText":"UserTribe is one of the fastest growing and leading thick data platforms in the world. We have created the framework of Customer Empowered Business™, and we believe that good and meaningful customer experiences make both people and businesses grow. To help companies involve their customers we have invented a unique platform that offers Customer Reality Checks. To join our team in Copenhagen, we are excited to welcome a Backend Developer Intern, eager to drive development fast forward. The Product Management team finest responsibility is the backend. As Backend Developer Intern, you are to join the Product Management team in further developing our platform and provide an immersive and engaging experience."
-                }
-            ],
+            "internshipText": {
+                "introduction":"",
+                "yourProfile":"",
+                "aboutUs":"UserTribe is one of the fastest growing and leading thick data platforms in the world. We have created the framework of Customer Empowered Business™, and we believe that good and meaningful customer experiences make both people and businesses grow. To help companies involve their customers we have invented a unique platform that offers Customer Reality Checks. To join our team in Copenhagen, we are excited to welcome a Backend Developer Intern, eager to drive development fast forward. The Product Management team finest responsibility is the backend. As Backend Developer Intern, you are to join the Product Management team in further developing our platform and provide an immersive and engaging experience.",
+                "toolsTasks":[
+                    "",
+                    "",
+                    ""
+                ]
+            },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/userTribe%2FUserTribe_logo.png?alt=media&token=5ac953e2-87ed-43d7-b72d-d0e86f89dd40",
             "images": [
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/userTribe%2FUserTribe1.jpg?alt=media&token=b6692c97-fe39-4b5e-809b-b48baddc9020",
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/missing%2Fmissing.png?alt=media&token=ef3f9af5-acfa-49e2-ae97-d3de7861b77d",
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/missing%2Fmissing2.png?alt=media&token=77daa884-2c7e-4d82-8b7a-2c7dc01a51d2"
             ],
-            "statisticInfo":{
-                "employs":"50-200",
+            "statisticInfo": {
+                "employees":"50-200",
                 "clients":"100",
                 "projects":"120",
                 "companyAge":"5 years"
             },
-            "socialMedia":{
-                "facebook":"https://www.facebook.com/UserTribe/",
-                "instagram":"https://www.instagram.com/usertribe/",
-                "linkedIn":"https://www.linkedin.com/company/usertribe/"
+            "contact":{
+                "interested":"",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/UserTribe/",
+                    "instagram":"https://www.instagram.com/usertribe/",
+                    "linkedIn":"https://www.linkedin.com/company/usertribe/",
+                    "phoneNumber":"",
+                    "email":"",
+                    "address":""
+                }
             }
         },
         {
@@ -219,32 +280,42 @@
             "searchFilter": ["projectmanagement"],
             "importantInfo":{
                 "deadline":"01.01.2019",
-                "date":"29.11.2018",
+                "created":"29.11.2018",
                 "duration":"3 months",
                 "location":"Copenhagen"
             },
-            "internshipText": [
-                {
-                    "firstTitle":"Job description",
-                    "firstText":"Unity is looking for a motivated student to support Unity’s PMO (project management office) in our IT organization. You will be supporting in coordinating, completing and concluding different projects, and you will be assisting Business Analysts and Project Managers various ad-hoc tasks. One of the challenges will be to effectively communicate with different stakeholders – ensuring timely delivery of all projects and execution as well as optimising processes with all involved stakeholders."
-                }
-            ],
+            "internshipText": {
+                "introduction":"Unity is looking for a motivated student to support Unity’s PMO (project management office) in our IT organization. You will be supporting in coordinating, completing and concluding different projects, and you will be assisting Business Analysts and Project Managers various ad-hoc tasks. One of the challenges will be to effectively communicate with different stakeholders – ensuring timely delivery of all projects and execution as well as optimising processes with all involved stakeholders.",
+                "yourProfile":"",
+                "aboutUs":"",
+                "toolsTasks":[
+                    "",
+                    "",
+                    ""
+                ]
+            },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/unity%2Funity-logo.png?alt=media&token=0dcb0401-f53b-42f2-8a21-e773578ab437",
             "images": [
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/unity%2Funity.jpg?alt=media&token=6d3ec4fa-fb9e-4fb9-8b4a-c72f75201642",
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/unity%2Funity.png?alt=media&token=d779314e-7757-430c-bc02-178a87e89de3",
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/unity%2Funity1.jpg?alt=media&token=88722bb6-d94d-4c7e-986e-b366124b219a"
             ],
-            "statisticInfo":{
-                "employs":"1000",
+            "statisticInfo": {
+                "employees":"1000",
                 "clients":"150",
                 "projects":"300",
                 "companyAge":" years"
             },
-            "socialMedia":{
-                "facebook":"https://www.facebook.com/unitytech/",
-                "instagram":"https://www.instagram.com/unitytechnologies/",
-                "linkedIn":"https://www.linkedin.com/company/unity-technologies/life/"
+            "contact":{
+                "interested":"",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/unitytech/",
+                    "instagram":"https://www.instagram.com/unitytechnologies/",
+                    "linkedIn":"https://www.linkedin.com/company/unity-technologies/life/",
+                    "phoneNumber":"",
+                    "email":"",
+                    "address":""
+                }
             }
         },
         {
@@ -252,613 +323,90 @@
             "companyName":"Nordic Crypto",
             "postTitle":"Frontend Developer Intern",
             "searchFilter": ["frontend"],
-            "importantInfo":{
+            "importantInfo": {
                 "deadline":"01.01.2019",
-                "date":"29.11.2018",
+                "created":"29.11.2018",
                 "duration":"3 months",
                 "location":"Copenhagen"
             },
-            "internshipText": [
-                {
-                    "firstTitle":"About the Internship",
-                    "firstText":"As a Frontend Developer Intern at Nordic Crypto, you will become part of a unique fintech startup that specializes in proprietary trading algorithms for cryptocurrencies and other financial instruments. You will work with a small team of hands-on entrepreneurs with extensive backgrounds in global investments banking and industrial corporates. You will be involved in creating a solid design process and documentation for Nordic Crypto’s subscription business."
-                }
-            ],
+            "internshipText": {
+                "introduction":"As a Frontend Developer Intern at Nordic Crypto, you will become part of a unique fintech startup that specializes in proprietary trading algorithms for cryptocurrencies and other financial instruments. You will work with a small team of hands-on entrepreneurs with extensive backgrounds in global investments banking and industrial corporates. You will be involved in creating a solid design process and documentation for Nordic Crypto’s subscription business.",
+                "yourProfile":"",
+                "aboutUs":"",
+                "toolsTasks":[
+                    "",
+                    "",
+                    ""
+                ]
+            },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/NordicCrypto%2FNordicCrypto.png?alt=media&token=6f372125-1612-46b4-8adf-e1f6e72fee49",
             "images": [
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/missing%2Fmissing.png?alt=media&token=ef3f9af5-acfa-49e2-ae97-d3de7861b77d",
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/missing%2Fmissing2.png?alt=media&token=77daa884-2c7e-4d82-8b7a-2c7dc01a51d2",
                 "https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/missing%2Fmissing3.png?alt=media&token=d804667a-62dd-4a7f-a352-5a527f46c9f0"
             ],
-            "statisticInfo":{
-                "employs":"13",
+            "statisticInfo": {
+                "employees":"13",
                 "clients":"5",
                 "projects":"5",
                 "companyAge":"2 years"
             },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":"https://www.linkedin.com/company/nordiccrypto/"
+            "contact":{
+                "interested":"",
+                "contactInfo":{
+                    "facebook":"",
+                    "instagram":"",
+                    "linkedIn":"https://www.linkedin.com/company/nordiccrypto/",
+                    "phoneNumber":"",
+                    "email":"",
+                    "address":""
+                }
             }
         }, 
         
+
         {
-            "id":"9", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
+            "id": "9", 
+            "companyName": "Missing",
+            "postTitle": "Missing",
             "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
+            "importantInfo": {
+                "deadline": "01.01.2019",
+                "created": "29.11.2018",
+                "duration": "3 months",
+                "location": "Copenhagen"
             },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
+            "internshipText": {
+                "introduction": "Missing text",
+                "yourProfile": "",
+                "aboutUs": "",
+                "toolsTasks":[
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "logo": "",
             "images": [
                 "",
                 ""
             ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
+            "statisticInfo": {
+                "employees": "",
+                "clients": "",
+                "projects": "",
+                "companyAge": ""
             },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"10", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
+            "contact":{
+                "interested":"",
+                "contactInfo":{
+                    "facebook":"",
+                    "instagram":"",
+                    "linkedIn":"",
+                    "phoneNumber":"",
+                    "email":"",
+                    "address":""
                 }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"11", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"12", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"13", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"14", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"15", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"16", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"17", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"18", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"19", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"20", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"21", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"22", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"23", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"24", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
-            }
-        },
-        {
-            "id":"25", 
-            "companyName":"Missing",
-            "postTitle":"Missing",
-            "searchFilter": [""],
-            "importantInfo":{
-                "deadline":"01.01.2019",
-                "date":"29.11.2018",
-                "duration":"3 months",
-                "location":"Copenhagen"
-            },
-            "textBox": [
-                {
-                    "internshipText":"",
-                    "firstText":""
-                }
-            ],
-            "logo":"",
-            "images": [
-                "",
-                ""
-            ],
-            "statisticInfo":{
-                "employs":"",
-                "clients":"",
-                "projects":"",
-                "companyAge":" years"
-            },
-            "socialMedia":{
-                "facebook":"",
-                "instagram":"",
-                "linkedIn":""
             }
         }
     ]

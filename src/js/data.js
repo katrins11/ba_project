@@ -151,25 +151,26 @@ function getHeroData(snap) {
 
 function getFirstInfoboxData(snap) { 
     var infoboxData = document.getElementById("first-infobox-container");
+    snapshot.forEach(snap => {
+        var htmlInfobox = '<div class="info">\
+                                <h3>'+snap.val().importantInfo.deadline+'</h3>\
+                                <p>Deadline</p>\
+                            </div>\
+                            <div class="info">\
+                                <h3>'+snap.val().importantInfo.duration+'</h3>\
+                                <p>Duration</p>\
+                            </div>\
+                            <div class="info">\
+                                <h3>'+snap.val().importantInfo.location+'</h3>\
+                                <p>Location</p>\
+                            </div>\
+                            <div class="info">\
+                                <h3>'+snap.val().importantInfo.created+'</h3>\
+                                <p>Created</p>\
+                            </div>';
 
-    var htmlInfobox = '<div class="info">\
-                            <h3>'+snap.val().importantInfo.deadline+'</h3>\
-                            <p>Deadline</p>\
-                        </div>\
-                        <div class="info">\
-                            <h3>'+snap.val().importantInfo.duration+'</h3>\
-                            <p>Duration</p>\
-                        </div>\
-                        <div class="info">\
-                            <h3>'+snap.val().importantInfo.location+'</h3>\
-                            <p>Location</p>\
-                        </div>\
-                        <div class="info">\
-                            <h3>'+snap.val().importantInfo.date+'</h3>\
-                            <p>Date</p>\
-                        </div>';
-
-    infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
+        infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
+    });
 }
 
 function getSecondInfoboxData(snap) { 
