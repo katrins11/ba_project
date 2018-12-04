@@ -3,7 +3,7 @@
         {
             "id":"1", 
             "companyName":"UMWELT",
-            "postTitle":"Frontender or webdesigner?",
+            "postTitle":"Are you our new Front-end intern?",
             "searchFilter": ["frontend", "webdesign"],
             "importantInfo":{
                 "deadline":"01.01.2019",
@@ -12,13 +12,11 @@
                 "location":"Copenhagen"
             },
             "internshipText": {
-                "introduction":"",
-                "yourProfile":"",
-                "aboutUs":"At Umwelt we are always looking for talented people to become part of the family. Don’t see an open position that matches your skills? Apply anyway. Send us your resumé and tell us about your talents.",
+                "introduction":"At Umwelt we are always looking for talented people to become part of the family. We are looking for interns within frontend development. Internships at Umwelt are  a minimum of 10-12 weeks. We provide a mentor throughout you internship, who will guide you and help you reach your goals.",
+                "yourProfile":"Are you interested in development and are you in the process of taking a web related education within design or web design. Are you used to working in sketch and has an understanding and interest in designing websites. Do you have the basic knowledge of HTML,PHP , CSS, and search engine optimization? Are you responsible and meeting stable. We expect you to not be afraid of new challenges and are conversational, that you have the courage to talk with our customers if there is a need for it. We also need you to speak and write in english, since most of our customer dialogue takes place in English.",
+                "aboutUs":"We are a premium agency based in Copenhagen. We offer development of Integrated Marketing, Digital Products and Service. We offer these three products to our clients separately, but hopefully all together. We have specialized in a certain area which we call “Helpful Marketing”. We develop experiences, tools or utilities that give the user a feeling of being helped. This is because we have realized that in the customer's eye most marketing is intrusive, while products are helpful. If we develop marketing in the same manner as products - i.e. in order to help people or solve a problem – customers are more likely to like the marketing and the brand.At Umwelt, we believe in full service with a digital core. We make digital solutions that help our customers set the digital agenda in their industry. We are experts in branded utilities, but we also work with all types of websites, webshops, apps, banners, etc.",
                 "toolsTasks":[
-                    "",
-                    "",
-                    ""
+                    "HTML/CSS","Angular","GreenSock","JavaScript","ScrollMagic"
                 ]
             },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/umwelt%2FUmWelt.png?alt=media&token=b1043b13-8738-4c35-8813-d76ed0f9add1",
@@ -34,14 +32,14 @@
                 "companyAge":"22"
             },
             "contact":{
-                "interested":"",
+                "interested":"Does this open position match your skills? Send us your resumé and tell us about your talents. Please send an email to: job@umwelt.com. If this position does not match your skills, please send us an application anyway. We look forward to hearing from you!",
                 "contactInfo":{
                     "facebook":"https://www.facebook.com/umweltdk",
                     "instagram":"https://www.instagram.com/umweltdk/",
                     "linkedIn":"https://www.linkedin.com/company/umwelt-a-s/",
-                    "phoneNumber":"",
-                    "email":"",
-                    "address":""
+                    "phoneNumber":"+45 60 78 98 67",
+                    "email":"umwelt@umwelt.com",
+                    "address":"Jernbanegade 6, 6700 Copenhagen"
                 }
             }   
         },
@@ -57,13 +55,11 @@
                 "location":"Copenhagen"
             },
             "internshipText": {
-                "introduction":"",
-                "yourProfile":"",
-                "aboutUs":"",
+                "introduction":"We are looking for interns at within web design and fullstack development. Internships at 1508 last from 3 - 6 months and you will either be apart of the design or development team. You will have tasks within scalable responsive design, you will help build, maintain and optimise websites and their features. You will get a lot of responsibility and the chance to shape your own career as we grow. You will have a chance to join an ambitious international team who thrives in fun environment. A chance to be a part of a great network and you will have a flexible work schedule.",
+                "yourProfile":"You are currently studying or have a degree from an IT university, BSc/MSc in Computer Science, IT engineer or equivalent. Experienced in maintaining and improving the design and flow of the website. Experienced with front-end web technologies like HTML, CSS and JavaScript. A passionate software developer who speaks tech as your mother language. A person who knows how to write good solid code. Fluent in either English, Danish or Czech. A team player with a go-get mindset.",
+                "aboutUs":"1508 is an innovation and design company, established on 15.08.2000. We develop digital services, brand experiences and innovative design solutions, and help our customers accelerate their digital transformation. We work through a well-proven framework, based on design thinking, prototyping and agile development, created to identify challenges and fast-paced solutions that support business goals and strategies. Through close cooperation we have helped more than 500 customers with business and product development, strategy and brand experience.",
                 "toolsTasks":[
-                    "",
-                    "",
-                    ""
+                    "Websites","Responsive Design","Umbraco","JavaScript","HTML/CSS","GreenSock"
                 ]
             },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/1508%2F1508.png?alt=media&token=29c5fb6f-b4c8-406f-b466-372075a97ea1",
@@ -76,17 +72,17 @@
                 "employees":"30",
                 "clients":"12",
                 "projects":"18",
-                "companyAge":"18 years"
+                "companyAge":"18"
             },
             "contact":{
-                "interested":"",
+                "interested":"We are always looking for talented people. Applications will be reviewed on an ongoing basis. So if you are interested and would like to know more: send us your application, CV and portfolio to job@1508.dk and we will contact you within few days and have a chat :) We promise lots of hands on experience as well as personal and career growth in a fun environment!",
                 "contactInfo":{
                     "facebook":"https://www.facebook.com/1508dk/?ref=br_rs",
                     "instagram":"https://www.instagram.com/1508dk/",
                     "linkedIn":"https://www.linkedin.com/company/1508-as/",
-                    "phoneNumber":"",
-                    "email":"",
-                    "address":""
+                    "phoneNumber":"+45 33 45 60 98",
+                    "email":"1508@1508.com",
+                    "address":"Platanvej 13, 1810 Frederiksberg"
                 }
             }  
         },
@@ -102,13 +98,15 @@
                 "location":"Copenhagen"
             },
             "internshipText": {
-                "introduction":"",
-                "yourProfile":"",
-                "aboutUs":"Text",
+                "introduction":"We are looking for a new team member with a flair for frontend at Cabana. An internship at Cabana is a minimum of 3 months and you can expect to be given a mentor throughout your internship. We will provide a good learning experience, free lunch, friday bars and other stuff.",
+                "yourProfile":"You hold at least a bachelor’s degree in Design, Computer Science, Engineering or related field. Have a good flair for UX design in general and  experience with JavaScript, HTML and CSS. Experience with UX and UI design is an advantage, Adobe XD, Proto.io, Sketch etc. Have a portfolio that you can share with us. Take initiative, enjoy working both alone and with others, and are creative. Are curious, open to new ideas and on top of the latest trends.",
+                "aboutUs":"Cabana is a digital experience studio. This means that we make solutions in close collaboration with our customers who solve business problems and provide value for their users. We are specialists in marketing automation and engagement flows and have since 2002 made it our mission to deliver personalized, digital user experiences with measurable results. We are a team of talented designers, certified developers, crisp project managers and experienced advisors. The starting point is always to know the individual company - to understand the challenges and needs. Only in this way can we provide the best advice. We live at Christianshavn and here is nice to be. Our passion for what we do can be clearly felt on the quality of our work.",
                 "toolsTasks":[
-                    "",
-                    "",
-                    ""
+                    "Collaborate with the team and UX Lead to create new prototypes and solutions for the product.",
+                    "Support user research and testing.",
+                    "Develop wireframes and task flows based on user needs.".
+                    "Collaborate with the UX Lead/external team and developers to create intuitive and user-friendly software.",
+                    "Find creative ways to solve UX problems."
                 ]
             },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/cabana%2Fcabana-logo.png?alt=media&token=18894bbf-2412-45ab-9b5d-ae6802e56a1d",
@@ -120,17 +118,17 @@
                 "employees":"12",
                 "clients":"3",
                 "projects":"4",
-                "companyAge":"8 years"
+                "companyAge":"8"
             },
             "contact":{
-                "interested":"",
+                "interested":"Sounds good? Great, then please drop us an email with your application and posible your portfolio and three lines describing why you should be the newest addition to our team. If you refer a new team member; we’ll make sure to send you a fine bottle of Snaps. Send us an email on job@cabana.dk",
                 "contactInfo":{
                     "facebook":"https://www.facebook.com/Cabana.dk/",
                     "instagram":"https://www.instagram.com/cabanadk/",
                     "linkedIn":"https://www.linkedin.com/showcase/cabana-a-s-cases/about/",
-                    "phoneNumber":"",
-                    "email":"",
-                    "address":""
+                    "phoneNumber":"+45 67 88 90 22",
+                    "email":"cabana@cabana.com",
+                    "address":"Langebro 22, 5600 Århus"
                 }
             }
         },
@@ -167,17 +165,17 @@
                 "employees":"150",
                 "clients":"40",
                 "projects":"60",
-                "companyAge":"20 years"
+                "companyAge":"20"
             },
             "contact":{
-                "interested":"",
+                "interested":"We provide the best solutions for our customers - and of course it requires the smartest heads of the industry. Is there such a thing on you and you are burning to create the future digital products and services? We are looking forward to hear from you. Submit your application as well as CV and possibly portfolio to job@impact.dk",
                 "contactInfo":{
                     "facebook":"https://www.facebook.com/impactdigitaldk/",
                     "instagram":"https://www.instagram.com/impact_digital_dk/",
                     "linkedIn":"https://www.linkedin.com/company/impactdigital/",
-                    "phoneNumber":"",
-                    "email":"",
-                    "address":""
+                    "phoneNumber":"+45 56 40 88 67",
+                    "email":"impact@impact.com",
+                    "address":"Lyneborggade 105, 2300 Copenhagen"
                 }
             }
         },
@@ -194,12 +192,14 @@
             },
             "internshipText": {
                 "introduction":"Are you looking for a rewarding internship where you can get hands on experience and grow as a designer? Relesys can provide you with exciting work tasks that is aligned with your interest and ambitions, not just coffee making! You will be joining a team with talented Designers, Coordinators and Project Managers. Most of them started as interns back in the days. Come join the school of Relesys and gain in-depth knowledge within design and creative thinking.",
-                "yourProfile":"",
-                "aboutUs":"",
+                "yourProfile":"You hold at least a bachelor’s degree in Design, Computer Science, Engineering or related field. Have a good flair for UX design in general. It is a plus (but not a prerequisite) if you have experience with JavaScript, HTML and CSS. Experience with UX and UI design is an advantage. Have a portfolio that you can share with us (we do not look at candidates without portfolio). Have problem solving skills and an analytical mindset. Want to participate in the UX and UI decision-making process in our company. Take initiative, enjoy working both alone and with others, and are creative. Are curious, open to new ideas and on top of the latest trends - innovation is critical to our success. Are fluent in English.",
+                "aboutUs":"Relesys was founded in 2014 with a mission to transform internal communication and performance management for businesses around the world. We base our knowledge on more than 30 years of experience with HR, Communication, Digital Technology and E-learning that we apply in our customized app solutions. Relesys is the first to develop a Retail Performance App. By using features based on intelligent software and elements of gamification the App motivates employees towards better performance and a proactive mindset. We are continuously developing our software to stay aligned with our clients’ needs and to push the boundaries of what our app can do. We deliver solutions for some of Europe’s largest retail businesses as well as some of the smallest. In common for all our collaborations is our mindset to build every relationship for the long run. We are there every step of the way to help our clients grow their people and their business.",
                 "toolsTasks":[
-                    "",
-                    "",
-                    ""
+                    "Collaborate with the team and UX Lead to create new prototypes and solutions for the product.", 
+                    "Support user research and testing.",
+                    "Develop wireframes and task flows based on user needs.",
+                    "Collaborate with the UX Lead/external team and developers to create intuitive and user-friendly software.",
+                    "Find creative ways to solve UX problems."
                 ]
             },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/relesys%2Frelesys_logo.png?alt=media&token=904f742b-0b8f-468d-a31e-2a0874740026",
@@ -214,17 +214,17 @@
                 "employees":"11-50",
                 "clients":"20",
                 "projects":"30",
-                "companyAge":"4 years"
+                "companyAge":"4"
             },
             "contact":{
-                "interested":"",
+                "interested":"We hope this post has caugth your interest. We are always looking for talented people. Please send ud your application and CV to job@job.com and will will get back to you as fast as posible. Give us a call if you have any questions reagarding this post.",
                 "contactInfo":{
                     "facebook":"https://www.facebook.com/relesys/",
                     "instagram":"https://www.instagram.com/explore/tags/relesyslab/",
                     "linkedIn":"https://www.linkedin.com/company/relesys/",
-                    "phoneNumber":"",
-                    "email":"",
-                    "address":""
+                    "phoneNumber":"+45 76 89 55 34",
+                    "email":"relesys@relesys.com",
+                    "address":"Gammelvej 45, 1200 Odense"
                 }
             }
         },
@@ -240,13 +240,11 @@
                 "location":"Copenhagen"
             },
             "internshipText": {
-                "introduction":"",
-                "yourProfile":"",
+                "introduction":"An internship at UserTribe starts in January 2019. The internship has a duration of 2-3 months and it is unpaid. We serve lunch, good coffee and everyone can join our crossfit sessions for free. We work in a cool office located in Nørrebro - close to the lakes. At UserTribe we are a team that really enjoy working together. We believe in what we do and make a great effort to create the best work environment. All in all to create great stuff!",
+                "yourProfile":"Minimum requirements: Experience building structured, maintainable and readable Python. Experience with automated tests. Be interested in teaching team members about your areas of expertise as well as learning from other experts about theirs. Experience with linux. Be proficient in Git version control. Intempus has no middle-management and believes in basing company decisions on merit. As we encourage all team members, including the newest, to contribute with ideas and inputs to create a better experience for our users. If you like to create an impact and wish to become part of a journey of growth, Intempus is the place for you.",
                 "aboutUs":"UserTribe is one of the fastest growing and leading thick data platforms in the world. We have created the framework of Customer Empowered Business™, and we believe that good and meaningful customer experiences make both people and businesses grow. To help companies involve their customers we have invented a unique platform that offers Customer Reality Checks. To join our team in Copenhagen, we are excited to welcome a Backend Developer Intern, eager to drive development fast forward. The Product Management team finest responsibility is the backend. As Backend Developer Intern, you are to join the Product Management team in further developing our platform and provide an immersive and engaging experience.",
                 "toolsTasks":[
-                    "",
-                    "",
-                    ""
+                    "Front-end: React, Redux, Tailwind CSS","Back-end: Node.js, Express.js, PostgreSQL", "AWS, Auth0, Google API's and more..."
                 ]
             },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/userTribe%2FUserTribe_logo.png?alt=media&token=5ac953e2-87ed-43d7-b72d-d0e86f89dd40",
@@ -259,24 +257,24 @@
                 "employees":"50-200",
                 "clients":"100",
                 "projects":"120",
-                "companyAge":"5 years"
+                "companyAge":"5"
             },
             "contact":{
-                "interested":"",
+                "interested":"We hope that this post has sparked your interest in becoming a part of the team. Send your application, CV and other references to our HR Manager, Marina Overbye, maria@job.com. For further information about the position, please take a look at our contact deatails",
                 "contactInfo":{
                     "facebook":"https://www.facebook.com/UserTribe/",
                     "instagram":"https://www.instagram.com/usertribe/",
                     "linkedIn":"https://www.linkedin.com/company/usertribe/",
-                    "phoneNumber":"",
-                    "email":"",
-                    "address":""
+                    "phoneNumber":"+45 76 89 55 34",
+                    "email":"tribe@tribe.com",
+                    "address":"Fisketorvet 67, 5600 Aalborg"
                 }
             }
         },
         {
             "id":"7", 
             "companyName":"Unity Technologies",
-            "postTitle":"Project Management Student Worker",
+            "postTitle":"Project Management Intern",
             "searchFilter": ["projectmanagement"],
             "importantInfo":{
                 "deadline":"01.01.2019",
@@ -286,12 +284,10 @@
             },
             "internshipText": {
                 "introduction":"Unity is looking for a motivated student to support Unity’s PMO (project management office) in our IT organization. You will be supporting in coordinating, completing and concluding different projects, and you will be assisting Business Analysts and Project Managers various ad-hoc tasks. One of the challenges will be to effectively communicate with different stakeholders – ensuring timely delivery of all projects and execution as well as optimising processes with all involved stakeholders.",
-                "yourProfile":"",
-                "aboutUs":"",
+                "yourProfile":"Software development is your passion, and you are a true expert within the field. +5 years within C# (or similar language). Experience with practices from Extreme Programming. Experience with distributed systems, and Software as a Service is an advantage. Experience within lean startup, agile development and project management, integration, design, Microservices and security is a definite advantage. You hold an engineering degree or a corresponding technical education – probably at Master level. Pro-active, self-starter, flexible and result oriented individual. Enjoy working in a fast-paced, dynamic environment. Passionate and excited about performance, cloud computing and agile software development. Fluent /native English speaker and writer",
+                "aboutUs":"Unity Technologies is a fast-growing technology company with an eye on changing how high-demand online events are handled. We take great pride in always being on top of the situation with our customers, and we love that we deliver online fairness to billions of end-users globally. Our culture is open, multicultural, flexible, and dynamic, with opportunities for great individual development, responsibility and initiative. This role will be perfect for someone interested in joining a growth-stage tech company, as you will be able to truly make a difference by applying your unique talent. Queue-it is located in the Camp by Rain-making, which is a great co-working space for tech companies, in Ballerup, near Copenhagen, Denmark.",
                 "toolsTasks":[
-                    "",
-                    "",
-                    ""
+                    "Work in a cloud native development environment, utilizing a range of different technologies and open source frameworks","Be a part of a team where focus is on craftsmanship and agility, automation and quality are not just empty words","Dive into our distributed, highly reliable and scalable Microservices architecture","Have a high degree of influence, responsibility and flexibility in planning and executing your tasks"
                 ]
             },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/unity%2Funity-logo.png?alt=media&token=0dcb0401-f53b-42f2-8a21-e773578ab437",
@@ -304,17 +300,17 @@
                 "employees":"1000",
                 "clients":"150",
                 "projects":"300",
-                "companyAge":" years"
+                "companyAge":"10"
             },
             "contact":{
-                "interested":"",
+                "interested":"We hope this post has caugth your interest. We are always looking for talented people. Please send ud your application and CV to job@job.com and will will get back to you as fast as posible. Give us a call if you have any questions reagarding this post.",
                 "contactInfo":{
                     "facebook":"https://www.facebook.com/unitytech/",
                     "instagram":"https://www.instagram.com/unitytechnologies/",
                     "linkedIn":"https://www.linkedin.com/company/unity-technologies/life/",
-                    "phoneNumber":"",
-                    "email":"",
-                    "address":""
+                    "phoneNumber":"+45 76 89 55 34",
+                    "email":"unity@unity.com",
+                    "address":"Vesterbrogade 678, 1810 Copenhagen"
                 }
             }
         },
@@ -331,12 +327,10 @@
             },
             "internshipText": {
                 "introduction":"As a Frontend Developer Intern at Nordic Crypto, you will become part of a unique fintech startup that specializes in proprietary trading algorithms for cryptocurrencies and other financial instruments. You will work with a small team of hands-on entrepreneurs with extensive backgrounds in global investments banking and industrial corporates. You will be involved in creating a solid design process and documentation for Nordic Crypto’s subscription business.",
-                "yourProfile":"",
-                "aboutUs":"",
+                "yourProfile":"Here are some of the things we look for: Experience with modern web frontend frameworks such as React, Vue or similar. Motivation to become a part of and learn from a team of experienced and passionate developers for web, iOS and Android. You are comfortable working with JavaScript. Experience with modern web technologies such as Progressive Web Apps. Interest in techniques for optimizing performance for the mobile web. We hope that you also want to share your knowledge with co-workers and assume you are as eager to follow the latest technology trends as the rest of us.",
+                "aboutUs":"Nordic Crypto is a Danish fintech company that develops proprietary trading algorithms, risk management models and analytical research for institutional finance and professional investors. Nordic Crypto is a Danish fintech startup that develops proprietary cryptocurrency trading algorithms and provides analytical research for institutional financiers, professional investors and cryptocurrency enthusiasts.We leverage a portfolio of unique and time-tested algorithms from financial markets. We are a highly qualified and friendly team located in Charlottenlund Palace in Charlottenlund (20 minutes from Copenhagen city center). Our services for institutional finance and professional investors are to give them an informed guideline that can be used to predict cryptocurrency. We have developed a proprietary, rule-based algorithmic tool that auto-generates entry and exit signals in cryptocurrencies called the Nordic Crypto Blackbox",
                 "toolsTasks":[
-                    "",
-                    "",
-                    ""
+                    "React","Redux","REST","API","GraphQL","TypeScript","Git","Webpack/Rollup"
                 ]
             },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/NordicCrypto%2FNordicCrypto.png?alt=media&token=6f372125-1612-46b4-8adf-e1f6e72fee49",
@@ -349,41 +343,37 @@
                 "employees":"13",
                 "clients":"5",
                 "projects":"5",
-                "companyAge":"2 years"
+                "companyAge":"2"
             },
             "contact":{
-                "interested":"",
+                "interested":"We encourage you to apply even if you do not feel you meet all of the requirements mentioned above. It is more important that you are curious, committed, have an open mind and want to get to know a tech company from the inside. Send an application with a cv and a portfolio to job@job.com, and we will get back to you as soon as posible.",
                 "contactInfo":{
-                    "facebook":"",
-                    "instagram":"",
+                    "facebook":"https://www.facebook.com/nordiccrypto/",
+                    "instagram":"https://www.instagram.com/nordiccrypto/",
                     "linkedIn":"https://www.linkedin.com/company/nordiccrypto/",
-                    "phoneNumber":"",
-                    "email":"",
-                    "address":""
+                    "phoneNumber":"+45 89 20 10 22",
+                    "email":"nordic@nordic.com",
+                    "address":"Nordpolen 109, 2000 Odense"
                 }
             }
         }, 
-        
-
         {
             "id": "9", 
-            "companyName": "Missing",
-            "postTitle": "Missing",
-            "searchFilter": [""],
+            "companyName": "Milk Studio",
+            "postTitle": "Looking for Talented web intern",
+            "searchFilter": ["frontend", "webdesign"],
             "importantInfo": {
-                "deadline": "01.01.2019",
-                "created": "29.11.2018",
-                "duration": "3 months",
-                "location": "Copenhagen"
+                "deadline": "04.06.2019",
+                "created": "01.11.2018",
+                "duration": "4 months",
+                "location": "Aalborg"
             },
             "internshipText": {
-                "introduction": "Missing text",
-                "yourProfile": "",
-                "aboutUs": "",
+                "introduction": "Join us as an intern at milk Studio. We’re looking for a front end developer intern with drive, that can be plugged into our team, located in the heart of Copenhagen. So if you’re a sucker for microinteractions, tweaking and nudging of easings, codrops articles and codepens keep you up at night – then you’re exactly the passionate person we’re looking for! We offer nice and flexible working conditions, lots of creative freedom, exciting projects, awesome colleagues, the best lunch scheme in the city as well as the opportunity of learning and increasing your skills everyday.",
+                "yourProfile": "We appreciate you to have: Knowledge and interest in various fields of design such as service design, interaction design, UX research, UX strategy, information architecture, visual design, business development, marketing, CRM and technology/development. Topnotch creative and illustration skills. Proven experience in producing digital screen experiences like apps and web pages. Experience with concepting and a visionary perspective on everything you work with. Familiar with Adobe CC (Photoshop, InDesign, illustrator), Figma or similar design applications. Good communication and interpersonal skills - capability to lead virtual teams. Degree in design. Capability to work cross-functionally and internationally in a fast changing environment. You’ll be spending quite a lot of time doing it in collaboration with the rest of the team, so if you’re not a fan of cross-functional teams…Barry might not be your thing after all.",
+                "aboutUs": "We help brands stay on point in the digital era. We are a Copenhagen based Creative digital studio. We work for brands, organisations and occasionally ourselves. But most importantly, we work for fun. With one foot firmly planted in cutting edge full-stack development and the other planted in visual and motion graphic design, we mainly help by building bridge between the sometimes huge gap residing in no-mans land between design and development.",
                 "toolsTasks":[
-                    "",
-                    "",
-                    ""
+                    "Backend: PHP, Laravel, CodeIgniter, Maria/MySQL","Frontend: JavaScript, VueJS, SCSS, GSAP","Generally: Git, Docker, WordPress"
                 ]
             },
             "logo": "",
@@ -392,20 +382,62 @@
                 ""
             ],
             "statisticInfo": {
-                "employees": "",
-                "clients": "",
-                "projects": "",
-                "companyAge": ""
+                "employees": "33",
+                "clients": "20",
+                "projects": "300",
+                "companyAge": "8"
             },
             "contact":{
-                "interested":"",
+                "interested":"If you are interested in the position, then please send us your application at hello@milk-studio.dk and tell us a bit about yourself. We’re looking forward to hear from you!",
                 "contactInfo":{
-                    "facebook":"",
-                    "instagram":"",
-                    "linkedIn":"",
-                    "phoneNumber":"",
-                    "email":"",
-                    "address":""
+                    "facebook":"https://www.facebook.com/milkstudio.dk/",
+                    "instagram":"https://www.instagram.com/milkstudio.dk/",
+                    "linkedIn":"https://www.linkedin.com/milkstudio.dk/",
+                    "phoneNumber":"+45 90 88 20 35",
+                    "email":"milk@milk.com",
+                    "address":"Vestergade 200, 4500 Aalborg"
+                }
+            }
+        }
+        {
+            "id": "10", 
+            "companyName": "Abtion",
+            "postTitle": "Into ruby on rails?",
+            "searchFilter": ["frontend"],
+            "importantInfo": {
+                "deadline": "04.03.2019",
+                "created": "02.08.2018",
+                "duration": "3 months",
+                "location": "Copenhagen"
+            },
+            "internshipText": {
+                "introduction": "Abtion is always on the lookout for talented interns. We are always looking for talented teamplayers to join our team and push our cutting edge solutions even further. Our internships span from 3 - 6 months. As an intern at Abtion you will get flexible hours and free lunch. ",
+                "yourProfile": "We expect you to make things more concrete and nerdy, here are some of the technologies we use and expect you to be familiar with: Python (preferably also Django), Relational database (preferably PostgreSQL), ElasticSearch (nice to have), Redis (nice to have), Go (nice to have). We are not afraid to challenge the choice of technology in order to pick the right tools for the job and be productive. The successful candidate for this position has: A structured approach to problem-solving. Passion for shipping new products. A keen eye for good product design from a development perspective. Knowledge of design patterns. Self-motivation, Good English skills",
+                "aboutUs": "We are Abtion, a creative technology company. We are a creative technology company. A colorful cocktail of thinkers, designers and engineers — shaken (not stirred) with passion and powers to push forward and make the world a better place to live, play and work. Our work transforms hard work to smart work. It connects people with things, learns machines to do the heavy lifting, and teaches children about Head Lice. Our engineers and focus on technology is what sets us apart. We never have to think about if something is too hard to realize. Nothing is too hard. Want to connect your phone to your bicycle light? Well, we have already done that. Want to know what pension is the best for your +5000 employee company? We made a nice software suite for AON Hewitt — they can give you the answer.",
+                "toolsTasks":[
+                    "Ruby (on and off Rails)","Everything JS (Node, React, Vue, Angular, etc.)","PHP (Laravel, WordPress)","Android (Java, React native)","iOS (Swift, React native)"
+                ]
+            },
+            "logo": "",
+            "images": [
+                "",
+                ""
+            ],
+            "statisticInfo": {
+                "employees": "20",
+                "clients": "14",
+                "projects": "112",
+                "companyAge": "5"
+            },
+            "contact":{
+                "interested":"We are looking forward to discovering our next team member! We offer a unique & independent position in a killer team, startup environment with a big company benefits and security, and growth centric new business focus. Please send your short application and cv to job@job.dk. If you have any questions, please contact Rami Piik at rami@job.com.",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/abtion/",
+                    "instagram":"https://www.instagram.com/abtion/",
+                    "linkedIn":"https://www.linkedin.com/abtion/",
+                    "phoneNumber":"+45 76 89 55 34",
+                    "email":"abtion@abtion.com",
+                    "address":"Holbækgade 34, 2300 Copenhagen"
                 }
             }
         }
