@@ -27,5 +27,8 @@
 <script src="js/paralax-post-text.js"></script>
 <script src="js/paralax-post-contact.js"></script>
 
+<!-- Intersection Observer-->
+<script src="js/scroll-animation.js"></script>
+
 <!-- Script -->
 <script src="js/script.js"></script>

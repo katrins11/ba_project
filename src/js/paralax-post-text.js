@@ -5,9 +5,7 @@ var textWH = window.innerHeight,
   $innerT1 = $('.innerT1'),
   $innerT2 = $('.innerT2'),
   $innerT3 = $('.innerT3'),
-  $screenT1 = $('.screenT1'),
-  $screenT2 = $('.screenT2'),
-  $screenT3 = $('.screenT3');
+  $screenT1 = $('.screenT1');
 
 $(function() {
   var scene = new ScrollMagic.Scene({
@@ -24,7 +22,6 @@ $(function() {
 var textSlide1 = new TimelineMax();
 textSlide1
   .to($left, 1, {yPercent: 0, ease: Power4.easeOut})
-  .fromTo($screenT1, 1, {yPercent: 20, autoAlpha: 0}, {yPercent: 0, autoAlpha: 1, scale: 1, ease: Power4.easeOut})
   .from($innerT2, 1, {autoAlpha: 0});
 
 new ScrollMagic.Scene({
@@ -38,8 +35,6 @@ new ScrollMagic.Scene({
 
 var textSlide2 = new TimelineMax();
 textSlide2
-  .to($screenT1, 1, {yPercent: 0, autoAlpha: 0, ease: Power4.easeOut})
-  .fromTo($screenT2, 1, {yPercent: 20, autoAlpha: 0}, {yPercent: 0, autoAlpha: 1, ease: Power4.easeOut})
   .from($innerT3, 1, {autoAlpha: 0});
 
 new ScrollMagic.Scene({
@@ -50,20 +45,6 @@ new ScrollMagic.Scene({
 .setTween(textSlide2)
 .addIndicators({name: "2nd slide"})
 .addTo(textController);
-
-var textSlide3 = new TimelineMax();
-textSlide3
-  .to($screenT2, 1, {yPercent: 0, autoAlpha: 0, ease: Power4.easeInOut})
-  .fromTo($screenT3, 1, {yPercent: 20, autoAlpha: 0}, {yPercent: 0, autoAlpha: 1, ease: Power4.easeInOut});
-
-new ScrollMagic.Scene({
-  triggerElement: $('.innerT2 h2')[0],
-  duration: '100%'
-})
-.setTween(textSlide3)
-.addIndicators({name: "3rd slide"})
-.addTo(textController);
-
 
 removeScrollMagic();
 

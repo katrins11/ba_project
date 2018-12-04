@@ -132,6 +132,7 @@ function getPost(snapshot) {
             getHeroData(snap);
             getFirstInfoboxData(snap);
             getSecondInfoboxData(snap);
+            getTextBoxData(snap)
         }
     });
 }
@@ -192,4 +193,10 @@ function getSecondInfoboxData(snap) {
                         </div>';
 
     infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
+}
+
+function getTextBoxData(snap) { 
+    var postLogo = document.getElementById("post-logo");
+    var htmlPostLogo = '<img src='+snap.val().logo+' alt="logo placholder">';
+    postLogo.insertAdjacentHTML('beforeend', htmlPostLogo);
 }
