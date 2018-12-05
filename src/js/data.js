@@ -132,7 +132,8 @@ function getPost(snapshot) {
             getHeroData(snap);
             getFirstInfoboxData(snap);
             getSecondInfoboxData(snap);
-            getTextBoxData(snap);   
+            getTextBoxData(snap); 
+            getContactBoxData(snap);  
         }
     });
 }
@@ -219,5 +220,16 @@ function getTextBoxData(snap) {
     var htmlToolsTasks = '<h2>Tasks & tools</h1>\
                         <p>'+snap.val().internshipText.toolsTasks+'</p>';
     toolsTasksText.insertAdjacentHTML('beforeend', htmlToolsTasks);
+}
 
+function getContactBoxData(snap) { 
+    // var aboutUsText = document.getElementById("about-us");
+    // var htmlAboutUs = '<h2>About '+snap.val().companyName+'</h1>\
+    //                     <p>'+snap.val().internshipText.aboutUs+'</p>';
+    // aboutUsText.insertAdjacentHTML('beforeend', htmlAboutUs);
+
+    // var introductionText = document.getElementById("introduction");
+    // var htmlIntroduction = '<h2>Internship introduction</h1>\
+    //                     <p>'+snap.val().internshipText.introduction+'</p>';
+    // introductionText.insertAdjacentHTML('beforeend', htmlIntroduction);
 }
