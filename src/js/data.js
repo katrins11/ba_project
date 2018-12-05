@@ -14,31 +14,28 @@ var ref = database.ref('post');
 ref.on('value', gotData, errData);
 
 function gotData(data) {
-    console.log("data", data.val()[0].companyName);
+    var frontpage = document.getElementById("front-page");
+    var overviewPage = document.getElementById("overview-page");
+    var postPage = document.getElementById("post-page");
+    if(frontpage) {
+        console.log("Your are on the FrontPage");
+        getFrontCardInfo(data);
+    }
+    else if(overviewPage) {
+        console.log("Your are on the OverviewPage");
+        getCardInfo(data);
+        getCarouselImg(data);
+    }    
+    else if(postPage) {
+        console.log("Your are on the PostPage");
+        getPost(data);
+    }
 }
+
 function errData(err) {
     console.log("ERROR", err);
 }
 
-database.ref('post').on('value', function(snapshot) {
-    var frontpage = document.getElementById("front-page");
-    var overviewPage = document.getElementById("overview-page");
-    var postPage = document.getElementById("post-page");
-
-    if(frontpage) {
-        console.log("Your are on the FrontPage");
-        getFrontCardInfo(snapshot);
-    }
-    else if(overviewPage) {
-        console.log("Your are on the OverviewPage");
-        getCardInfo(snapshot);
-        getCarouselImg(snapshot);
-    }    
-    else if(postPage) {
-        console.log("Your are on the PostPage");
-        getPost(snapshot);
-    }
-});
 
 function getCardInfo(snapshot) {
     var compName = document.getElementById("resultscontainer");
@@ -65,6 +62,29 @@ function getCardInfo(snapshot) {
                         </a>';
         compName.insertAdjacentHTML('beforeend', htmlCard);
     });
+    /* *** search *** */
+    let filterInput = document.getElementById('filter-input');
+    filterInput.addEventListener('keyup', function() {
+        // Get value of input
+        let filterValue = document.getElementById('filter-input').value.toLowerCase();
+        // Get names from list
+        let Allposts = document.getElementById('resultscontainer');
+        // Get each item from list
+        let postItem = Allposts.querySelectorAll('.eachPost');
+        // Loop through list
+        for(let i = 0;i < postItem.length;i++){
+            let a = postItem[i];
+            // If matched
+            if(a.innerHTML.toLowerCase().indexOf(filterValue) > -1) {
+                postItem[i].style.display = '';
+            }
+            else {
+                postItem[i].style.display = 'none'; 
+            }
+        }
+    });
+    /* *** Filtering *** */
+    var mixer = mixitup(compName);
 };
 
 function getFrontCardInfo(snapshot) {
@@ -99,19 +119,35 @@ function getFrontCardInfo(snapshot) {
 };
 
 function getCarouselImg(snapshot) {
-    var carouselDiv = document.querySelector("#owlCarousel .owl-stage-outer .owl-stage");
+    var carouselDiv = document.querySelector("#owlCarousel");
     snapshot.forEach(snap => {
         if(snap.val().id == 4) {
-            console.log(snap.val().images.length);
+            console.log("length is: ", snap.val().images.length);
             
             for(var i = 0; i < snap.val().images.length; i++) {
                 console.log(snap.val().images[i]);
                 var carouselImg = '<div class="item">\
                                       <img src="'+snap.val().images[i]+'" alt="">\
                                    </div>';
-                carouselDiv.insertAdjacentHTML('beforeend', carouselImg);
+                console.log("each image: ", carouselImg);
+                $(carouselDiv).append(carouselImg);
+                // carouselDiv.insertAdjacentHTML('beforeend', carouselImg);
             }
 
+        }
+    });
+
+    $('.owl-carousel').owlCarousel({
+        center: true,
+        items: 2,
+        loop: true,
+        nav: true,
+        margin: 40,
+        autoWidth: true,
+        responsive:{
+            600:{
+                items: 3
+            }
         }
     });
 };
