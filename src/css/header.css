@@ -20,16 +20,16 @@ header {
       top: 0;
       right: 0;
 
-      &:nth-child(3) {
+      &:nth-child(2) {
         transform: translateY(0);
       }
 
-      &:nth-child(4) {
+      &:nth-child(3) {
         transform: translateX(10px) translateY(9px);
         transition: all 0.25s ease-in-out;
       }
 
-      &:nth-child(5) {
+      &:nth-child(4) {
         transform: translateY(18px);
       }
     }
@@ -51,7 +51,7 @@ header {
       cursor: pointer;
 
       .line {
-        &:nth-child(4) {
+        &:nth-child(3) {
           transform: translateX(0px) translateY(9px);
           transition: all 0.25s ease-in-out;
         }
