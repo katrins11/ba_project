@@ -42,7 +42,7 @@
       </p> -->
     </div>  
     <div id="tasks-tools" class="innerText innerT4">
-      <h2>Tasks & tools</h2>
+      <!-- <h2>Tasks & tools</h2>
       <p class="sub-title">Tasks</p>
       <ul>
         <li>Reimplementation of Angular 2 project in standard HTML/JS, which will also be used by a React Native (or similar framework) mobile version.</li>
@@ -57,7 +57,7 @@
         <li>HTML/CSS</li>
         <li>Angular</li>
         <li>React Native</li>
-      </ul>
+      </ul> -->
     </div>  
   </div>
 </section> 
