@@ -16,7 +16,11 @@
                 "yourProfile":"Are you interested in development and are you in the process of taking a web related education within design or web design. Are you used to working in sketch and has an understanding and interest in designing websites. Do you have the basic knowledge of HTML,PHP , CSS, and search engine optimization? Are you responsible and meeting stable. We expect you to not be afraid of new challenges and are conversational, that you have the courage to talk with our customers if there is a need for it. We also need you to speak and write in english, since most of our customer dialogue takes place in English.",
                 "aboutUs":"We are a premium agency based in Copenhagen. We offer development of Integrated Marketing, Digital Products and Service. We offer these three products to our clients separately, but hopefully all together. We have specialized in a certain area which we call “Helpful Marketing”. We develop experiences, tools or utilities that give the user a feeling of being helped. This is because we have realized that in the customer's eye most marketing is intrusive, while products are helpful. If we develop marketing in the same manner as products - i.e. in order to help people or solve a problem – customers are more likely to like the marketing and the brand.At Umwelt, we believe in full service with a digital core. We make digital solutions that help our customers set the digital agenda in their industry. We are experts in branded utilities, but we also work with all types of websites, webshops, apps, banners, etc.",
                 "toolsTasks":[
-                    "HTML/CSS","Angular","GreenSock","JavaScript","ScrollMagic"
+                    "HTML/CSS",
+                    "Angular",
+                    "GreenSock",
+                    "JavaScript",
+                    "ScrollMagic"
                 ]
             },
             "logo":"https://firebasestorage.googleapis.com/v0/b/theintern-95665.appspot.com/o/umwelt%2FUmWelt.png?alt=media&token=b1043b13-8738-4c35-8813-d76ed0f9add1",
@@ -104,7 +108,7 @@
                 "toolsTasks":[
                     "Collaborate with the team and UX Lead to create new prototypes and solutions for the product.",
                     "Support user research and testing.",
-                    "Develop wireframes and task flows based on user needs.".
+                    "Develop wireframes and task flows based on user needs.",
                     "Collaborate with the UX Lead/external team and developers to create intuitive and user-friendly software.",
                     "Find creative ways to solve UX problems."
                 ]
@@ -398,7 +402,7 @@
                     "address":"Vestergade 200, 4500 Aalborg"
                 }
             }
-        }
+        },
         {
             "id": "10", 
             "companyName": "Abtion",
