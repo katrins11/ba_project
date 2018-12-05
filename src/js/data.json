@@ -104,7 +104,7 @@
                 "toolsTasks":[
                     "Collaborate with the team and UX Lead to create new prototypes and solutions for the product.",
                     "Support user research and testing.",
-                    "Develop wireframes and task flows based on user needs.".
+                    "Develop wireframes and task flows based on user needs.",
                     "Collaborate with the UX Lead/external team and developers to create intuitive and user-friendly software.",
                     "Find creative ways to solve UX problems."
                 ]
@@ -398,7 +398,7 @@
                     "address":"Vestergade 200, 4500 Aalborg"
                 }
             }
-        }
+        },
         {
             "id": "10", 
             "companyName": "Abtion",

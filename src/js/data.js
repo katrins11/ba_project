@@ -202,34 +202,28 @@ function getTextBoxData(snap) {
     postLogo.insertAdjacentHTML('beforeend', htmlPostLogo);
 
     var aboutUsText = document.getElementById("about-us");
-    var htmlAboutUs = '<h2>About '+snap.val().companyName+'</h1>\
-                        <p>'+snap.val().internshipText.aboutUs+'</p>';
+    var htmlAboutUs = '<p>'+snap.val().internshipText.aboutUs+'</p>';
     aboutUsText.insertAdjacentHTML('beforeend', htmlAboutUs);
 
     var introductionText = document.getElementById("introduction");
-    var htmlIntroduction = '<h2>Internship introduction</h1>\
-                        <p>'+snap.val().internshipText.introduction+'</p>';
+    var htmlIntroduction = '<p>'+snap.val().internshipText.introduction+'</p>';
     introductionText.insertAdjacentHTML('beforeend', htmlIntroduction);
 
     var yourProfileText = document.getElementById("your-profile");
-    var htmlYourProfile = '<h2>Your profile</h1>\
-                        <p>'+snap.val().internshipText.yourProfile+'</p>';
+    var htmlYourProfile = '<p>'+snap.val().internshipText.yourProfile+'</p>';
     yourProfileText.insertAdjacentHTML('beforeend', htmlYourProfile);
 
     var toolsTasksText = document.getElementById("tasks-tools");
-    var htmlToolsTasks = '<h2>Tasks & tools</h1>\
-                        <p>'+snap.val().internshipText.toolsTasks+'</p>';
+    var htmlToolsTasks = '<p>'+snap.val().internshipText.toolsTasks+'</p>';
     toolsTasksText.insertAdjacentHTML('beforeend', htmlToolsTasks);
 }
 
 function getContactBoxData(snap) { 
-    // var aboutUsText = document.getElementById("about-us");
-    // var htmlAboutUs = '<h2>About '+snap.val().companyName+'</h1>\
-    //                     <p>'+snap.val().internshipText.aboutUs+'</p>';
-    // aboutUsText.insertAdjacentHTML('beforeend', htmlAboutUs);
+    var interestedText = document.getElementById("interested");
+    var htmlInterested = '<p>'+snap.val().contact.interested+'</p>';
+    interestedText.insertAdjacentHTML('beforeend', htmlInterested);
 
-    // var introductionText = document.getElementById("introduction");
-    // var htmlIntroduction = '<h2>Internship introduction</h1>\
-    //                     <p>'+snap.val().internshipText.introduction+'</p>';
-    // introductionText.insertAdjacentHTML('beforeend', htmlIntroduction);
+    var contactInfoText = document.getElementById("contact");
+    var htmlContactInfo = '<p>'+snap.val().contact.contactInfo+'</p>';
+    contactInfoText.insertAdjacentHTML('beforeend', htmlContactInfo);
 }
