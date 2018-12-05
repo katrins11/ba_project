@@ -5,13 +5,13 @@
 
         <?php include('php/hero-post.php')?>
 
-        <?php include('php/paralax-post-text.php')?>
+        <?php include('php/post-text.php')?>
 
         <?php include('php/slider.php')?>
 
         <?php include('php/info-box.php')?>
 
-        <?php include('php/paralax-post-contact.php')?>
+        <?php include('php/post-contact.php')?>
 
         <?php include('php/cta.php')?>
 

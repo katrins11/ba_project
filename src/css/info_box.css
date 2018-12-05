@@ -15,7 +15,6 @@
     padding: 20px;
   }
   
-  
   .info {
     text-align: center;
     lost-column: 1/4 4 40px;
@@ -56,9 +55,7 @@
   }
 
   &.hero-info-box {
-    margin-top: -180px;
-    z-index: 3;
-    position: relative;
+
   }
 }
 
