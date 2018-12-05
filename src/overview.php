@@ -4,8 +4,6 @@
         <?php include('php/menu.php')?>
 
         <?php include('php/search.php')?>
-
-        <?php include('php/carousel.php')?>
         
         <?php include('php/footer.php')?>
     </div>
