@@ -2,6 +2,7 @@ footer {
     width: calc(100vw - 80px);
     padding: 20px 40px;
     background-color: var(--color-primary-yellow);
+    /* background-color: green; */
     display: flex;
     flex-derection: row;
     justify-content: space-between;

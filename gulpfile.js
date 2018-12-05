@@ -7,21 +7,30 @@ const gulp = require('gulp'),
       postcssImport = require('postcss-import'),
       mixins = require('postcss-mixins'),
       simpleVars = require('postcss-simple-vars'),
-      postcssNested = require('postcss-nested');
+      postcssNested = require('postcss-nested'),
+      browserSync = require('browser-sync').create();
 
-gulp.task("php", function() {
+gulp.task('php', function() {
   return gulp
-    .src("./src/*.php")
-    .pipe(gulp.dest("./build"))
+    .src('./src/*.php')
+    .pipe(gulp.dest('./build'))
 });
 
-gulp.task("phpHelp", function() {
+gulp.task('phpHelp', function() {
   return gulp
-    .src(["./src/php/*.php", "./src/php/section/*.php"])
-    .pipe(gulp.dest("./build/php"))
+    .src(['./src/php/*.php', './src/php/section/*.php'])
+    .pipe(gulp.dest('./build/php'))
 });
 
-gulp.task("css", function() {
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'app'
+    },
+  })
+})
+
+gulp.task('css', function() {
   const processors = [
     precss,
     simpleVars({ silent: true }),
@@ -33,20 +42,23 @@ gulp.task("css", function() {
     postcssImport
   ]
   return gulp
-    .src("./src/css/styles.css")
+    .src('./src/css/styles.css')
     .pipe(postcss(processors))
-    .pipe(gulp.dest("./build/css"))
+    .pipe(gulp.dest('./build/css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
 });
 
-gulp.task("js", function() {
+gulp.task('js', function() {
   return gulp
-    .src("./src/js/*.js")
-    .pipe(gulp.dest("./build/js"));
+    .src('./src/js/*.js')
+    .pipe(gulp.dest('./build/js'));
 });
 gulp.task("assets", function() {
   return gulp
-    .src("./src/assets/*")
-    .pipe(gulp.dest("./build/assets"));
+    .src('./src/assets/*')
+    .pipe(gulp.dest('./build/assets'));
 });
 
 function buildAll(){
@@ -57,15 +69,15 @@ function buildAll(){
   gulp.start('assets');
 }
 
-gulp.task("buildAll", function () {
+gulp.task('buildAll', function () {
   buildAll();
 });
 
 gulp.task('watchAll', function () {
-  gulp.watch("./src/css/*", ["css"]);
-  gulp.watch("./src/*", ["php"]);
-  gulp.watch("./src/js/*", ["js"]);
-  gulp.watch("./src/assets/*", ["assets"]);
-  gulp.watch("./src/php/*",["phpHelp"]);
-  gulp.watch("./src/php/section/*",["phpHelp"]);
+  gulp.watch('./src/css/*', gulp.series('css'));
+  gulp.watch('./src/*', gulp.series('php'));
+  gulp.watch('./src/js/*', gulp.series('js'));
+  gulp.watch('./src/assets/*', gulp.series('assets'));
+  gulp.watch('./src/php/*', gulp.series('phpHelp'));
+  gulp.watch('./src/php/section/*', gulp.series('phpHelp'));
 });
