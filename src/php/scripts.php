@@ -30,5 +30,9 @@
 <!-- Intersection Observer-->
 <script src="js/scroll-animation.js"></script>
 
+<!-- Hero -->
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js'></script>
+<script src="js/hero.js"></script>
+
 <!-- Script -->
 <script src="js/script.js"></script>
