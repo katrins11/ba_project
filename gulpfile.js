@@ -74,10 +74,19 @@ gulp.task('buildAll', function () {
 });
 
 gulp.task('watchAll', function () {
+<<<<<<< HEAD
   gulp.watch('./src/css/*', gulp.series('css'));
   gulp.watch('./src/*', gulp.series('php'));
   gulp.watch('./src/js/*', gulp.series('js'));
   gulp.watch('./src/assets/*', gulp.series('assets'));
   gulp.watch('./src/php/*', gulp.series('phpHelp'));
   gulp.watch('./src/php/section/*', gulp.series('phpHelp'));
+=======
+  gulp.watch("./src/css/*", gulp.series('css'));
+  gulp.watch("./src/*", gulp.series('php'));
+  gulp.watch("./src/js/*", gulp.series('js'));
+  gulp.watch("./src/assets/*", gulp.series('assets'));
+  gulp.watch("./src/php/*", gulp.series('phpHelp'));
+  gulp.watch("./src/php/section/*", gulp.series('phpHelp'));
+>>>>>>> e6974fa2817bb7f8510f5c21093627ef9d1726f1
 });
