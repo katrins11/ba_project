@@ -11,9 +11,20 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    &:hover h1 svg {
+      transform: translateX(20px);
+      transform-origin: center;
+      transition: all .8s ease-in;
+      // animation: fadeIn 5s linear 2s infinite alternate;
+    }
+    &:hover .smallBlob{
+      transform: scale(1.2);
+      transform-origin: center;
+      transition: all .8s ease-in;
+    }
   }
   
-  .section-headline {
+  h1 {
     position: absolute;
     z-index: 5;
     font-family: var(--montserrat);
@@ -21,38 +32,35 @@
     font-size: 36px;
     color: var(--color-black);
     text-align: center;
+    display: inline-flex;
+    svg {
+      width: 50px;
+      position: absolute;
+      top: 12px;
+      right: -90px;
+      transform: translateX(0px);
+      transform-origin: center;
+      transition: all .8s ease-out;
+    }
   }
 
-    .triangle {
+  .smallBlob {
     position: absolute; 
-    
-    &.one {
-      width: 1000px; 
-      height: 1000px; 
-      bottom: 100px;
-      left: 300px;
-      z-index: 3;
-      opacity: 0.8;
-    }
+    top: -100px; 
+    left: -280px; 
+    width: 200px;
+    transform: scale(1);
+    transform-origin: center;
+    transition: all .8s ease-out;
+  }
+}
 
-    &.two {
-      width: 400px;
-      height: 400px;
-      bottom: 0;
-      left: 0;
-      z-index: 3;
-      opacity: 0.6;
-      transform: rotate(145deg);
-    }
-
-    &.three {
-      width: 600px;
-      height: 600px;
-      right: 100px;
-      bottom: 300px;
-      z-index: 2;
-      opacity: 0.4;
-      transform: rotate(25deg);
-    }
-  } 
+@keyframes fadeIn {
+  0% { right: -90px; }
+  50% { right: -120px; }
+  100% { right: -90px; }
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
