@@ -5,20 +5,21 @@
 
         <?php include('php/search.php')?>
 
-        <div id="myModal" class="modal">
+        <div id="pop-up-modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>  
                 <?php include('php/hero-post.php')?>
 
                 <?php include('php/post-text.php')?>
 
-                <?php include('php/slider.php')?>
+                <?php include('php/carousel.php')?>
 
                 <?php include('php/info-box.php')?>
 
                 <?php include('php/post-contact.php')?>
-
-                <?php include('php/cta.php')?>
+                <section class="btn-close">
+                    <button>Close</button>
+                </section>
             </div>
         </div>
 
