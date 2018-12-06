@@ -50,7 +50,7 @@ function getCardInfo(snapshot) {
             filterItem = snap.val().searchFilter[i] + " ";
             filterItems += filterItem;
         }
-        var htmlCard = '<a class="eachPost mix '+filterItems+'" data-companyID="'+snap.val().id+'">\
+        var htmlCard = '<a id="pop-up" class="eachPost mix '+filterItems+'" data-companyID="'+snap.val().id+'">\
                             <div class="postImage"><img src="'+snap.val().images[0]+'" alt="office placholder"></div>\
                             <div class="company">\
                                 <h3 id="company-name">'+snap.val().companyName+'</h3>\
