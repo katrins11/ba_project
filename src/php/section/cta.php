@@ -1,5 +1,5 @@
 <section class="cta section-watch">
-  <a href="">
+  <a href="/ba_project/build/overview.php">
     <h1 class="section-headline">
       See more oppotunities 
       <svg width="31px" height="24px" viewBox="0 0 31 24" version="1.1">

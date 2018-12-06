@@ -14,7 +14,7 @@
     .owl-nav {
         .owl-prev, .owl-next {
             position: absolute;
-            width: 12vw;
+            width: 8.2vw;
             height: 90vh;
             top: -3px;
             display: flex;
@@ -33,7 +33,7 @@
             left: -5px;
         }
         .owl-next {
-            right: -5px;
+            right: -4px;
         }
     }
 

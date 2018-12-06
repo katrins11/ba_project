@@ -10,7 +10,7 @@
 }
 
 .frontPosts {
-  h3 {
+  h1 {
     font-family: var(--montserrat);
     font-size: 36px;
     font-weight: var(--font-bold);
