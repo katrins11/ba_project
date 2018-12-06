@@ -9,6 +9,8 @@
 
         <?php include('php/paralax-frontpage.php')?>
 
+        <?php include('php/cta-guide.php')?>
+
         <?php include('php/frontPosts.php')?>
 
         <?php include('php/cta.php')?>
