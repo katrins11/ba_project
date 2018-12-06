@@ -7,8 +7,7 @@
 
         <div id="myModal" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
+                <span class="close">&times;</span>  
                 <?php include('php/hero-post.php')?>
 
                 <?php include('php/post-text.php')?>

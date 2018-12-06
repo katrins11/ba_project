@@ -13,13 +13,14 @@ var database = firebase.database();
 var ref = database.ref('post');
 ref.on('value', gotData, errData);
 
-function gotData(data) {
+function gotData(snapshot) {
     var frontpage = document.getElementById("front-page");
     var overviewPage = document.getElementById("overview-page");
     var postPage = document.getElementById("post-page");
+    
     if(frontpage) {
         console.log("Your are on the FrontPage");
-        getFrontCardInfo(data);
+        getFrontCardInfo(snapshot);
     }
     else if(overviewPage) {
         console.log("Your are on the OverviewPage");
