@@ -268,14 +268,9 @@ function getTextBoxData(snap) {
     var toolsTasksText = document.getElementById("tasks-tools");
 
     for(var i = 0; i < snap.val().internshipText.toolsTasks.length; i++) {
-        console.log(snap.val().images[i]);
         var htmlToolsTasks = '<li>'+snap.val().internshipText.toolsTasks[i]+'</li>';
-       
         toolsTasksText.insertAdjacentHTML('beforeend', htmlToolsTasks);
-        // $(carouselDiv).append(carouselImg);
-        // carouselDiv.insertAdjacentHTML('beforeend', carouselImg);
     }
-    console.log("length is: ", snap.val().internshipText.toolsTasks.length);
 }
 
 //**************** GET CONTACT DATA *****************//

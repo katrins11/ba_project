@@ -65,7 +65,7 @@
       line-height: 3;
       color: var(--color-black);
       font-family: var(--roboto);
-      font-size: 18px;
+      font-size: 14px;
 
       a {
         display: flex;
