@@ -1,3 +1,4 @@
+//**************** FIREBASE *****************//
 var config = {
     apiKey: "AIzaSyBIZI6hbCrbtBaCQ1cwm_B0NP245AAF5KY",
     authDomain: "theintern-95665.firebaseapp.com",
@@ -39,7 +40,7 @@ function errData(err) {
     console.log("ERROR", err);
 }
 
-
+//**************** SEARCH & CARDS *****************//
 function getCardInfo(snapshot) {
     var compName = document.getElementById("resultscontainer");
 
@@ -91,6 +92,7 @@ function getCardInfo(snapshot) {
     var mixer = mixitup(compName);
 };
 
+//**************** CARD DATA *****************//
 function getFrontCardInfo(snapshot) {
     var companyPosts = document.getElementById("frontPagePosts"),
         numberOfPosts = '',
@@ -122,6 +124,7 @@ function getFrontCardInfo(snapshot) {
     });
 };
 
+//**************** OWL CAROUSEL *****************//
 function getCarouselImg(snapshot) {
     var carouselDiv = document.querySelector("#owlCarousel");
     snapshot.forEach(snap => {
@@ -178,6 +181,7 @@ function getPost(snapshot) {
     });
 }
 
+//**************** GET HERO DATA *****************//
 function getHeroData(snap) { 
     var heroData = document.getElementById("hero-post-container");
 
@@ -190,6 +194,7 @@ function getHeroData(snap) {
     heroData.insertAdjacentHTML('beforeend', htmlHerobox);
 }
 
+//**************** GET FIRST INFORBOX DATA *****************//
 function getFirstInfoboxData(snap) { 
     var infoboxData = document.getElementById("first-infobox-container");
 
@@ -213,6 +218,7 @@ function getFirstInfoboxData(snap) {
     infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
 }
 
+//**************** GET SECOND INFORBOX DATA *****************//
 function getSecondInfoboxData(snap) { 
     var infoboxData = document.getElementById("second-infobox-container");
 
@@ -236,61 +242,102 @@ function getSecondInfoboxData(snap) {
     infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
 }
 
+//**************** GET TEXT DATA *****************//
 function getTextBoxData(snap) { 
+    // LOGO
     var postLogo = document.getElementById("post-logo");
     var htmlPostLogo = '<img src='+snap.val().logo+' alt="logo placholder">';
     postLogo.insertAdjacentHTML('beforeend', htmlPostLogo);
 
+    // ABOUT
     var aboutUsText = document.getElementById("about-us");
     var htmlAboutUs = '<p>'+snap.val().internshipText.aboutUs+'</p>';
     aboutUsText.insertAdjacentHTML('beforeend', htmlAboutUs);
 
+    // INTRODUCTION
     var introductionText = document.getElementById("introduction");
     var htmlIntroduction = '<p>'+snap.val().internshipText.introduction+'</p>';
     introductionText.insertAdjacentHTML('beforeend', htmlIntroduction);
 
+    // YOUR PROFILE
     var yourProfileText = document.getElementById("your-profile");
     var htmlYourProfile = '<p>'+snap.val().internshipText.yourProfile+'</p>';
     yourProfileText.insertAdjacentHTML('beforeend', htmlYourProfile);
 
+    // TOOLS & TASKS
     var toolsTasksText = document.getElementById("tasks-tools");
-    var htmlToolsTasks = '<p>'+snap.val().internshipText.toolsTasks+'</p>';
-    toolsTasksText.insertAdjacentHTML('beforeend', htmlToolsTasks);
+
+    for(var i = 0; i < snap.val().internshipText.toolsTasks.length; i++) {
+        var htmlToolsTasks = '<li>'+snap.val().internshipText.toolsTasks[i]+'</li>';
+        toolsTasksText.insertAdjacentHTML('beforeend', htmlToolsTasks);
+    }
 }
 
+//**************** GET CONTACT DATA *****************//
 function getContactBoxData(snap) { 
+    // GET INTERESTED TEXT
     var interestedText = document.getElementById("interested");
     var htmlInterested = '<p>'+snap.val().contact.interested+'</p>';
     interestedText.insertAdjacentHTML('beforeend', htmlInterested);
 
+    // GET CONTACT LIST
     var contactInfoText = document.getElementById("contact");
-    var htmlContactInfo = '<p>'+snap.val().contact.contactInfo+'</p>';
+    var htmlContactInfo = '<ul>\
+                                <li>\
+                                    <img src="assets/mail.svg" alt="">\
+                                    <span>'+snap.val().contact.contactInfo.email+'</span>\
+                                </li>\
+                                <li>\
+                                    <img src="assets/call.svg" alt="">\
+                                    <span>'+snap.val().contact.contactInfo.phoneNumber+'</span>\
+                                </li>\
+                                <li>\
+                                    <img src="assets/location.svg" alt="">\
+                                    <span>'+snap.val().contact.contactInfo.address+'</span>\
+                                </li>\
+                            </ul>\
+                            <ul>\
+                                <li>\
+                                    <a href="'+snap.val().contact.contactInfo.facebook+'" class="fa fa-facebook">\
+                                        <img src="assets/facebook.svg" alt="">\
+                                        <span>Facebook</span>\
+                                    </a>\
+                                </li>\
+                                <li>\
+                                    <a href="'+snap.val().contact.contactInfo.instagram+'" class="fa fa-facebook">\
+                                        <img src="assets/instagram.svg" alt="">\
+                                        <span>Instagram</span>\
+                                    </a>\
+                                </li>\
+                                <li>\
+                                    <a href="'+snap.val().contact.contactInfo.linkedIn+'" class="fa fa-facebook">\
+                                        <img src="assets/linkedin.svg" alt="">\
+                                        <span>LinkedIn</span>\
+                                    </a>\
+                                </li>\
+                            </ul>';
     contactInfoText.insertAdjacentHTML('beforeend', htmlContactInfo);
 }
 
-//**************** Pop-up page *****************//
+//**************** POP-UP MODAL *****************//
 function popUp() { 
-    // Get the modal
-    var modal = document.getElementById('myModal');
+    var modal = document.getElementById('pop-up-modal');
+    var cardClick = document.getElementById("pop-up");
+    var spanClose = document.getElementsByClassName("close")[0];
+    var btnClose = document.getElementsByClassName("btn-close")[0];
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("pop-up");
-    console.log(btn);
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on the button, open the modal 
-    btn.onclick = function() {
+    cardClick.onclick = function() {
         modal.style.display = "block";
     }
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
+    spanClose.onclick = function() {
         modal.style.display = "none";
     }
 
-    // When the user clicks anywhere outside of the modal, close it
+    btnClose.onclick = function() {
+        modal.style.display = "none";
+    }
+
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";

@@ -6,7 +6,7 @@ function observeOnScroll () {
 
   //*************** POP UP MODUAL OBSERVER **************//
   var options = {
-    root: document.querySelector('#myModal'),
+    root: document.querySelector('#pop-up-modal'),
     rootMargin: '0px',
     threshold: 1.0
   }
@@ -15,7 +15,7 @@ function observeOnScroll () {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('scroll-animation');
-        console.log('entry', entry);
+        // console.log('entry', entry);
       }
     });
   };
