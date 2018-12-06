@@ -1,3 +1,4 @@
+//**************** FIREBASE *****************//
 var config = {
     apiKey: "AIzaSyBIZI6hbCrbtBaCQ1cwm_B0NP245AAF5KY",
     authDomain: "theintern-95665.firebaseapp.com",
@@ -39,7 +40,7 @@ function errData(err) {
     console.log("ERROR", err);
 }
 
-
+//**************** SEARCH & CARDS *****************//
 function getCardInfo(snapshot) {
     var compName = document.getElementById("resultscontainer");
 
@@ -91,6 +92,7 @@ function getCardInfo(snapshot) {
     var mixer = mixitup(compName);
 };
 
+//**************** CARD DATA *****************//
 function getFrontCardInfo(snapshot) {
     var companyPosts = document.getElementById("frontPagePosts"),
         numberOfPosts = '',
@@ -122,6 +124,7 @@ function getFrontCardInfo(snapshot) {
     });
 };
 
+//**************** OWL CAROUSEL *****************//
 function getCarouselImg(snapshot) {
     var carouselDiv = document.querySelector("#owlCarousel");
     snapshot.forEach(snap => {
@@ -178,6 +181,7 @@ function getPost(snapshot) {
     });
 }
 
+//**************** GET HERO DATA *****************//
 function getHeroData(snap) { 
     var heroData = document.getElementById("hero-post-container");
 
@@ -190,6 +194,7 @@ function getHeroData(snap) {
     heroData.insertAdjacentHTML('beforeend', htmlHerobox);
 }
 
+//**************** GET FIRST INFORBOX DATA *****************//
 function getFirstInfoboxData(snap) { 
     var infoboxData = document.getElementById("first-infobox-container");
 
@@ -213,6 +218,7 @@ function getFirstInfoboxData(snap) {
     infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
 }
 
+//**************** GET SECOND INFORBOX DATA *****************//
 function getSecondInfoboxData(snap) { 
     var infoboxData = document.getElementById("second-infobox-container");
 
@@ -236,33 +242,50 @@ function getSecondInfoboxData(snap) {
     infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
 }
 
+//**************** GET TEXT DATA *****************//
 function getTextBoxData(snap) { 
+    // LOGO
     var postLogo = document.getElementById("post-logo");
     var htmlPostLogo = '<img src='+snap.val().logo+' alt="logo placholder">';
     postLogo.insertAdjacentHTML('beforeend', htmlPostLogo);
 
+    // ABOUT
     var aboutUsText = document.getElementById("about-us");
     var htmlAboutUs = '<p>'+snap.val().internshipText.aboutUs+'</p>';
     aboutUsText.insertAdjacentHTML('beforeend', htmlAboutUs);
 
+    // INTRODUCTION
     var introductionText = document.getElementById("introduction");
     var htmlIntroduction = '<p>'+snap.val().internshipText.introduction+'</p>';
     introductionText.insertAdjacentHTML('beforeend', htmlIntroduction);
 
+    // YOUR PROFILE
     var yourProfileText = document.getElementById("your-profile");
     var htmlYourProfile = '<p>'+snap.val().internshipText.yourProfile+'</p>';
     yourProfileText.insertAdjacentHTML('beforeend', htmlYourProfile);
 
+    // TOOLS & TASKS
     var toolsTasksText = document.getElementById("tasks-tools");
-    var htmlToolsTasks = '<p>'+snap.val().internshipText.toolsTasks+'</p>';
-    toolsTasksText.insertAdjacentHTML('beforeend', htmlToolsTasks);
+
+    for(var i = 0; i < snap.val().internshipText.toolsTasks.length; i++) {
+        console.log(snap.val().images[i]);
+        var htmlToolsTasks = '<li>'+snap.val().internshipText.toolsTasks[i]+'</li>';
+       
+        toolsTasksText.insertAdjacentHTML('beforeend', htmlToolsTasks);
+        // $(carouselDiv).append(carouselImg);
+        // carouselDiv.insertAdjacentHTML('beforeend', carouselImg);
+    }
+    console.log("length is: ", snap.val().internshipText.toolsTasks.length);
 }
 
+//**************** GET CONTACT DATA *****************//
 function getContactBoxData(snap) { 
+    // GET INTERESTED TEXT
     var interestedText = document.getElementById("interested");
     var htmlInterested = '<p>'+snap.val().contact.interested+'</p>';
     interestedText.insertAdjacentHTML('beforeend', htmlInterested);
 
+    // GET CONTACT LIST
     var contactInfoText = document.getElementById("contact");
     var htmlContactInfo = '<ul>\
                                 <li>\
@@ -301,7 +324,7 @@ function getContactBoxData(snap) {
     contactInfoText.insertAdjacentHTML('beforeend', htmlContactInfo);
 }
 
-//**************** Pop-up page *****************//
+//**************** POP-UP MODAL *****************//
 function popUp() { 
     var modal = document.getElementById('pop-up-modal');
     var cardClick = document.getElementById("pop-up");

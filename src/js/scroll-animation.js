@@ -15,7 +15,7 @@ function observeOnScroll () {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('scroll-animation');
-        console.log('entry', entry);
+        // console.log('entry', entry);
       }
     });
   };
