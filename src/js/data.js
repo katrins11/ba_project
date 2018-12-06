@@ -34,10 +34,11 @@ database.ref('post').on('value', function(snapshot) {
         getCardInfo(snapshot);
         getCarouselImg(snapshot);
         popUp();
+        getPost(snapshot);
     }    
     else if(postPage) {
         console.log("Your are on the PostPage");
-        getPost(snapshot);
+        // getPost(snapshot);
     }
 });
 
@@ -124,8 +125,8 @@ function getCarouselImg(snapshot) {
 // post data from that specifik one into post page
 
 function getPost(snapshot) {
-    var postPage = document.getElementById("post-page");
-    var postID = postPage.getAttribute("data-postId");
+    var postPage = document.getElementById("overview-page");
+    var postID = postPage.getAttribute("data-overviewId");
     console.log("Post ID:", postID);
 
     snapshot.forEach(snap => {
