@@ -7,12 +7,20 @@
     font-weight: 700;
     font-size: 36px;
     color: var(--color-black);
+
+    @media (--mq-mobile) {
+      font-size: 24px;
+    }
   }
 
   p {
     font-size: 18px;
     line-height: 30px;
     color: var(--color-black);
+    @media (--mq-mobile) {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   a { 
@@ -24,6 +32,10 @@
     height: 100%;
     cursor: pointer;
     padding: 100px 0;
+
+    @media (--mq-mobile) {
+      padding: 50px 0;
+    }
 
     &:hover svg {
       transform: translateX(20px);
@@ -42,6 +54,10 @@
   .text-container {
     width: 410px;
     position: relative;
+
+    .cta-more& {
+      width: 500px;
+    }
   }
 
   .headline-arrow {
@@ -50,6 +66,12 @@
 
     .cta-guide& {
       margin-bottom: 10px;
+    }
+
+    .cta-more& {
+      @media (--mq-mobile) {
+        padding: 0 40px;
+      }
     }
   }
 
@@ -68,13 +90,24 @@
     transform-origin: center;
     transition: all .5s ease-out;
 
+    @media (--mq-mobile) {
+      width: 120px;
+    }
+
     .cta-guide& {
       top: -40px; 
       left: -20px; 
+      @media (--mq-mobile) {
+        left: 10px;
+      }
     }
     .cta-more& {
-      top: -100px; 
-      left: -590px;
+      top: -80px;
+      left: -20px;
+      @media (--mq-mobile) {
+        top: -30px;
+        left: 20px;
+      }
     }
   }
 }
