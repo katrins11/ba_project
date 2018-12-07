@@ -29,6 +29,7 @@ function gotData(snapshot) {
         getCarouselImg(snapshot);
         popUp();
         getPost(snapshot);
+        getSingleComapnyData();
     }    
     else if(postPage) {
         console.log("Your are on the PostPage");
@@ -51,7 +52,7 @@ function getCardInfo(snapshot) {
             filterItem = snap.val().searchFilter[i] + " ";
             filterItems += filterItem;
         }
-        var htmlCard = '<a id="pop-up" class="eachPost mix '+filterItems+'" data-companyID="'+snap.val().id+'">\
+        var htmlCard = '<a id="popUp" class="eachPost mix '+filterItems+'" data-companyID="'+snap.val().id+'">\
                             <div class="postImage"><img src="'+snap.val().images[0]+'" alt="office placholder"></div>\
                             <div class="company">\
                                 <h3 id="company-name">'+snap.val().companyName+'</h3>\
@@ -319,28 +320,55 @@ function getContactBoxData(snap) {
     contactInfoText.insertAdjacentHTML('beforeend', htmlContactInfo);
 }
 
+function getSingleComapnyData() {
+    // GET ID OF COMPANY ON CLICK OF CARD
+    //PASS THAT ID TO FUCTIONS THAT GET DATA FOR THE POP UP MODAL
+    var popUp = document.getElementById("popUp");
+    popUp.addEventListener("click", function(){
+        console.log("2");
+        var companyId = popUp.getAttribute('data-companyID');
+        console.log('companyId:', companyId);
+    });
+ }
+
+
 //**************** POP-UP MODAL *****************//
 function popUp() { 
     var modal = document.getElementById('pop-up-modal');
-    var cardClick = document.getElementById("pop-up");
+    var cardClick = document.getElementById("popUp");
     var spanClose = document.getElementsByClassName("close")[0];
     var btnClose = document.getElementsByClassName("btn-close")[0];
+    var body = document.querySelector('body');
+    var navbar = document.getElementById("header");
+
+    console.log(body);
 
     cardClick.onclick = function() {
         modal.style.display = "block";
+        body.style.position = "fixed";
+
+        // PUT ON STICKY NAV WHEN MODAL OPEN
+        // if(navbar.contains.classList("sticky")){
+        //     console.log('hello');
+        //     //navbar.classList.add("sticky");
+        // }
+        
     }
 
     spanClose.onclick = function() {
         modal.style.display = "none";
+        body.style.position = "relative";
     }
 
     btnClose.onclick = function() {
         modal.style.display = "none";
+        body.style.position = "relative";
     }
 
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
+            body.style.position = "relative";
         }
     }
 }
