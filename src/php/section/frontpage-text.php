@@ -1,17 +1,6 @@
-<section id="frontpage-banner" class="section-watch">
-  <div class="left"> 
-    <h1>We connect young professionals to business</h1>
-    <p>We have an internship that boosts your career - no matter what level you are at.</p>
-  </div>
-
-  <div class="right"> 
-    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="placholder"> 
-  </div>
-</section> 
-
 <section id="" class="section-watch">
   <div class="text-container">
-    <div class="text-section section-watch">
+    <div class="text-section">
       <div class="title">
         <h1>What is Web Intern?</h1>
       </div>

@@ -7,9 +7,9 @@
 
         <?php include('php/hero-banner.php')?>
 
-        <?php include('php/frontpage-text.php')?>
+        <?php include('php/headline-banner.php')?>
 
-        <?php //include('php/paralax-frontpage.php')?>
+        <?php include('php/frontpage-text.php')?>
 
         <?php include('php/cta-guide.php')?>
 
