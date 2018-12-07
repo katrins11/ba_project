@@ -325,22 +325,28 @@ function popUp() {
     var cardClick = document.getElementById("pop-up");
     var spanClose = document.getElementsByClassName("close")[0];
     var btnClose = document.getElementsByClassName("btn-close")[0];
+    var body = document.querySelector('body');
+    console.log(body);
 
     cardClick.onclick = function() {
         modal.style.display = "block";
+        body.style.position = "fixed";
     }
 
     spanClose.onclick = function() {
         modal.style.display = "none";
+        body.style.position = "relative";
     }
 
     btnClose.onclick = function() {
         modal.style.display = "none";
+        body.style.position = "relative";
     }
 
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
+            body.style.position = "relative";
         }
     }
 }
