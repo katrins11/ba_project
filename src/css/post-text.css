@@ -1,6 +1,10 @@
 .text-container {
   padding: 0 80px;
 
+  @media (--mq-mobile) {
+    padding: 0 40px;
+  }
+
   .text-section {
     width: 100%;
     padding: 80px 0;
