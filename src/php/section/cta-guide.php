@@ -18,7 +18,7 @@
             </g>
           </svg>
       </div>
-      <p>
+      <p class="cta-text">
         Are you unsure how to write a good application? Follow these 8 steps from application to internship
       </p>
       <svg class="smallBlob" viewBox="0 0 500 500">

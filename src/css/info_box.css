@@ -23,50 +23,9 @@
     @media (--mq-tablet) {
       lost-column: 1/2 2 80px;
     }
-
-    h3 {
-      color: var(--color-primary-yellow);
-      font-family: var(--montserrat);
-      font-weight: 500;
-      font-size: 30px;
-      
-      @media (--mq-tablet) {
-        font-size: 26px;
-      }
-
-      @media (--mq-mobile) {
-        font-size: 18px;
-      }
-    }
-
-    p {
-      color: var(--color-black);
-      font-family: var(--roboto);
-      font-weight: 200;
-      font-size: 18px;
-
-      @media (--mq-tablet) {
-        font-size: 14px;
-      }
-
-      @media (--mq-mobile) {
-        font-size: 12px;
-      }
-    }
-  }
-
-  &.hero-info-box {
-
   }
 }
 
-.section-headline {
+.info-box-headline {
   margin: 0 40px 40px 40px;
-
-  h1 {
-    color: var(--color-primary-black);
-    font-family: var(--montserrat);
-    font-weight: 700;
-    font-size: 36px;
-  }
 }

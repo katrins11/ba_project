@@ -33,16 +33,9 @@
     }
 
     .text, .title {
-      color: var(--color-black);
       @media (--mq-tablet) {
         lost-column: 3/3;
       }
-    }
-
-    h1 {
-      font-family: var(--montserrat);
-      font-weight: 700;
-      font-size: 36px;
     }
   }
 }

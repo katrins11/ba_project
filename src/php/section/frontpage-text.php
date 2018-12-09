@@ -2,7 +2,7 @@
   <div class="text-container">
     <div class="text-section">
       <div class="title">
-        <h1>What is Web Intern?</h1>
+        <h1 class="section-headline">What is Web Intern?</h1>
       </div>
       <div id="about-webintern" class="text">
         <p>

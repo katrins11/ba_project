@@ -5,7 +5,7 @@
   </a>
 
   <nav class="menu-btn" id="btnmenu">
-      <p>menu</p>
+      <p class="hover-text">menu</p>
       <div class="line"></div>
       <div class="line"></div>
       <div class="line"></div>

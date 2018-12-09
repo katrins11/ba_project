@@ -12,20 +12,100 @@ section {
   margin-bottom: 80px;
 }
 
+/** Body text **/
 p {
   font-size: 14px;
   font-family: var(--roboto);
-  font-weight: 300;
+  font-weight: 200;
   line-height: 22px;
+  color: var(--color-black);
+
+  &.card-text {
+    font-size: 12px;
+  }
+
+  &.cta-text {
+    font-size: 18px;
+    line-height: 30px;
+    @media (--mq-mobile) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  &.info-text {
+    font-size: 18px;
+    @media (--mq-tablet) {
+      font-size: 14px;
+    }
+    @media (--mq-mobile) {
+      font-size: 12px;
+    }
+  }
+
+  &.hover-text {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }   
 }
+
+h1 {
+  color: var(--color-black);
+  font-family: var(--montserrat);
+
+  &.section-headline {
+    font-weight: 700;
+    font-size: 36px;
+    @media (--mq-mobile) {
+      font-size: 24px;
+    }
+  }
+
+  &.card-title {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  &.btn-font {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &.info-headline {
+    color: var(--color-primary-yellow);
+    font-weight: 500;
+    font-size: 30px;
+    @media (--mq-tablet) {
+      font-size: 26px;
+    }
+    @media (--mq-mobile) {
+      font-size: 18px;
+    }
+  }
+}
+
+
+
+/** Info box **/
+
+
+.small-btn {
+
+}
+
+.hover-text {
+
+}
+
+.post-title {
+
+}
+
+
 
 .newest-posts {
 
   .section-headline {
-    font-family: var(--montserrat);
-    font-weight: 700;
-    font-size: 36px;
-    color: var(--color-black);
     padding: 0 0 40px 40px;
     margin: 0;
   }

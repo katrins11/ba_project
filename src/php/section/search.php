@@ -6,7 +6,13 @@
       <img class="search-icon"src="assets/search.svg" alt="">
     </div>
 
-    <div class="filter-btns">
+    <div id="showFilterMenu">
+        <h1 class="btn-font">Filter</h1>
+    </div>
+
+    <?php include('php/filter.php')?>
+
+    <!-- <div class="filter-btns">
       <button type="button" class="filter btn-inverted" data-filter="all">All Posts</button> 
       <button type="button" class="filter btn-inverted" data-filter=".frontend">Front-End</button> 
       <button type="button" class="filter btn-inverted" data-filter=".backend">Back-End</button> 
@@ -17,7 +23,7 @@
       <button type="button" class="filter btn-inverted" data-filter=".webdesign">Web Design</button>       
       <button type="button" class="filter btn-inverted" data-filter=".database">Database</button> 
       <button type="button" class="filter btn-inverted" data-filter=".projectmanagement">Project Management</button> 
-    </div>
+    </div> -->
   </div>
 
   <div class="resultscontainer" id="resultscontainer"></div>

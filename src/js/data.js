@@ -30,6 +30,7 @@ function gotData(snapshot) {
         popUp();
         getPost(snapshot);
         getSingleComapnyData();
+        mobileFilterMenu();
     }    
     else if(postPage) {
         console.log("Your are on the PostPage");
@@ -58,13 +59,13 @@ function getCardInfo(snapshot) {
                                 <div class="overlay"></div>\
                             </div>\
                             <div class="company">\
-                                <h3 id="company-name">'+snap.val().companyName+'</h3>\
+                                <h1 id="company-name" class="card-title">'+snap.val().companyName+'</h1>\
                             </div>\
                             <div class="text">\
-                                <h3>'+snap.val().postTitle+'</h3>\
+                                <h1 class="card-title">'+snap.val().postTitle+'</h1>\
                                 <div class="info">\
-                                    <p>'+snap.val().importantInfo.deadline+'</p>\
-                                    <p>'+snap.val().importantInfo.location+'</p>\
+                                    <p class="card-text">'+snap.val().importantInfo.deadline+'</p>\
+                                    <p class="card-text">'+snap.val().importantInfo.location+'</p>\
                                 </div>\
                             </div>\
                         </a>';
@@ -113,13 +114,13 @@ function getFrontCardInfo(snapshot) {
         var frontCard = '<a class="eachPost" data-companyID="'+snap.val().id+'">\
                             <div class="postImage"><img src="'+snap.val().images[0]+'" alt="office placholder"></div>\
                             <div class="company">\
-                                <h3 id="company-name">'+snap.val().companyName+'</h3>\
+                                <h1 id="company-name" class="card-title">'+snap.val().companyName+'</h1>\
                             </div>\
                             <div class="text">\
-                                <h3>'+snap.val().postTitle+'</h3>\
+                                <h1 class="card-title">'+snap.val().postTitle+'</h1>\
                                 <div class="info">\
-                                    <p>'+snap.val().importantInfo.deadline+'</p>\
-                                    <p>'+snap.val().importantInfo.location+'</p>\
+                                    <p class="card-text">'+snap.val().importantInfo.deadline+'</p>\
+                                    <p class="card-text">'+snap.val().importantInfo.location+'</p>\
                                 </div>\
                             </div>\
                          </a>';
@@ -203,20 +204,20 @@ function getFirstInfoboxData(snap) {
     var infoboxData = document.getElementById("first-infobox-container");
 
     var htmlInfobox = '<div class="info">\
-                            <h3>'+snap.val().importantInfo.deadline+'</h3>\
-                            <p>Deadline</p>\
+                            <h1 class="info-headline">'+snap.val().importantInfo.deadline+'</h1>\
+                            <p class="info-text">Deadline</p>\
                         </div>\
                         <div class="info">\
-                            <h3>'+snap.val().importantInfo.duration+'</h3>\
-                            <p>Duration</p>\
+                            <h1 class="info-headline">'+snap.val().importantInfo.duration+'</h1>\
+                            <p class="info-text">Duration</p>\
                         </div>\
                         <div class="info">\
-                            <h3>'+snap.val().importantInfo.location+'</h3>\
-                            <p>Location</p>\
+                            <h1 class="info-headline">'+snap.val().importantInfo.location+'</h1>\
+                            <p class="info-text">Location</p>\
                         </div>\
                         <div class="info">\
-                            <h3>'+snap.val().importantInfo.created+'</h3>\
-                            <p>Created</p>\
+                            <h1 class="info-headline">'+snap.val().importantInfo.created+'</h1>\
+                            <p class="info-text">Created</p>\
                         </div>';
 
     infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
@@ -227,20 +228,20 @@ function getSecondInfoboxData(snap) {
     var infoboxData = document.getElementById("second-infobox-container");
 
     var htmlInfobox = '<div class="info">\
-                            <h3>'+snap.val().statisticInfo.employees+'</h3>\
-                            <p>Employees</p>\
+                            <h1 class="info-headline">'+snap.val().statisticInfo.employees+'</h1>\
+                            <p class="info-text">Employees</p>\
                         </div>\
                         <div class="info">\
-                            <h3>'+snap.val().statisticInfo.clients+'</h3>\
-                            <p>Clients</p>\
+                            <h1 class="info-headline">'+snap.val().statisticInfo.clients+'</h1>\
+                            <p class="info-text">Clients</p>\
                         </div>\
                         <div class="info">\
-                            <h3>'+snap.val().statisticInfo.projects+'</h3>\
-                            <p>Projects</p>\
+                            <h1 class="info-headline">'+snap.val().statisticInfo.projects+'</h1>\
+                            <p class="info-text">Projects</p>\
                         </div>\
                         <div class="info">\
-                            <h3>'+snap.val().statisticInfo.companyAge+'</h3>\
-                            <p>Years in the field</p>\
+                            <h1 class="info-headline">'+snap.val().statisticInfo.companyAge+'</h1>\
+                            <p class="info-text">Years in the field</p>\
                         </div>';
 
     infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
@@ -390,4 +391,25 @@ function popUp() {
             body.style.position = "relative";
         }
     }
+}
+
+//**************** MOBILE - OPEN FILTER MENU *****************//
+
+function mobileFilterMenu() { 
+    var showFilterMenu = document.getElementById("showFilterMenu");
+    var hideFilterMenu = document.getElementsByClassName("close")[0];
+
+    showFilterMenu.onclick = function() { 
+        console.log('filter click');
+        var filterContainer = document.getElementById("filter-container");
+        filterContainer.classList.add('active');
+    }
+
+    hideFilterMenu.onclick = function() { 
+        console.log('close click');
+        var filterContainer = document.getElementById("filter-container");
+        filterContainer.classList.remove('active');
+
+    }
+
 }

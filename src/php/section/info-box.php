@@ -1,6 +1,6 @@
 <section class="section-watch">
-  <div class="section-headline">
-    <h1>Company statistics</h1>
+  <div class="info-box-headline">
+    <h1 class="section-headline">Company statistics</h1>
   </div>
 
   <div id="second-infobox-container"></div>
