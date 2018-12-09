@@ -53,7 +53,10 @@ function getCardInfo(snapshot) {
             filterItems += filterItem;
         }
         var htmlCard = '<a id="popUp" class="pop-up eachPost mix '+filterItems+'" data-companyID="'+snap.val().id+'">\
-                            <div class="postImage"><img src="'+snap.val().images[0]+'" alt="office placholder"></div>\
+                            <div class="postImage">\
+                                <img src="'+snap.val().images[0]+'" alt="office placholder">\
+                                <div class="overlay"></div>\
+                            </div>\
                             <div class="company">\
                                 <h3 id="company-name">'+snap.val().companyName+'</h3>\
                             </div>\
@@ -319,8 +322,9 @@ function getContactBoxData(snap) {
                             </ul>';
     contactInfoText.insertAdjacentHTML('beforeend', htmlContactInfo);
 }
+
 //**************** GET DATA FROM SINGLE POST *****************//
-function getSingleComapnyData(snapshot) {
+function getSingleComapnyData() {
     // GET ID OF COMPANY ON CLICK OF CARD
     //PASS THAT ID TO FUCTIONS THAT GET DATA FOR THE POP UP MODAL
     // var eachPost = document.getElementsByClassName("eachPost");
@@ -350,10 +354,11 @@ function popUp() {
     var body = document.querySelector('body');
     var navbar = document.getElementById("header");
     var eachPost = document.getElementsByClassName("eachPost");
+    
     //console.log(body);
     
     for (var i = 0; i < eachPost.length; i++) {
-        eachPost[i].addEventListener('click', function(){
+        eachPost[i].addEventListener('click', function(e){
             console.log('click');
             modal.style.display = "block";
             body.style.position = "fixed";
@@ -364,8 +369,8 @@ function popUp() {
             //     //navbar.classList.add("sticky");
             // }  
 
-            // var companyId = eachPost[i].getAttribute('data-companyID')[i];
-            // console.log('companyId:', companyId);
+            var companyId = e.target.getAttribute('data-companyID');
+            console.log('companyId:', companyId);
         });
     }
 
