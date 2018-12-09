@@ -38,6 +38,30 @@
       }
     }
   }
+
+  .inline-link {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    
+    svg {
+      width: 50px;
+      height: 15px;
+      transform: translateX(0px);
+      transform-origin: center;
+      transition: all .5s ease-out;
+    }
+
+    &:hover svg {
+      transform: translateX(20px);
+      transform-origin: center;
+      transition: all .5s ease-in;
+      /*animation: fadeIn 5s linear 2s infinite alternate;*/
+    }
+  }
 }
 
 /******* Text component - Contact list ********/
