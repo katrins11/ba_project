@@ -33,27 +33,16 @@
     }
 
     .text, .title {
+      color: var(--color-black);
       @media (--mq-tablet) {
         lost-column: 3/3;
       }
     }
-  }
 
-  .section-headline {
-    position: relative;
-    @media (--mq-tablet) {
-      margin-bottom: 20px;
-    }
-
-    &::after {
-      /*position: absolute;
-      width: 50%;
-      height: 2px;
-      background: var(--color-primary-yellow);
-      content: "";
-      bottom: 0;
-      left: 0;
-      transition: width .25s ease-in-out;*/
+    h1 {
+      font-family: var(--montserrat);
+      font-weight: 700;
+      font-size: 36px;
     }
   }
 
@@ -79,6 +68,14 @@
       transition: all .5s ease-in;
       /*animation: fadeIn 5s linear 2s infinite alternate;*/
     }
+  }
+
+  li {
+    align-items: center;
+    line-height: 2;
+    color: var(--color-black);
+    font-family: var(--roboto);
+    font-size: 14px;
   }
 }
 
