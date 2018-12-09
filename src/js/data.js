@@ -52,7 +52,7 @@ function getCardInfo(snapshot) {
             filterItem = snap.val().searchFilter[i] + " ";
             filterItems += filterItem;
         }
-        var htmlCard = '<a id="popUp" class="eachPost mix '+filterItems+'" data-companyID="'+snap.val().id+'">\
+        var htmlCard = '<a id="popUp" class="pop-up eachPost mix '+filterItems+'" data-companyID="'+snap.val().id+'">\
                             <div class="postImage"><img src="'+snap.val().images[0]+'" alt="office placholder"></div>\
                             <div class="company">\
                                 <h3 id="company-name">'+snap.val().companyName+'</h3>\
@@ -130,14 +130,14 @@ function getCarouselImg(snapshot) {
     var carouselDiv = document.querySelector("#owlCarousel");
     snapshot.forEach(snap => {
         if(snap.val().id == 4) {
-            console.log("length is: ", snap.val().images.length);
+            //console.log("length is: ", snap.val().images.length);
             
             for(var i = 0; i < snap.val().images.length; i++) {
-                console.log(snap.val().images[i]);
+                //console.log(snap.val().images[i]);
                 var carouselImg = '<div class="item">\
                                       <img src="'+snap.val().images[i]+'" alt="">\
                                    </div>';
-                console.log("each image: ", carouselImg);
+                //console.log("each image: ", carouselImg);
                 $(carouselDiv).append(carouselImg);
                 // carouselDiv.insertAdjacentHTML('beforeend', carouselImg);
             }
@@ -168,7 +168,7 @@ function getCarouselImg(snapshot) {
 function getPost(snapshot) {
     var postPage = document.getElementById("overview-page");
     var postID = postPage.getAttribute("data-overviewId");
-    console.log("Post ID:", postID);
+    //console.log("Post ID:", postID);
 
     snapshot.forEach(snap => {
 
@@ -319,16 +319,25 @@ function getContactBoxData(snap) {
                             </ul>';
     contactInfoText.insertAdjacentHTML('beforeend', htmlContactInfo);
 }
-
-function getSingleComapnyData() {
+//**************** GET DATA FROM SINGLE POST *****************//
+function getSingleComapnyData(snapshot) {
     // GET ID OF COMPANY ON CLICK OF CARD
     //PASS THAT ID TO FUCTIONS THAT GET DATA FOR THE POP UP MODAL
-    var popUp = document.getElementById("popUp");
-    popUp.addEventListener("click", function(){
-        console.log("2");
-        var companyId = popUp.getAttribute('data-companyID');
-        console.log('companyId:', companyId);
-    });
+    // var eachPost = document.getElementsByClassName("eachPost");
+    
+    // for (var i = 0; i < eachPost.length; i++) {
+    //     eachPost[i].addEventListener('click', function(){
+    //         console.log('click');
+    //         // var companyId = eachPost[i].getAttribute('data-companyID')[i];
+    //         // console.log('companyId:', companyId);
+    //     });
+    // }
+
+    // var popUp = document.getElementById("popUp");
+    // popUp.addEventListener("click", function(){
+    //     var companyId = popUp.getAttribute('data-companyID');
+    //     console.log('companyId:', companyId);
+    // });
  }
 
 
@@ -340,19 +349,24 @@ function popUp() {
     var btnClose = document.getElementsByClassName("btn-close")[0];
     var body = document.querySelector('body');
     var navbar = document.getElementById("header");
+    var eachPost = document.getElementsByClassName("eachPost");
+    //console.log(body);
+    
+    for (var i = 0; i < eachPost.length; i++) {
+        eachPost[i].addEventListener('click', function(){
+            console.log('click');
+            modal.style.display = "block";
+            body.style.position = "fixed";
 
-    console.log(body);
+            // PUT ON STICKY NAV WHEN MODAL OPEN
+            // if(navbar.contains.classList("sticky")){
+            //     console.log('hello');
+            //     //navbar.classList.add("sticky");
+            // }  
 
-    cardClick.onclick = function() {
-        modal.style.display = "block";
-        body.style.position = "fixed";
-
-        // PUT ON STICKY NAV WHEN MODAL OPEN
-        // if(navbar.contains.classList("sticky")){
-        //     console.log('hello');
-        //     //navbar.classList.add("sticky");
-        // }
-        
+            // var companyId = eachPost[i].getAttribute('data-companyID')[i];
+            // console.log('companyId:', companyId);
+        });
     }
 
     spanClose.onclick = function() {
