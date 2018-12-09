@@ -119,6 +119,6 @@
 
   .resultscontainer {
     position: relative;
-    display: inline-flex;
+    display: flex;
   }
 }

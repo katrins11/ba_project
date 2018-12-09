@@ -21,7 +21,8 @@
 @import 'info_box.css';
 
 @import 'search.css';
-@import 'cards.css';
+@import 'card.css';
+@import 'card-container.css';
 
 @import 'carousel.css';
 
