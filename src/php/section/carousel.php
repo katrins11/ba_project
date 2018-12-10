@@ -1,2 +1,1 @@
-<div class="owl-carousel owl-theme" id="owlCarousel">
-</div>
+<section class="owl-carousel owl-theme" id="owlCarousel"></section>

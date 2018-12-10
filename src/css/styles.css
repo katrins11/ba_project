@@ -15,14 +15,17 @@
 
 @import 'herobanner.css';
 @import 'hero-post.css';
+@import 'pop.css';
 @import 'cta.css';
 
 @import 'info_box.css';
 
 @import 'search.css';
-@import 'cards.css';
+@import 'card.css';
+@import 'filter.css';
 
 @import 'carousel.css';
 
 @import 'paralax.css';
-@import 'post-text.css';
+@import 'text-component.css';
+@import 'headline-banner.css';

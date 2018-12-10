@@ -1,11 +1,10 @@
 <header id="header">
-
     <a class="logo-link" href='/'>
         <img src="assets/logo-header.svg" alt="logo">
     </a>
 
     <nav class="menu-btn" id="btnMenu">
-        <p>menu</p>
+        <p class="hover-text">menu</p>
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
@@ -25,7 +24,7 @@
 
     <nav class="menu-btn--close js-btn-close">
         <div class="menu-btn--close-inner">
-            <p>close</p>
+            <p class="hover-text">close</p>
             <div class="line"></div>
             <div class="line"></div>
         </div>
