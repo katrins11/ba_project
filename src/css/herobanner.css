@@ -12,7 +12,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 0;
     width: 100%;
     padding: 5px;
@@ -20,15 +20,21 @@
     cursor: pointer;
 
     svg{
-      width: 750px;
+      width: 70%;
+      max-height: 100%;
       margin: 0 auto;
       display: block;
+      @media (--mq-large-desktop) {
+        width: 90%;
+        height: 100%;
+      }
+      @media (--mq-tablet) {
+        width: 90%;
+      }
+      @media (--mq-mobile) {
+        width: 95%;
+      }
     } 
-
-    .tag-line {
-      max-width: 50%;
-      z-index: 5;
-    }
 
     h1 {
       font-family: var(--montserrat);
@@ -39,13 +45,27 @@
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: var(--color-black);
 
+      max-width: 50%;
+      z-index: 5;
+
       position: absolute;
       top: calc(50% - 250px);
       left: 25%;
       text-align: center;
 
+      @media (--mq-large-desktop) {
+        top: calc(50% - 150px);
+      }
+      @media (--mq-tablet) {
+        font-size: 100px;
+        max-width: 70%;
+        left: 15%;
+      }
+
       @media (--mq-mobile) {
         font-size: 50px;
+        -webkit-text-stroke-width: 1.5px;
+        top: calc(50% - 120px);
       }
     }
   }

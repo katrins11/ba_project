@@ -31,5 +31,9 @@
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js'></script>
 <script src="js/hero.js"></script>
 
-<!-- Script -->
+<!-- Blob and Menu -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+<script src="js/morphSVGPlugin.min.js"></script>
+<script src="js/menu.js"></script>
+
 <script src="js/script.js"></script>
