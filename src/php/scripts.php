@@ -24,6 +24,14 @@
 <script src="js/paralax-post-text.js"></script>
 <script src="js/paralax-post-contact.js"></script> -->
 
+<script src="js/modaal.min.js"></script>
+<script>
+    // $('.inline').modaal({
+    //     content_source: '#inline'
+    // });
+
+</script>
+
 <!-- Intersection Observer-->
 <script src="js/scroll-animation.js"></script>
 
