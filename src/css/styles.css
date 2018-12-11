@@ -3,6 +3,7 @@
 @lost flexbox flex;
 
 @import 'guide.css';
+@import 'about.css';
 
 @import 'variables.css';
 @import 'mixins.css';
