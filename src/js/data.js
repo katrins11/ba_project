@@ -22,6 +22,7 @@ function gotData(snapshot) {
     if(frontpage) {
         console.log("Your are on the FrontPage");
         getFrontCardInfo(snapshot);
+        popUp();
     }
     else if(overviewPage) {
         console.log("Your are on the OverviewPage");
@@ -111,7 +112,7 @@ function getFrontCardInfo(snapshot) {
 
     snapshot.forEach(snap => {
         if(i >= numberOfPosts) { return; }
-        var frontCard = '<a class="eachPost" data-companyID="'+snap.val().id+'">\
+        var frontCard = '<a id="popUp" class="pop-up eachPost" data-companyID="'+snap.val().id+'">\
                             <div class="postImage"><img src="'+snap.val().images[0]+'" alt="office placholder"></div>\
                             <div class="company">\
                                 <h1 id="company-name" class="card-title">'+snap.val().companyName+'</h1>\
@@ -397,7 +398,7 @@ function popUp() {
 
 function mobileFilterMenu() { 
     var showFilterMenu = document.getElementById("showFilterMenu");
-    var hideFilterMenu = document.getElementsByClassName("close")[0];
+    var hideFilterMenu = document.getElementsByClassName("close-filter-menu")[0];
 
     showFilterMenu.onclick = function() { 
         console.log('filter click');

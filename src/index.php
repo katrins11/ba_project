@@ -12,6 +12,8 @@
         <?php include('php/frontpage-text.php')?>
 
         <?php include('php/cta-guide.php')?>
+        
+        <?php include('php/pop-up-modal.php')?>
 
         <?php include('php/frontPosts.php')?>
 
