@@ -111,24 +111,26 @@
 
 .modaal-close {
 	position: fixed;
-	right: 20px;
-	top: 20px;
-	color: #fff;
+  right: 30px;
+  top: 20px;
+	color: var(--color-secondary-red);
 	cursor: pointer;
 	opacity: 1;
 	width: 50px;
 	height: 50px;
-	background: rgba(0, 0, 0, 0);
 	border-radius: 100%;
 	transition: all 0.2s ease-in-out;
+  outline: none;
+  background-color: #fff !important;
+
 
   &:focus, &:hover {
     outline: none;
-    background: #fff;
+    background-color: var(--color-secondary-red) !important;
   }
 
   &:focus:before, &:focus:after, &:hover:before, &:hover:after  {
-    background: #b93d0c;
+    background: #fff;
   }
 
   span {
@@ -146,12 +148,12 @@
     display: block;
     content: " ";
     position: absolute;
-    top: 14px;
-    left: 23px;
-    width: 4px;
-    height: 22px;
+    right: 10px;
+    top: 25px;
+    height: 2px;
+    width: 30px;
     border-radius: 4px;
-    background: #fff;
+    background-color: var(--color-secondary-red);
     transition: background 0.2s ease-in-out;
   }
 
