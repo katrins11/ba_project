@@ -42,9 +42,7 @@
     "scrollmagic": "^2.0.6",
     "gulp": "^3.9.1",
     "gulp-series": "^1.0.2",
-    "intersection-observer": "^0.5.1"
-  },
-  "dependencies": {
+    "intersection-observer": "^0.5.1",
     "modaal": "^0.4.4"
   }
 }
