@@ -366,9 +366,14 @@ function popUp() {
     for (var i = 0; i < eachPost.length; i++) {
         eachPost[i].addEventListener('click', function(e){
             console.log('click');
-            $('.inline').modaal({
-                content_source: '#inline'
-            });
+                $('.inline').modaal({
+                    content_source: '#inline'
+                });
+
+                // IF SCREEN SIZE IS TABLET
+                //     $('.fullscreen').modaal({
+                //     fullscreen: true
+                // });
             // modal.style.display = "block";
             // body.style.position = "fixed";
 
