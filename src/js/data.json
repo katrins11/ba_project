@@ -43,7 +43,8 @@
                     "linkedIn":"https://www.linkedin.com/company/umwelt-a-s/",
                     "phoneNumber":"+45 60 78 98 67",
                     "email":"umwelt@umwelt.com",
-                    "address":"Jernbanegade 6, 6700 Copenhagen"
+                    "address":"Jernbanegade 6, 6700 Copenhagen",
+                    "website":"www.umwelt.dk"
                 }
             }   
         },
@@ -86,7 +87,8 @@
                     "linkedIn":"https://www.linkedin.com/company/1508-as/",
                     "phoneNumber":"+45 33 45 60 98",
                     "email":"1508@1508.com",
-                    "address":"Platanvej 13, 1810 Frederiksberg"
+                    "address":"Platanvej 13, 1810 Frederiksberg",
+                    "website":"1508.dk"
                 }
             }  
         },
@@ -132,7 +134,8 @@
                     "linkedIn":"https://www.linkedin.com/showcase/cabana-a-s-cases/about/",
                     "phoneNumber":"+45 67 88 90 22",
                     "email":"cabana@cabana.com",
-                    "address":"Langebro 22, 5600 Århus"
+                    "address":"Langebro 22, 5600 Århus",
+                    "website":"www.cabana.dk"
                 }
             }
         },
@@ -179,7 +182,8 @@
                     "linkedIn":"https://www.linkedin.com/company/impactdigital/",
                     "phoneNumber":"+45 56 40 88 67",
                     "email":"impact@impact.com",
-                    "address":"Lyneborggade 105, 2300 Copenhagen"
+                    "address":"Lyneborggade 105, 2300 Copenhagen",
+                    "website":"www.impact.dk"
                 }
             }
         },
@@ -228,7 +232,8 @@
                     "linkedIn":"https://www.linkedin.com/company/relesys/",
                     "phoneNumber":"+45 76 89 55 34",
                     "email":"relesys@relesys.com",
-                    "address":"Gammelvej 45, 1200 Odense"
+                    "address":"Gammelvej 45, 1200 Odense",
+                    "website":"relesys.net"
                 }
             }
         },
@@ -271,7 +276,8 @@
                     "linkedIn":"https://www.linkedin.com/company/usertribe/",
                     "phoneNumber":"+45 76 89 55 34",
                     "email":"tribe@tribe.com",
-                    "address":"Fisketorvet 67, 5600 Aalborg"
+                    "address":"Fisketorvet 67, 5600 Aalborg",
+                    "website":"usertribe.com"
                 }
             }
         },
@@ -314,7 +320,8 @@
                     "linkedIn":"https://www.linkedin.com/company/unity-technologies/life/",
                     "phoneNumber":"+45 76 89 55 34",
                     "email":"unity@unity.com",
-                    "address":"Vesterbrogade 678, 1810 Copenhagen"
+                    "address":"Vesterbrogade 678, 1810 Copenhagen",
+                    "website":"unity3d.com"
                 }
             }
         },
@@ -357,7 +364,8 @@
                     "linkedIn":"https://www.linkedin.com/company/nordiccrypto/",
                     "phoneNumber":"+45 89 20 10 22",
                     "email":"nordic@nordic.com",
-                    "address":"Nordpolen 109, 2000 Odense"
+                    "address":"Nordpolen 109, 2000 Odense",
+                    "website":"nordiccrypto.com"
                 }
             }
         }, 
@@ -399,7 +407,8 @@
                     "linkedIn":"https://www.linkedin.com/milkstudio.dk/",
                     "phoneNumber":"+45 90 88 20 35",
                     "email":"milk@milk.com",
-                    "address":"Vestergade 200, 4500 Aalborg"
+                    "address":"Vestergade 200, 4500 Aalborg",
+                    "website":"milk-studio.dk"
                 }
             }
         },
@@ -441,7 +450,8 @@
                     "linkedIn":"https://www.linkedin.com/abtion/",
                     "phoneNumber":"+45 76 89 55 34",
                     "email":"abtion@abtion.com",
-                    "address":"Holbækgade 34, 2300 Copenhagen"
+                    "address":"Holbækgade 34, 2300 Copenhagen",
+                    "website":"abtion.com"
                 }
             }
         }
