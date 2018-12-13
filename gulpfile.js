@@ -66,10 +66,10 @@ gulp.task('buildAll', function () {
 });
 
 gulp.task('watchAll', function () {
-  gulp.watch("./src/css/*", gulp.series('css'));
-  gulp.watch("./src/*", gulp.series('php'));
-  gulp.watch("./src/js/*", gulp.series('js'));
-  gulp.watch("./src/assets/*", gulp.series('assets'));
-  gulp.watch("./src/php/*", gulp.series('phpHelp'));
-  gulp.watch("./src/php/section/*", gulp.series('phpHelp'));
+  gulp.watch("./src/css/*", ['css']);
+  gulp.watch("./src/*", ['php']);
+  gulp.watch("./src/js/*", ['js']);
+  gulp.watch("./src/assets/*", ['assets']);
+  gulp.watch("./src/php/*", ['phpHelp']);
+  gulp.watch("./src/php/section/*", ['phpHelp']);
 });
