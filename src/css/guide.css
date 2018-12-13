@@ -1,43 +1,42 @@
 /* Guide */
 .guide {
-    width: 100vh;
-    h2 {
-        font-size: 28px;
+    width: 100vw;
+    height: auto;
+    position: relative;
+    padding-top: 80px;
+
+    h2, h3 {
+        font-size: 24px;
         font-family: var(--montserrat);
         font-weigh: var(--font-semibold);
         margin-bottom: 40px;
     }
-     p {
+    p {
         font-size: 14px;
         font-family: var(--roboto);
         font-weigh: var(--font-light);
         line-height: 22px; 
     }
 
-    .guide_about {
-        width: calc(100vw - 450px);
-        height: 100vh;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        div {
-            max-width: 50%;
-            margin-left: 5%;
-        }
-       
+    .guide_steps {
+        width: 100%;
+        height: auto;
+        position: relative;
     }
-
     .guide_overview {
         width: 450px;
-        height: 100%;
-        position: fixed;
-        top: 0;
+        height: auto;
+        position: absolute;
+        top: 80px;
         right: 0;
 
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media (--mq-tablet) {
+            display: none;
+        }
 
         .menu {
             counter-reset: itemCounter; 
@@ -100,105 +99,74 @@
         }
     }
    
-    .guide_steps {
-        width: 70vw;
-        height: auto;
-        display: flex;
-        flex-direction:column;
-        counter-reset: itemCounter;
+    /* guideSteps
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .guideSteps{
+        padding-bottom: 50px;
+        
+        ul {
+            background: #fff;
+            padding: 50px 0;
 
-        .guide_step {
-            width: 80%;
-            height: 35vh;
-            position: relative;
-            margin: 2vw 10%;
-            border-left: 2px solid var(--color-primary-yellow);
-
-            &:before {
-                content: counter(itemCounter,decimal-leading-zero);
-                font-size: 28px;
-                font-size: 28px;
-                font-family: var(--montserrat);
-                font-weigh: var(--font-semibold);
-                position: absolute;
-                right: 98.5%;
-                top: -35px;
-                color: var(--color-primary-yellow);
-                padding: 0 5px;
-                counter-increment: itemCounter;
-            }
-
-            h2{
-                font-size: 26px;
-                position: absolute;
-                bottom: 0px;
-                left: 0;
-                transform: rotate(-90deg);
-            }
-            div {
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
+            li {
+                list-style-type: none;
                 position: relative;
-                margin-left: 15px;
-                display: flex;
-                align-items: center;
+                width: 70vw;
+                margin-left: 80px;
+                padding: 50px 0;
+                border-left: 2px solid #333;
+                @media screen and (max-width: 600px) {
+                    margin-left: 40px;
+                }
+
+                div {
+                    position: relative;
+                    bottom: 0;
+                    width: 50vw;
+                    padding: 15px;
+                    left: 45px;
+                    @media screen and (max-width: 900px) {
+                        width: 100%;
+                    }
+                    @media screen and (max-width: 600px) {
+                        width: 90%;
+                    }
+                }
+                svg {
+                    width: 80px;
+                    position: absolute;
+                    top: 0;
+                    left: -40px;
+                    transform-origin: center;
+                    transition: all .8s ease-out;
+                }
+
+                &:hover svg {
+                    width: 90px;
+                    transform-origin: center;
+                    transition: all .8s ease-in;
+                }
             }
-            p {
-                width: 90%;
-                max-width: 90%;
-                position: absolute;
-                right: 100%;
-            } 
         }
     }
 
-    #guide_step_1 h2 {
-        bottom: 125px;
-        left: -193px;
-    }
-    #guide_step_2 h2 {
-        bottom: 40px;
-        left: -115px;
+    /* EFFECTS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+    .guideSteps ul li div, .guideSteps ul li svg {
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s ease-in-out;
     }
 
-    #guide_step_3 h2 {
-        bottom: 2px;
-        left: -76px;
-    }
-    #guide_step_4 h2 {
-        bottom: 75px;
-        left: -153px;
-    }
-    #guide_step_5 h2 {
-        bottom: 35px;
-        left: -108px;
-    }
-    #guide_step_6 h2 {
-        bottom: 30px;
-        left: -105px;
-    }
-    #guide_step_7 h2 {
-        bottom: 60px;
-        left: -135px;
-    }
-    #guide_step_8 h2 {
-        bottom: 50px;
-        left: -124px;   
+    .guideSteps ul li div, .guideSteps ul li svg {
+        transform: translate3d(200px, 0, 0);
     }
 
-
-    #guide_step_1:hover, #guide_step_2:hover, #guide_step_3:hover, #guide_step_4:hover,
-    #guide_step_5:hover, #guide_step_6:hover, #guide_step_7:hover, #guide_step_8:hover{
-        p{
-            animation: slideIn 2s forwards;
-        }
+    .guideSteps ul li.in-view div, .guideSteps ul li.in-view svg {
+        transform: none;
+        visibility: visible;
+        opacity: 1;
     }
 
-}
-
-
-@keyframes slideIn {
-    0% { right: 100%; }
-    100% { right: 10%; }
 }

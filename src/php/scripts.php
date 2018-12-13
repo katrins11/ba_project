@@ -38,4 +38,7 @@
 <script src="js/morphSVGPlugin.min.js"></script>
 <script src="js/menu.js"></script>
 
+<!-- Guide -->
+<script src="js/guide.js"></script>
+
 <script src="js/script.js"></script>
