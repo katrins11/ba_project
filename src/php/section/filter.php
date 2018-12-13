@@ -1,6 +1,11 @@
 <div id="filter-container">
   <div class="filter-btns">
-    <span class="close-filter-menu">&times;</span>
+    <div class="filter-btn--close">
+      <div class="filter-btn--close-inner">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
     <ul>
       <li>
         <button type="button" class="filter btn-inverted" data-filter="all">All Posts</button> 

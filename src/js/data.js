@@ -305,6 +305,10 @@ function getContactBoxData(snap) {
                                     <img src="assets/location.svg" alt="">\
                                     <span>'+snap.val().contact.contactInfo.address+'</span>\
                                 </li>\
+                                <li>\
+                                    <img src="assets/web.svg" alt="">\
+                                    <span>'+snap.val().contact.contactInfo.address+'</span>\
+                                </li>\
                             </ul>\
                             <ul>\
                                 <li>\
@@ -366,14 +370,10 @@ function popUp() {
     for (var i = 0; i < eachPost.length; i++) {
         eachPost[i].addEventListener('click', function(e){
             console.log('click');
+                // MODAAL 
                 $('.inline').modaal({
                     content_source: '#inline'
                 });
-
-                // IF SCREEN SIZE IS TABLET
-                //     $('.fullscreen').modaal({
-                //     fullscreen: true
-                // });
             // modal.style.display = "block";
             // body.style.position = "fixed";
 
@@ -410,7 +410,7 @@ function popUp() {
 
 function mobileFilterMenu() { 
     var showFilterMenu = document.getElementById("showFilterMenu");
-    var hideFilterMenu = document.getElementsByClassName("close-filter-menu")[0];
+    var hideFilterMenu = document.getElementsByClassName("filter-btn--close")[0];
 
     showFilterMenu.onclick = function() { 
         console.log('filter click');
