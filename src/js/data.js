@@ -54,7 +54,7 @@ function getCardInfo(snapshot) {
             filterItem = snap.val().searchFilter[i] + " ";
             filterItems += filterItem;
         }
-        var htmlCard = '<a id="popUp" class="pop-up eachPost mix '+filterItems+'" data-companyID="'+snap.val().id+'">\
+        var htmlCard = '<a id="popUp" class="inline pop-up eachPost mix '+filterItems+'" data-companyID="'+snap.val().id+'">\
                             <div class="postImage">\
                                 <img src="'+snap.val().images[0]+'" alt="office placholder">\
                                 <div class="overlay"></div>\
@@ -286,6 +286,10 @@ function getContactBoxData(snap) {
     var htmlInterested = '<p>'+snap.val().contact.interested+'</p>';
     interestedText.insertAdjacentHTML('beforeend', htmlInterested);
 
+    var interestedText = document.getElementById("interested");
+    var htmlInterested = '<p>'+snap.val().contact.interested+'</p>';
+    interestedText.insertAdjacentHTML('beforeend', htmlInterested);
+
     // GET CONTACT LIST
     var contactInfoText = document.getElementById("contact");
     var htmlContactInfo = '<ul>\
@@ -355,15 +359,23 @@ function popUp() {
     var btnClose = document.getElementsByClassName("btn-close")[0];
     var body = document.querySelector('body');
     var navbar = document.getElementById("header");
-    var eachPost = document.getElementsByClassName("eachPost");
+    var eachPost = document.getElementsByClassName("inline");
     
     //console.log(body);
     
     for (var i = 0; i < eachPost.length; i++) {
         eachPost[i].addEventListener('click', function(e){
             console.log('click');
-            modal.style.display = "block";
-            body.style.position = "fixed";
+                $('.inline').modaal({
+                    content_source: '#inline'
+                });
+
+                // IF SCREEN SIZE IS TABLET
+                //     $('.fullscreen').modaal({
+                //     fullscreen: true
+                // });
+            // modal.style.display = "block";
+            // body.style.position = "fixed";
 
             // PUT ON STICKY NAV WHEN MODAL OPEN
             // if(navbar.contains.classList("sticky")){
@@ -376,22 +388,22 @@ function popUp() {
         });
     }
 
-    spanClose.onclick = function() {
-        modal.style.display = "none";
-        body.style.position = "relative";
-    }
+    // spanClose.onclick = function() {
+    //     modal.style.display = "none";
+    //     body.style.position = "relative";
+    // }
 
-    btnClose.onclick = function() {
-        modal.style.display = "none";
-        body.style.position = "relative";
-    }
+    // btnClose.onclick = function() {
+    //     modal.style.display = "none";
+    //     body.style.position = "relative";
+    // }
 
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-            body.style.position = "relative";
-        }
-    }
+    // window.onclick = function(event) {
+    //     if (event.target == modal) {
+    //         modal.style.display = "none";
+    //         body.style.position = "relative";
+    //     }
+    // }
 }
 
 //**************** MOBILE - OPEN FILTER MENU *****************//
