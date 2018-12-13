@@ -357,53 +357,21 @@ function getSingleComapnyData() {
 
 //**************** POP-UP MODAL *****************//
 function popUp() { 
-    var modal = document.getElementById('pop-up-modal');
-    var cardClick = document.getElementById("popUp");
-    var spanClose = document.getElementsByClassName("close")[0];
-    var btnClose = document.getElementsByClassName("btn-close")[0];
-    var body = document.querySelector('body');
-    var navbar = document.getElementById("header");
     var eachPost = document.getElementsByClassName("inline");
-    
-    //console.log(body);
     
     for (var i = 0; i < eachPost.length; i++) {
         eachPost[i].addEventListener('click', function(e){
             console.log('click');
-                // MODAAL 
-                $('.inline').modaal({
-                    content_source: '#inline'
-                });
-            // modal.style.display = "block";
-            // body.style.position = "fixed";
 
-            // PUT ON STICKY NAV WHEN MODAL OPEN
-            // if(navbar.contains.classList("sticky")){
-            //     console.log('hello');
-            //     //navbar.classList.add("sticky");
-            // }  
+            // MODAAL 
+            $('.inline').modaal({
+                content_source: '#inline'
+            });
 
             var companyId = e.target.getAttribute('data-companyID');
             console.log('companyId:', companyId);
         });
     }
-
-    // spanClose.onclick = function() {
-    //     modal.style.display = "none";
-    //     body.style.position = "relative";
-    // }
-
-    // btnClose.onclick = function() {
-    //     modal.style.display = "none";
-    //     body.style.position = "relative";
-    // }
-
-    // window.onclick = function(event) {
-    //     if (event.target == modal) {
-    //         modal.style.display = "none";
-    //         body.style.position = "relative";
-    //     }
-    // }
 }
 
 //**************** MOBILE - OPEN FILTER MENU *****************//
