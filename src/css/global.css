@@ -84,28 +84,44 @@ h1 {
   }
 
   &.link-text {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 
+/*****  Send Email *****/
+#send-email {
+  display: flex;
+  justify-content: center;
+}
+.send-email {
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 110px;
+  background-color: var(--color-primary-yellow);
+  margin: 10px;
+  cursor: pointer;
 
+    a {
+      height: 100%;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
 
-/** Info box **/
-
-
-.small-btn {
-
+      p {
+        font-family: var(--montserrat);
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
 }
 
-.hover-text {
-
-}
-
-.post-title {
-
-}
 
 
+
+/** newest-posts**/
 
 .newest-posts {
 

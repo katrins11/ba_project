@@ -1,36 +1,36 @@
 <div id="filter-container">
   <div class="filter-btns">
-    <span class="close">&times;</span>
+    <span class="close-filter-menu">&times;</span>
     <ul>
-      <li type="button" class="filter btn-inverted" data-filter="all">
-        <h1 class="btn-font">All Posts</h1>
+      <li>
+        <button type="button" class="filter btn-inverted" data-filter="all">All Posts</button> 
       </li>
-      <li type="button" class="filter btn-inverted" data-filter=".frontend">
-        <h1 class="btn-font">Front-End</h1>
+      <li>
+        <button type="button" class="filter btn-inverted" data-filter=".frontend">Front-End</button> 
       </li>
-      <li type="button" class="filter btn-inverted" data-filter=".backend">
-        <h1 class="btn-font">Back-End</h1>
+      <li>
+        <button type="button" class="filter btn-inverted" data-filter=".backend">Back-End</button> 
       </li>
-      <li type="button" class="filter btn-inverted" data-filter=".fullstack">
-        <h1 class="btn-font">Full-stack</h1>
+      <li>
+        <button type="button" class="filter btn-inverted" data-filter=".fullstack">Full-stack</button> 
       </li>
-      <li type="button" class="filter btn-inverted" data-filter=".appdevelopment">
-        <h1 class="btn-font">App Development</h1>
+      <li>
+        <button type="button" class="filter btn-inverted" data-filter=".appdevelopment">App Development</button> 
       </li>
-      <li type="button" class="filter btn-inverted" data-filter=".ui">
-        <h1 class="btn-font">UI</h1>
+      <li>
+        <button type="button" class="filter btn-inverted" data-filter=".ui">UI</button> 
       </li>
-      <li type="button" class="filter btn-inverted" data-filter=".ux">
-        <h1 class="btn-font">UX</h1>
+      <li>
+        <button type="button" class="filter btn-inverted" data-filter=".ux">UX</button>
       </li>
-      <li type="button" class="filter btn-inverted" data-filter=".webdesign">
-        <h1 class="btn-font">Web Design</h1>
+      <li>
+        <button type="button" class="filter btn-inverted" data-filter=".webdesign">Web Design</button>  
       </li>
-      <li type="button" class="filter btn-inverted" data-filter=".database">
-        <h1 class="btn-font">Database</h1>
+      <li>
+        <button type="button" class="filter btn-inverted" data-filter=".database">Database</button> 
       </li>
-      <li type="button" class="filter btn-inverted" data-filter=".projectmanagement">
-        <h1 class="btn-font">Project Management</h1>
+      <li>
+        <button type="button" class="filter btn-inverted" data-filter=".projectmanagement">Project Management</button> 
       </li>
     </ul>
   </div>

@@ -3,6 +3,7 @@
 @lost flexbox flex;
 
 @import 'guide.css';
+@import 'about.css';
 
 @import 'variables.css';
 @import 'mixins.css';
@@ -23,6 +24,7 @@
 @import 'search.css';
 @import 'card.css';
 @import 'filter.css';
+@import 'modaal.css';
 
 @import 'carousel.css';
 
