@@ -17,18 +17,19 @@
     
     <!-- PopUp Model -->
     <script src="js/modaal.min.js"></script>
+<?php endif; ?>
 
-<?php elseif(basename($_SERVER['PHP_SELF']) == 'overview.php') : ?>
+<?php if(basename($_SERVER['PHP_SELF']) == 'overview.php') : ?>
     <!-- Search -->
     <script src="js/mixitup.min.js"></script>
+<?php endif; ?>
 
-<?php elseif(basename($_SERVER['PHP_SELF']) == 'guide.php') : ?>
+<?php if(basename($_SERVER['PHP_SELF']) == 'guide.php') : ?>
     <!-- Guide -->
     <script src="js/guide.js"></script>
 
 <?php endif; ?>
 
-<script src="js/mixitup.min.js"></script>
 <!-- ScrollMagic-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
