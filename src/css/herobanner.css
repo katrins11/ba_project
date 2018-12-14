@@ -65,4 +65,12 @@
       }
     }
   }
+
+  .arrow-down {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    right: 50%;
+    transform: rotate(90deg);
+  }
 }
