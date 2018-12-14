@@ -60,7 +60,7 @@ function getCardInfo(snapshot) {
                                 <div class="overlay"></div>\
                             </div>\
                             <div class="company">\
-                                <h1 id="company-name" class="card-title">'+snap.val().companyName+'</h1>\
+                                <h1 class="company-name card-title">'+snap.val().companyName+'</h1>\
                             </div>\
                             <div class="text">\
                                 <h1 class="card-title">'+snap.val().postTitle+'</h1>\
@@ -91,6 +91,9 @@ function getCardInfo(snapshot) {
             }
             else {
                 postItem[i].style.display = 'none'; 
+                var container = document.getElementById('resultscontainer');
+                var htmlNoResults = '<h1>No results found.</h1>';
+                container.insertAdjacentHTML('beforeend', htmlNoResults);
             }
         }
     });
@@ -112,10 +115,10 @@ function getFrontCardInfo(snapshot) {
 
     snapshot.forEach(snap => {
         if(i >= numberOfPosts) { return; }
-        var frontCard = '<a id="popUp" class="pop-up eachPost" data-companyID="'+snap.val().id+'">\
+        var frontCard = '<a class="inline pop-up eachPost" data-companyID="'+snap.val().id+'">\
                             <div class="postImage"><img src="'+snap.val().images[0]+'" alt="office placholder"></div>\
                             <div class="company">\
-                                <h1 id="company-name" class="card-title">'+snap.val().companyName+'</h1>\
+                                <h1 class="company-name card-title">'+snap.val().companyName+'</h1>\
                             </div>\
                             <div class="text">\
                                 <h1 class="card-title">'+snap.val().postTitle+'</h1>\
