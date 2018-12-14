@@ -52,7 +52,7 @@ function getCardInfo(snapshot) {
             filterItem = snap.val().searchFilter[i] + " ";
             filterItems += filterItem;
         }
-        var htmlCard = '<a class="inline pop-up eachPost mix '+filterItems+'" data-companyid="'+snap.val().id+'">\
+        var htmlCard = '<a class="inline eachPost mix '+filterItems+'" data-companyid="'+snap.val().id+'">\
                             <div class="postImage">\
                                 <img src="'+snap.val().images[0]+'" alt="office placholder">\
                                 <div class="overlay"></div>\
@@ -113,7 +113,7 @@ function getFrontCardInfo(snapshot) {
 
     snapshot.forEach(snap => {
         if(i >= numberOfPosts) { return; }
-        var frontCard = '<a class="inline pop-up eachPost" data-companyID="'+snap.val().id+'">\
+        var frontCard = '<a class="inline eachPost" data-companyID="'+snap.val().id+'">\
                             <div class="postImage"><img src="'+snap.val().images[0]+'" alt="office placholder"></div>\
                             <div class="company">\
                                 <h1 class="company-name card-title">'+snap.val().companyName+'</h1>\
@@ -161,9 +161,6 @@ function getCarouselImg(snapshot, attrVal) {
         autoWidth: true,
         responsiveClass:true,
         responsive:{
-            0:{
-                items:1,
-            },
             600:{
                 items:3,
             }
@@ -172,10 +169,6 @@ function getCarouselImg(snapshot, attrVal) {
 };
 
 //**************** POST PAGE *****************//
-
-// Get specific post company id
-// post data from that specifik one into post page
-
 function getPost(snapshot) {
     var postPage = document.getElementById("overview-page");
     var postID = postPage.getAttribute("companyid");
@@ -195,13 +188,8 @@ function getPost(snapshot) {
                 getContactBoxData(snap);  
             }
         });
-    })
-    // console.log("theIdIsAgin: ", attrVal);
-   
+    });
 
-    
-    
-    
 }
 
 //**************** GET HERO DATA *****************//
@@ -333,7 +321,7 @@ function getContactBoxData(snap) {
                                 </li>\
                                 <li>\
                                     <img src="assets/web.svg" alt="">\
-                                    <span>'+snap.val().contact.contactInfo.address+'</span>\
+                                    <span>'+snap.val().contact.contactInfo.website+'</span>\
                                 </li>\
                             </ul>\
                             <ul>\
