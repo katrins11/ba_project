@@ -23,6 +23,7 @@ function gotData(snapshot) {
         console.log("Your are on the FrontPage");
         getFrontCardInfo(snapshot);
         popUp();
+        getPost(snapshot);
     }
     else if(overviewPage) {
         console.log("Your are on the OverviewPage");
@@ -99,7 +100,7 @@ function getCardInfo(snapshot) {
     var mixer = mixitup(compName);
 };
 
-//**************** CARD DATA *****************//
+//**************** FRONTPAGE CARD DATA *****************//
 function getFrontCardInfo(snapshot) {
     var companyPosts = document.getElementById("frontPagePosts"),
         numberOfPosts = '',
@@ -366,22 +367,17 @@ function popUp() {
 }
 
 //**************** MOBILE - OPEN FILTER MENU *****************//
-
 function mobileFilterMenu() { 
     var showFilterMenu = document.getElementById("showFilterMenu");
     var hideFilterMenu = document.getElementsByClassName("filter-btn--close")[0];
 
     showFilterMenu.onclick = function() { 
-        console.log('filter click');
         var filterContainer = document.getElementById("filter-container");
         filterContainer.classList.add('active');
     }
 
     hideFilterMenu.onclick = function() { 
-        console.log('close click');
         var filterContainer = document.getElementById("filter-container");
         filterContainer.classList.remove('active');
-
     }
-
 }
