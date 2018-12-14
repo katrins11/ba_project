@@ -81,22 +81,40 @@ function getCardInfo(snapshot) {
         let Allposts = document.getElementById('resultscontainer');
         // Get each item from list
         let postItem = Allposts.querySelectorAll('.eachPost');
+        //No resault
+        var container = document.getElementById('resultscontainer');
+        var noResaultMessage = document.getElementById('noSearchResault');
         // Loop through list
         for(let i = 0;i < postItem.length;i++){
             let a = postItem[i];
             // If matched
             if(a.innerHTML.toLowerCase().indexOf(filterValue) > -1) {
                 postItem[i].style.display = '';
+                // console.log('how many: ', a.innerHTML.indexOf(filterValue).length);
             }
             else {
                 postItem[i].style.display = 'none'; 
-                // var container = document.getElementById('resultscontainer');
-                // var htmlNoResults = '<h1>No results found.</h1>';
-                // container.insertAdjacentHTML('beforeend', htmlNoResults);
             }
         }
+        //Empty check
+        if($('.eachPost:visible').length == 0) {
+            console.log('nothing there');
+            noResaultMessage.style.display = 'block';
+        }
+        else {
+            console.log('something there');
+            noResaultMessage.style.display = 'none';
+        }
     });
+
     /* *** Filtering *** */
+    var filterClicked = $('.filter');
+    
+    filterClicked.click(function() {
+        console.log('filterbtn clicked');
+        $('#filter-input').val('');
+    });
+
     var mixer = mixitup(compName);
 };
 
@@ -171,14 +189,10 @@ function getCarouselImg(snapshot, attrVal) {
 
 //**************** POST PAGE *****************//
 function getPost(snapshot) {
-    var postPage = document.getElementById("overview-page");
-    var postID = postPage.getAttribute("companyid");
     var allCards = $('.eachPost');
-    var attrVal;
 
     allCards.click(function() {
-        attrVal = $(this).attr('data-companyid');
-        // console.log("theIdIs: ", attrVal);
+        var attrVal = $(this).attr('data-companyid');
         snapshot.forEach(snap => {
             if(snap.val().id == attrVal){
                 getHeroData(snap);

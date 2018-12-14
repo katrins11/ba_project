@@ -8,8 +8,6 @@
     <?php include('php/search.php')?>
 
     <?php include('php/pop-up-modal.php')?>
-
-    <?php include('php/carousel.php')?>
     
     <?php include('php/footer.php')?>
   </div>
