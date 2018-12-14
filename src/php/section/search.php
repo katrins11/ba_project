@@ -13,5 +13,7 @@
     <?php include('php/filter.php')?>
   </div>
 
-  <div class="resultscontainer" id="resultscontainer"></div>
+  <div class="resultscontainer" id="resultscontainer">
+    <div id="noSearchResault">No results found</div>
+  </div>
 </section>
