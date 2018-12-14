@@ -159,9 +159,13 @@ function getCarouselImg(snapshot, attrVal) {
         nav: true,
         margin: 40,
         autoWidth: true,
+        responsiveClass:true,
         responsive:{
+            0:{
+                items:1,
+            },
             600:{
-                items: 3
+                items:3,
             }
         }
     });
