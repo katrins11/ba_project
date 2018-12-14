@@ -19,7 +19,7 @@
 
     <h1 class="tag-line"><?php echo $heroBannerHeadline ?></h1>
   </div>
-  <svg class="arrow-down" width="31px" height="24px" viewBox="0 0 31 24" version="1.1">
+  <svg class="arrow-down bounce" width="31px" height="24px" viewBox="0 0 31 24" version="1.1">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g transform="translate(-802.000000, -490.000000)" fill="#333333" fill-rule="nonzero" stroke="#333333" stroke-width="2">
                 <g transform="translate(221.000000, 248.000000)">

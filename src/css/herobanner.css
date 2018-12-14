@@ -71,6 +71,20 @@
     bottom: 10%;
     left: 50%;
     right: 50%;
-    transform: rotate(90deg);
+  }
+
+  .bounce {
+    animation: bounce 3s infinite;
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: rotate(90deg) translateX(0);
+    }
+    40% {
+      transform: rotate(90deg) translateX(-30px);
+    }
+    60% {
+      transform: rotate(90deg) translateX(-15px);
+    }
   }
 }
