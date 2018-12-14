@@ -4,10 +4,6 @@
 
   <?php include('php/header.php')?>
 
-  <!-- <section id="about-hero">
-    <h1>About web Intern</h1>
-  </section> -->
-
   <?php include('php/headline-banner.php')?>
 
   <section id="" class="section-watch">
