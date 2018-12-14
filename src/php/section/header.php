@@ -1,5 +1,5 @@
 <header id="header">
-    <a class="logo-link" href='/'>
+    <a class="logo-link" href='/ba_project/build/'>
         <img src="assets/logo-header.svg" alt="logo">
     </a>
 
@@ -69,7 +69,7 @@
                 </svg>
             </li>
             <li class="js-menu-item" data-morph="M 451.5,185.8 C 441.5,266.2 339.6,305 272.3,350.2 207.7,393.6 226.7,444.7 182.6,447.9 132.8,451.4 83.97,399.9 66.37,353.1 34.6,268.4 41.16,141.8 112,85.44 186.1,26.329999999999984 313.8,54.099999999999994 396,101.4 425.2,118.2 455.6,152.4 451.5,185.8 Z">
-                <a href="/ba_project/build/overview.php">Overview</a>
+                <a href="/ba_project/build/overview.php">Internships</a>
                 <svg width="155px" height="164px" viewBox="0 0 155 164" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
                         <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="105.395378%" gradientTransform="translate(0.500000,0.500000),scale(1.000000,0.948808),rotate(90.000000),scale(1.000000,0.504730),translate(-0.500000,-0.500000)" id="radialGradient-1">

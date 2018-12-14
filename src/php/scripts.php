@@ -17,12 +17,14 @@
     
     <!-- PopUp Model -->
     <script src="js/modaal.min.js"></script>
+<?php endif; ?>
 
-<?php elseif(basename($_SERVER['PHP_SELF']) == 'overview.php') : ?>
+<?php if(basename($_SERVER['PHP_SELF']) == 'overview.php') : ?>
     <!-- Search -->
     <script src="js/mixitup.min.js"></script>
+<?php endif; ?>
 
-<?php elseif(basename($_SERVER['PHP_SELF']) == 'guide.php') : ?>
+<?php if(basename($_SERVER['PHP_SELF']) == 'guide.php') : ?>
     <!-- Guide -->
     <script src="js/guide.js"></script>
 

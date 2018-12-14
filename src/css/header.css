@@ -37,7 +37,7 @@ header {
 
     .hover-text {
         position: absolute;
-        bottom: 5px;
+        bottom: -1px;
         left: -20px;
         opacity: 0;
         transition: all 0.25s ease-in-out;
@@ -145,6 +145,9 @@ header {
       height: 100%;
       width: 100%;
       position: relative;
+      .hover-text {
+        bottom: 5px;
+      }
     }
 
     .line{
