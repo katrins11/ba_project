@@ -340,27 +340,6 @@ function getContactBoxData(snap) {
     contactInfoText.insertAdjacentHTML('beforeend', htmlContactInfo);
 }
 
-//**************** GET DATA FROM SINGLE POST *****************//
-function getSingleComapnyData() {
-    // GET ID OF COMPANY ON CLICK OF CARD
-    //PASS THAT ID TO FUCTIONS THAT GET DATA FOR THE POP UP MODAL
-    // var eachPost = document.getElementsByClassName("eachPost");
-    
-    // for (var i = 0; i < eachPost.length; i++) {
-    //     eachPost[i].addEventListener('click', function(){
-    //         console.log('click');
-    //         // var companyId = eachPost[i].getAttribute('data-companyID')[i];
-    //         // console.log('companyId:', companyId);
-    //     });
-    // }
-
-    // var popUp = document.getElementById("popUp");
-    // popUp.addEventListener("click", function(){
-    //     var companyId = popUp.getAttribute('data-companyID');
-    //     console.log('companyId:', companyId);
-    // });
- }
-
 
 //**************** POP-UP MODAL *****************//
 function popUp() { 
