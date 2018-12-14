@@ -17,6 +17,6 @@
             </g>
         </svg>
 
-    <h1 class="tag-line">Start your future now</h1>
+    <h1 class="tag-line"><?php echo $heroBannerHeadline ?></h1>
   </div>
 </section>

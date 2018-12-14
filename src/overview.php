@@ -1,3 +1,5 @@
+<?php include('php/config.php'); ?>
+
 <?php include('php/head.php')?>
   <div class="page" id="overview-page" data-overviewId="1">
     <?php include('php/header.php')?>

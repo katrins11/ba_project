@@ -5,7 +5,6 @@
     <?php include('php/header.php')?>
     
     <div class="guide">
-        
         <?php include('php/headline-banner.php')?>
 
         <section class="guide_steps">
@@ -244,9 +243,6 @@
             </div>
         </section>
         
-   
-        
-
         <?php include('php/footer.php')?>
     </div>
 
