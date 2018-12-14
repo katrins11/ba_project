@@ -30,7 +30,6 @@ function gotData(snapshot) {
         getCarouselImg(snapshot);
         popUp();
         getPost(snapshot);
-        getSingleComapnyData();
         mobileFilterMenu();
     }    
     else if(postPage) {
@@ -90,9 +89,9 @@ function getCardInfo(snapshot) {
             }
             else {
                 postItem[i].style.display = 'none'; 
-                var container = document.getElementById('resultscontainer');
-                var htmlNoResults = '<h1>No results found.</h1>';
-                container.insertAdjacentHTML('beforeend', htmlNoResults);
+                // var container = document.getElementById('resultscontainer');
+                // var htmlNoResults = '<h1>No results found.</h1>';
+                // container.insertAdjacentHTML('beforeend', htmlNoResults);
             }
         }
     });
@@ -136,8 +135,8 @@ function getFrontCardInfo(snapshot) {
 function getCarouselImg(snapshot, attrVal) {
     var carouselDiv = document.querySelector("#owlCarousel");
     snapshot.forEach(snap => {
-        // if(snap.val().id == 4) {
-        if(snap.val().id == attrVal) {
+        if(snap.val().id == 4) {
+        // if(snap.val().id == attrVal) {
             //console.log("length is: ", snap.val().images.length);
             
             for(var i = 0; i < snap.val().images.length; i++) {
@@ -178,7 +177,7 @@ function getPost(snapshot) {
 
     allCards.click(function() {
         attrVal = $(this).attr('data-companyid');
-        console.log("theIdIs: ", attrVal);
+        // console.log("theIdIs: ", attrVal);
         snapshot.forEach(snap => {
             if(snap.val().id == attrVal){
                 getHeroData(snap);
@@ -190,7 +189,7 @@ function getPost(snapshot) {
             }
         });
     });
-    console.log("theIdIsAgin: ", attrVal); 
+
 }
 
 //**************** GET HERO DATA *****************//
@@ -287,9 +286,9 @@ function getTextBoxData(snap) {
     for(var i = 0; i < snap.val().internshipText.toolsTasks.length; i++) {
         htmlToolsTasks = '<li>'+snap.val().internshipText.toolsTasks[i]+'</li>';
         finalHtmlToolsTasks += htmlToolsTasks;
-        console.log("each: ", finalHtmlToolsTasks);
+        // console.log("each: ", finalHtmlToolsTasks);
     }
-    console.log("final: ", finalHtmlToolsTasks);
+    // console.log("final: ", finalHtmlToolsTasks);
     toolsTasksText.innerHTML = '';
     toolsTasksText.insertAdjacentHTML('beforeend', finalHtmlToolsTasks);
 }
