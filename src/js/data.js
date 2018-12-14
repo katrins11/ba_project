@@ -334,7 +334,7 @@ function getContactBoxData(snap) {
                                 </li>\
                                 <li>\
                                     <img src="assets/web.svg" alt="">\
-                                    <span>'+snap.val().contact.contactInfo.address+'</span>\
+                                    <span>'+snap.val().contact.contactInfo.website+'</span>\
                                 </li>\
                             </ul>\
                             <ul>\
