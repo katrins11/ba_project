@@ -5,7 +5,7 @@
 <script src="js/header.js"></script>
 
 <!-- Intersection Observer-->
-<script src="js/scroll-animation.js"></script>
+<script src="js/intersection-observer.js"></script>
 
 <?php if(basename($_SERVER['PHP_SELF']) == 'index.php' || basename($_SERVER['PHP_SELF']) == 'overview.php') : ?>
     <!-- Database -->
