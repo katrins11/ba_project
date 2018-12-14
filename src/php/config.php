@@ -23,6 +23,47 @@
         $headlineBannerImage = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80';   
     }
 
+    /* *** *** cta *** *** */
+    $ctaHeader = 'See more oppotunities';
+
+    /* *** *** cta-guide *** *** */
+    $ctaGuideHeader = 'Application Guide';
+    $ctaGuideText = 'Are you unsure how to write a good application? Follow these 8 steps from application to internship';
+
+    /* *** *** footerInfo *** *** */
+    $footerMail = 'mail@mail.com';
+    $footerNumber = '+45 60 60 60 60';
+    $footerLocation = 'Lygten 37, 1400 Copenhagen';
+
+    /* *** *** Frontpage Text *** *** */
+    $frontPageTextHeadline = 'What is Web Intern?';
+    $frontPageTextText = 'Missing Text';
+    $frontPageTextHeadlineReadMore = 'Read more about Web Intern';
+
+    /* *** *** FrontPost *** *** */
+    $frontPostsHeadline = 'Reacently added internships!';
+    
+    /* *** *** HeroBanner *** *** */
+    $heroBannerHeadline = 'Start your future now';
+    
+    /* *** *** FrontPost *** *** */
+    $infoBoxHeadline = 'Company statistics';
+      
+    /* *** *** Post Contact *** *** */
+    $postContactHeadlineOne = 'Interested?';
+    $postContactHeadlineTwo = 'Contact';
+
+    /* *** *** Post Text *** *** */
+    $postTextHeadlineOne = 'The Internship';
+    $postTextHeadlineTwo = 'Your profile';
+    $postTextHeadlineThree = 'Tasks & tools';
+    
+    /* *** *** Search *** *** */
+    $filterHeadline = 'Filter';
+         
+    /* *** *** AboutPage *** *** */
+    $aboutPageHeadline = 'Who we are.';
+
     /* *** *** Guide *** *** */
     $guideHeadlineStep1 = 'What do you want to do?';
     $guideTextStep1 = 'Missing';

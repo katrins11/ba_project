@@ -1,30 +1,38 @@
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-<!-- Database -->
-<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
-<script src="js/data.js"></script>
+<!-- Header -->
+<script src="js/header.js"></script>
 
-<!-- Search -->
-<script src="js/mixitup.min.js"></script>
+<!-- Intersection Observer-->
+<script src="js/scroll-animation.js"></script>
 
-<!-- OWL -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<?php if(basename($_SERVER['PHP_SELF']) == 'index.php' || basename($_SERVER['PHP_SELF']) == 'overview.php') : ?>
+    <!-- Database -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+    <script src="js/data.js"></script>
 
- <!-- AnimeJS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-<script src="js/shape-animation.js"></script>
+    <!-- OWL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <!-- PopUp Model -->
+    <script src="js/modaal.min.js"></script>
+
+<?php elseif(basename($_SERVER['PHP_SELF']) == 'overview.php') : ?>
+    <!-- Search -->
+    <script src="js/mixitup.min.js"></script>
+
+<?php elseif(basename($_SERVER['PHP_SELF']) == 'guide.php') : ?>
+    <!-- Guide -->
+    <script src="js/guide.js"></script>
+
+<?php endif; ?>
 
 <!-- ScrollMagic-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script> 
-
-<script src="js/modaal.min.js"></script>
-
-<!-- Intersection Observer-->
-<script src="js/scroll-animation.js"></script>
 
 <!-- Hero -->
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js'></script>
@@ -34,8 +42,5 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
 <script src="js/morphSVGPlugin.min.js"></script>
 <script src="js/menu.js"></script>
-
-<!-- Guide -->
-<script src="js/guide.js"></script>
 
 <script src="js/script.js"></script>

@@ -1,5 +1,7 @@
-        
+<?php include('php/config.php'); ?>
+     
 <?php include('php/head.php')?>
+
     <div class="page" id="front-page">
         <?php include('php/menu.php')?>
 
@@ -21,4 +23,5 @@
 
         <?php include('php/footer.php')?>
     </div>
+    
 <?php include('php/foot.php')?>

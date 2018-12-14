@@ -46,7 +46,6 @@ function errData(err) {
 //**************** SEARCH & CARDS *****************//
 function getCardInfo(snapshot) {
     var compName = document.getElementById("resultscontainer");
-
     snapshot.forEach(snap => {
         var filterItem = '',
             filterItems = '';
@@ -54,7 +53,7 @@ function getCardInfo(snapshot) {
             filterItem = snap.val().searchFilter[i] + " ";
             filterItems += filterItem;
         }
-        var htmlCard = '<a id="popUp" class="inline pop-up eachPost mix '+filterItems+'" data-companyID="'+snap.val().id+'">\
+        var htmlCard = '<a class="inline pop-up eachPost mix '+filterItems+'" data-companyid="'+snap.val().id+'">\
                             <div class="postImage">\
                                 <img src="'+snap.val().images[0]+'" alt="office placholder">\
                                 <div class="overlay"></div>\
@@ -134,10 +133,11 @@ function getFrontCardInfo(snapshot) {
 };
 
 //**************** OWL CAROUSEL *****************//
-function getCarouselImg(snapshot) {
+function getCarouselImg(snapshot, attrVal) {
     var carouselDiv = document.querySelector("#owlCarousel");
     snapshot.forEach(snap => {
-        if(snap.val().id == 4) {
+        // if(snap.val().id == 4) {
+        if(snap.val().id == attrVal) {
             //console.log("length is: ", snap.val().images.length);
             
             for(var i = 0; i < snap.val().images.length; i++) {
@@ -175,31 +175,42 @@ function getCarouselImg(snapshot) {
 
 function getPost(snapshot) {
     var postPage = document.getElementById("overview-page");
-    var postID = postPage.getAttribute("data-overviewId");
-    //console.log("Post ID:", postID);
+    var postID = postPage.getAttribute("companyid");
+    var allCards = $('.eachPost');
+    var attrVal;
 
-    snapshot.forEach(snap => {
+    allCards.click(function() {
+        attrVal = $(this).attr('data-companyid');
+        console.log("theIdIs: ", attrVal);
+        snapshot.forEach(snap => {
+            if(snap.val().id == attrVal){
+                getHeroData(snap);
+                getFirstInfoboxData(snap);
+                getSecondInfoboxData(snap);
+                getTextBoxData(snap); 
+                getCarouselImg(snap, attrVal);
+                getContactBoxData(snap);  
+            }
+        });
+    })
+    console.log("theIdIsAgin: ", attrVal);
+   
 
-        if(snap.val().id == postID){
-            getHeroData(snap);
-            getFirstInfoboxData(snap);
-            getSecondInfoboxData(snap);
-            getTextBoxData(snap); 
-            getContactBoxData(snap);  
-        }
-    });
+    
+    
+    
 }
 
 //**************** GET HERO DATA *****************//
 function getHeroData(snap) { 
     var heroData = document.getElementById("hero-post-container");
-
     var htmlHerobox = '<img src='+snap.val().images[0]+' alt="office placholder">\
                         <div class="hero-overlay"></div>\
                         <div class="tag-line">\
                             <h1>'+snap.val().postTitle+'</h1>\
                         </div>';
 
+    heroData.innerHTML = '';
     heroData.insertAdjacentHTML('beforeend', htmlHerobox);
 }
 
@@ -223,7 +234,7 @@ function getFirstInfoboxData(snap) {
                             <h1 class="info-headline">'+snap.val().importantInfo.created+'</h1>\
                             <p class="info-text">Created</p>\
                         </div>';
-
+    infoboxData.innerHTML = '';
     infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
 }
 
@@ -247,7 +258,7 @@ function getSecondInfoboxData(snap) {
                             <h1 class="info-headline">'+snap.val().statisticInfo.companyAge+'</h1>\
                             <p class="info-text">Years in the field</p>\
                         </div>';
-
+    infoboxData.innerHTML = '';
     infoboxData.insertAdjacentHTML('beforeend', htmlInfobox);
 }
 
@@ -256,30 +267,39 @@ function getTextBoxData(snap) {
     // LOGO
     var postLogo = document.getElementById("post-logo");
     var htmlPostLogo = '<img src='+snap.val().logo+' alt="logo placholder">';
+    postLogo.innerHTML = '';
     postLogo.insertAdjacentHTML('beforeend', htmlPostLogo);
 
     // ABOUT
     var aboutUsText = document.getElementById("about-us");
     var htmlAboutUs = '<p>'+snap.val().internshipText.aboutUs+'</p>';
+    aboutUsText.innerHTML = '';
     aboutUsText.insertAdjacentHTML('beforeend', htmlAboutUs);
 
     // INTRODUCTION
     var introductionText = document.getElementById("introduction");
     var htmlIntroduction = '<p>'+snap.val().internshipText.introduction+'</p>';
+    introductionText.innerHTML = '';
     introductionText.insertAdjacentHTML('beforeend', htmlIntroduction);
 
     // YOUR PROFILE
     var yourProfileText = document.getElementById("your-profile");
     var htmlYourProfile = '<p>'+snap.val().internshipText.yourProfile+'</p>';
+    yourProfileText.innerHTML = '';
     yourProfileText.insertAdjacentHTML('beforeend', htmlYourProfile);
 
     // TOOLS & TASKS
     var toolsTasksText = document.getElementById("tasks-tools");
-
+    var htmlToolsTasks;
+    var finalHtmlToolsTasks;
     for(var i = 0; i < snap.val().internshipText.toolsTasks.length; i++) {
-        var htmlToolsTasks = '<li>'+snap.val().internshipText.toolsTasks[i]+'</li>';
-        toolsTasksText.insertAdjacentHTML('beforeend', htmlToolsTasks);
+        htmlToolsTasks = '<li>'+snap.val().internshipText.toolsTasks[i]+'</li>';
+        finalHtmlToolsTasks += htmlToolsTasks;
+        console.log("each: ", finalHtmlToolsTasks);
     }
+    console.log("final: ", finalHtmlToolsTasks);
+    toolsTasksText.innerHTML = '';
+    toolsTasksText.insertAdjacentHTML('beforeend', finalHtmlToolsTasks);
 }
 
 //**************** GET CONTACT DATA *****************//
@@ -333,29 +353,9 @@ function getContactBoxData(snap) {
                                     </a>\
                                 </li>\
                             </ul>';
+    contactInfoText.innerHTML = '';
     contactInfoText.insertAdjacentHTML('beforeend', htmlContactInfo);
 }
-
-//**************** GET DATA FROM SINGLE POST *****************//
-function getSingleComapnyData() {
-    // GET ID OF COMPANY ON CLICK OF CARD
-    //PASS THAT ID TO FUCTIONS THAT GET DATA FOR THE POP UP MODAL
-    // var eachPost = document.getElementsByClassName("eachPost");
-    
-    // for (var i = 0; i < eachPost.length; i++) {
-    //     eachPost[i].addEventListener('click', function(){
-    //         console.log('click');
-    //         // var companyId = eachPost[i].getAttribute('data-companyID')[i];
-    //         // console.log('companyId:', companyId);
-    //     });
-    // }
-
-    // var popUp = document.getElementById("popUp");
-    // popUp.addEventListener("click", function(){
-    //     var companyId = popUp.getAttribute('data-companyID');
-    //     console.log('companyId:', companyId);
-    // });
- }
 
 
 //**************** POP-UP MODAL *****************//
@@ -364,15 +364,12 @@ function popUp() {
     
     for (var i = 0; i < eachPost.length; i++) {
         eachPost[i].addEventListener('click', function(e){
-            console.log('click');
 
             // MODAAL 
             $('.inline').modaal({
                 content_source: '#inline'
             });
 
-            var companyId = e.target.getAttribute('data-companyID');
-            console.log('companyId:', companyId);
         });
     }
 }

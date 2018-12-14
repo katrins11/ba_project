@@ -7,13 +7,11 @@
     </div>
 
     <div id="showFilterMenu">
-        <h1 class="btn-font">Filter</h1>
+        <h1 class="btn-font"><?php echo $filterHeadline ?></h1>
     </div>
 
     <?php include('php/filter.php')?>
-
   </div>
 
   <div class="resultscontainer" id="resultscontainer"></div>
-
 </section>
