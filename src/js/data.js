@@ -17,7 +17,6 @@ ref.on('value', gotData, errData);
 function gotData(snapshot) {
     var frontpage = document.getElementById("front-page");
     var overviewPage = document.getElementById("overview-page");
-    var postPage = document.getElementById("post-page");
     
     if(frontpage) {
         console.log("Your are on the FrontPage");
@@ -32,11 +31,7 @@ function gotData(snapshot) {
         popUp();
         getPost(snapshot);
         mobileFilterMenu();
-    }    
-    else if(postPage) {
-        console.log("Your are on the PostPage");
-        // getPost(snapshot);
-    }    
+    }       
 }
 
 function errData(err) {
@@ -90,7 +85,6 @@ function getCardInfo(snapshot) {
             // If matched
             if(a.innerHTML.toLowerCase().indexOf(filterValue) > -1) {
                 postItem[i].style.display = '';
-                // console.log('how many: ', a.innerHTML.indexOf(filterValue).length);
             }
             else {
                 postItem[i].style.display = 'none'; 
@@ -98,11 +92,9 @@ function getCardInfo(snapshot) {
         }
         //Empty check
         if($('.eachPost:visible').length == 0) {
-            console.log('nothing there');
             noResaultMessage.style.display = 'block';
         }
         else {
-            console.log('something there');
             noResaultMessage.style.display = 'none';
         }
     });
@@ -111,7 +103,6 @@ function getCardInfo(snapshot) {
     var filterClicked = $('.filter');
     
     filterClicked.click(function() {
-        console.log('filterbtn clicked');
         $('#filter-input').val('');
     });
 
@@ -128,7 +119,6 @@ function getFrontCardInfo(snapshot) {
     else if(screen.width >= 1030) { numberOfPosts = 3; }
     else if(screen.width >= 500) { numberOfPosts = 2; }
     else { numberOfPosts = 1; }
-    //console.log("numberOfPosts: ", numberOfPosts);
 
     snapshot.forEach(snap => {
         if(i >= numberOfPosts) { return; }
@@ -155,19 +145,11 @@ function getCarouselImg(snapshot, attrVal) {
     var carouselDiv = document.querySelector("#owlCarousel");
     snapshot.forEach(snap => {
         if(snap.val().id == 4) {
-        // if(snap.val().id == attrVal) {
-            //console.log("length is: ", snap.val().images.length);
-            
             for(var i = 0; i < snap.val().images.length; i++) {
-                //console.log(snap.val().images[i]);
-                var carouselImg = '<div class="item">\
-                                      <img src="'+snap.val().images[i]+'" alt="">\
+                var carouselImg = '<div class="item" style="background-image: url('+snap.val().images[i]+')">\
                                    </div>';
-                //console.log("each image: ", carouselImg);
                 $(carouselDiv).append(carouselImg);
-                // carouselDiv.insertAdjacentHTML('beforeend', carouselImg);
             }
-
         }
     });
 
@@ -178,12 +160,7 @@ function getCarouselImg(snapshot, attrVal) {
         nav: true,
         margin: 40,
         autoWidth: true,
-        responsiveClass:true,
-        responsive:{
-            600:{
-                items:3,
-            }
-        }
+        responsiveClass:true
     });
 };
 
@@ -301,9 +278,7 @@ function getTextBoxData(snap) {
     for(var i = 0; i < snap.val().internshipText.toolsTasks.length; i++) {
         htmlToolsTasks = '<li>'+snap.val().internshipText.toolsTasks[i]+'</li>';
         finalHtmlToolsTasks += htmlToolsTasks;
-        // console.log("each: ", finalHtmlToolsTasks);
     }
-    // console.log("final: ", finalHtmlToolsTasks);
     toolsTasksText.innerHTML = '';
     toolsTasksText.insertAdjacentHTML('beforeend', finalHtmlToolsTasks);
 }

@@ -4,6 +4,9 @@
   width: 100%;
   background-color: var(--color-grey);
   height: 100vh;
+  @media (--mq-mobile) {
+    height: 40vh;
+  }
 
   .menu__logo {
     width: 100%;

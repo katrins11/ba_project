@@ -2,7 +2,7 @@
   <div class="search-content">
     
     <div class="search-field">
-      <input type="text" id="filter-input" placeholder="Search internships..."type="text">
+      <input type="text" id="filter-input" placeholder="Search for internship ..." type="text">
       <img class="search-icon"src="assets/search.svg" alt="">
     </div>
 
