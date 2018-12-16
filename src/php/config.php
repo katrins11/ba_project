@@ -37,7 +37,7 @@
 
     /* *** *** Frontpage Text *** *** */
     $frontPageTextHeadline = 'What is Web Intern?';
-    $frontPageTextText = 'Missing Text';
+    $frontPageTextText = 'All people at some point have to go out and get a job. Taking an internship is a great way to gain knowledge and experience within a field of work and can be great stepping stone into work life. A lot of companies offer internships, but finding an internship can be a struggle if you don’t know where to look or know how to start your application process. This is where Web Intern comes into the picture. Web Intern offers a platform for internship opportunities within the web industry. To put it simply, Web Intern is a job portal for internships. The platform hosts internship postings for companies looking for interns and people can take use of the platform by browsing through internship postings in search of an internship opportunity.';
     $frontPageTextHeadlineReadMore = 'Read more about Web Intern';
 
     /* *** *** FrontPost *** *** */
@@ -63,6 +63,8 @@
          
     /* *** *** AboutPage *** *** */
     $aboutPageHeadline = 'Who we are.';
+    $aboutPageTextHeadline = 'We believe in interns';
+    $aboutPageText = 'We believe that students or any candidates can be a huge contribution to companies. This is true both in all areas of work, where motivated candidates can solve tasks at a very high level and end up being a meaningful part of the team at any workplace. We strive to give candidates the best start to their career and Web Intern provides a guide for success, which is a guide intended for giving candidates the best start to their application process and how to get the internship. Please check out our guide, if you are unsure of how to get started with applying for an internship.';
 
     /* *** *** Guide *** *** */
     $guideHeadlineStep1 = 'What do you want to do?';
