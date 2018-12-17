@@ -78,7 +78,7 @@ function getCardInfo(snapshot) {
         let postItem = Allposts.querySelectorAll('.eachPost');
         //No resault
         var container = document.getElementById('resultscontainer');
-        var noResaultMessage = document.getElementById('noSearchResault');
+        var noResultMessage = document.getElementById('noSearchResault');
         // Loop through list
         for(let i = 0;i < postItem.length;i++){
             let a = postItem[i];
@@ -92,18 +92,20 @@ function getCardInfo(snapshot) {
         }
         //Empty check
         if($('.eachPost:visible').length == 0) {
-            noResaultMessage.style.display = 'block';
+            noResultMessage.style.display = 'block';
         }
         else {
-            noResaultMessage.style.display = 'none';
+            noResultMessage.style.display = 'none';
         }
     });
 
     /* *** Filtering *** */
     var filterClicked = $('.filter');
+    var noResultMessage = document.getElementById('noSearchResault');
     
     filterClicked.click(function() {
         $('#filter-input').val('');
+        noResultMessage.style.display = 'none';
     });
 
     var mixer = mixitup(compName);
