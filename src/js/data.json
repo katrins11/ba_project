@@ -454,6 +454,436 @@
                     "website":"abtion.com"
                 }
             }
+        },
+        {
+            "id": "11", 
+            "companyName": "Frankly",
+            "postTitle": "Are you our next creative?",
+            "searchFilter": ["frontend"],
+            "importantInfo": {
+                "deadline": "06.03.2019",
+                "created": "03.08.2018",
+                "duration": "4 months",
+                "location": "Copenhagen"
+            },
+            "internshipText": {
+                "introduction": "Frankly is always on the lookout for talented interns. We are always looking for talented teamplayers to join our team and push our cutting edge solutions even further. Our internships span from 3 - 6 months. As an intern at Abtion you will get flexible hours and free lunch. ",
+                "yourProfile": "We expect you to make things more concrete and nerdy, here are some of the technologies we use and expect you to be familiar with: Python (preferably also Django), Relational database (preferably PostgreSQL), ElasticSearch (nice to have), Redis (nice to have), Go (nice to have). We are not afraid to challenge the choice of technology in order to pick the right tools for the job and be productive. The successful candidate for this position has: A structured approach to problem-solving. Passion for shipping new products. A keen eye for good product design from a development perspective. Knowledge of design patterns. Self-motivation, Good English skills",
+                "aboutUs": "We are Frankly, a creative technology company. We are a creative technology company. A colorful cocktail of thinkers, designers and engineers — shaken (not stirred) with passion and powers to push forward and make the world a better place to live, play and work. Our work transforms hard work to smart work. It connects people with things, learns machines to do the heavy lifting, and teaches children about Head Lice. Our engineers and focus on technology is what sets us apart. We never have to think about if something is too hard to realize. Nothing is too hard. Want to connect your phone to your bicycle light? Well, we have already done that. Want to know what pension is the best for your +5000 employee company? We made a nice software suite for AON Hewitt — they can give you the answer.",
+                "toolsTasks":[
+                    "Wireframes","JavaScript","CSS","PHP","Web Design"
+                ]
+            },
+            "logo": "",
+            "images": [
+                "",
+                ""
+            ],
+            "statisticInfo": {
+                "employees": "41",
+                "clients": "26",
+                "projects": "225",
+                "companyAge": "7"
+            },
+            "contact":{
+                "interested":"We are looking forward to discovering our next team member! We offer a unique & independent position in a killer team, startup environment with a big company benefits and security, and growth centric new business focus. Please send your short application and cv to job@job.dk. If you have any questions, please contact Rami Piik at rami@job.com.",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/frankly/",
+                    "instagram":"https://www.instagram.com/frankly/",
+                    "linkedIn":"https://www.linkedin.com/frankly/",
+                    "phoneNumber":"+45 10 30 44 90",
+                    "email":"frankly@frankly.com",
+                    "address":"Juleblomstgade 89, 2100 Copenhagen",
+                    "website":"frankly.dk"
+                }
+            }
+        },
+        {
+            "id": "12", 
+            "companyName": "Eksponent",
+            "postTitle": "Talented UX & projectmanegment interns needed",
+            "searchFilter": ["frontend","UX"],
+            "importantInfo": {
+                "deadline": "07.03.2019",
+                "created": "04.08.2018",
+                "duration": "3 months",
+                "location": "Copenhagen"
+            },
+            "internshipText": {
+                "introduction": "Eksponent is always on the lookout for talented interns. Do you want to experiment with user involvement, concept development and UX? Or are you more on planning, facilitating and project management? Exponent seeks two internships in spring 2019. At eksponent you will get: . A skilled intern who introduces you to projects and follows you through your internship. A practical intro course for the professional methods used in everyday life. A professional plan for the course that is tailored to your level. Ongoing conversations about professional development and responsibility. Opportunity to work on projects with interesting customers. An interdisciplinary working environment. Possibility of professional sparring with your colleagues. Working time to make an internship report. In addition, you will be able to become part of a software agency that is close to technology and users. You are going to work somewhere where the professional is in focus and where you should expect you to learn something from your colleagues. Just as they expect to learn something from you.",
+                "yourProfile": "We imagine that you are in a higher education within, for example. IT, communication, digital design or e-business. You designate yourself as ambitious and wish to specialize in the digital area. You are structured, committed and curious to learn new.",
+                "aboutUs": "In Exponent we work with the development of digital solutions from idea to launch. We are lucky to be allowed to work with lots of exciting and ambitious customers and projects. We have a flat structure and an informal but professional culture. You will experience a great deal of influence and responsibility. Both in the daily work of project teams and inft. To help create and shape Exponent. We believe that the best solutions are created in teams. Therefore, we are worried about being good at communicating and working together. We are on Frederiksberg.",
+                "toolsTasks":[
+                    "Information Architecture (IA) and Navigation","Wireframes and interaction design","Schedule workshops, interviews and user tests","Business needs and user needs","Content management systems", "Participate in customer meetings", "Offers and presentation to customers"
+                ]
+            },
+            "logo": "",
+            "images": [
+                "",
+                ""
+            ],
+            "statisticInfo": {
+                "employees": "15",
+                "clients": "20",
+                "projects": "60",
+                "companyAge": "2"
+            },
+            "contact":{
+                "interested":"We are looking forward to discovering our next team member! We offer a unique & independent position in a killer team, startup environment with a big company benefits and security, and growth centric new business focus. Please send your short application and cv to job@job.dk. If you have any questions, please contact Rami Piik at rami@job.com.",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/eksponent/",
+                    "instagram":"https://www.instagram.com/eksponent/",
+                    "linkedIn":"https://www.linkedin.com/eksponent/",
+                    "phoneNumber":"+45 76 89 55 34",
+                    "email":"praktikant@eksponent.com ",
+                    "address":"dublinroad 90, 2300 Copenhagen",
+                    "website":"eksponent.com"
+                }
+            }
+        },
+        {
+            "id": "13", 
+            "companyName": "Granyon",
+            "postTitle": "Back-end intern wanted",
+            "searchFilter": ["backend"],
+            "importantInfo": {
+                "deadline": "01.03.2019",
+                "created": "08.08.2018",
+                "duration": "3 months",
+                "location": "Copenhagen"
+            },
+            "internshipText": {
+                "introduction": "Granyon is always on the lookout for talented interns. We are always looking for talented teamplayers to join our team and push our cutting edge solutions even further. Our internships span from 3 - 6 months. As an intern at Abtion you will get flexible hours and free lunch. ",
+                "yourProfile": "We expect you to make things more concrete and nerdy, here are some of the technologies we use and expect you to be familiar with: Python (preferably also Django), Relational database (preferably PostgreSQL), ElasticSearch (nice to have), Redis (nice to have), Go (nice to have). We are not afraid to challenge the choice of technology in order to pick the right tools for the job and be productive. The successful candidate for this position has: A structured approach to problem-solving. Passion for shipping new products. A keen eye for good product design from a development perspective. Knowledge of design patterns. Self-motivation, Good English skills",
+                "aboutUs": "We are Granyon, a creative technology company. We are a creative technology company. A colorful cocktail of thinkers, designers and engineers — shaken (not stirred) with passion and powers to push forward and make the world a better place to live, play and work. Our work transforms hard work to smart work. It connects people with things, learns machines to do the heavy lifting, and teaches children about Head Lice. Our engineers and focus on technology is what sets us apart. We never have to think about if something is too hard to realize. Nothing is too hard. Want to connect your phone to your bicycle light? Well, we have already done that. Want to know what pension is the best for your +5000 employee company? We made a nice software suite for AON Hewitt — they can give you the answer.",
+                "toolsTasks":[
+                    "Ruby (on and off Rails)","Everything JS (Node, React, Vue, Angular, etc.)","PHP (Laravel, WordPress)","Android (Java, React native)","iOS (Swift, React native)"
+                ]
+            },
+            "logo": "",
+            "images": [
+                "",
+                ""
+            ],
+            "statisticInfo": {
+                "employees": "90",
+                "clients": "200",
+                "projects": "300",
+                "companyAge": "20"
+            },
+            "contact":{
+                "interested":"We are looking forward to discovering our next team member! We offer a unique & independent position in a killer team, startup environment with a big company benefits and security, and growth centric new business focus. Please send your short application and cv to job@job.dk. If you have any questions, please contact Rami Piik at rami@job.com.",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/granyon/",
+                    "instagram":"https://www.instagram.com/granyon/",
+                    "linkedIn":"https://www.linkedin.com/granyon/",
+                    "phoneNumber":"+45 76 89 55 34",
+                    "email":"granyon@granyon.com",
+                    "address":"streetname 109, 1800 Copenhagen",
+                    "website":"www.granyon.com/"
+                }
+            }
+        },
+        {
+            "id": "14", 
+            "companyName": "Dna-design",
+            "postTitle": "Are you our new Web designer?",
+            "searchFilter": ["webdesign"],
+            "importantInfo": {
+                "deadline": "09.06.2019",
+                "created": "20.12.2018",
+                "duration": "3 months",
+                "location": "Copenhagen"
+            },
+            "internshipText": {
+                "introduction": "dna-design is always on the lookout for talented interns. We are always looking for talented teamplayers to join our team and push our cutting edge solutions even further. Our internships span from 3 - 6 months. As an intern at Abtion you will get flexible hours and free lunch. ",
+                "yourProfile": "We expect you to make things more concrete and nerdy, here are some of the technologies we use and expect you to be familiar with: Python (preferably also Django), Relational database (preferably PostgreSQL), ElasticSearch (nice to have), Redis (nice to have), Go (nice to have). We are not afraid to challenge the choice of technology in order to pick the right tools for the job and be productive. The successful candidate for this position has: A structured approach to problem-solving. Passion for shipping new products. A keen eye for good product design from a development perspective. Knowledge of design patterns. Self-motivation, Good English skills",
+                "aboutUs": "We are dna-design, a creative technology company. We are a creative technology company. A colorful cocktail of thinkers, designers and engineers — shaken (not stirred) with passion and powers to push forward and make the world a better place to live, play and work. Our work transforms hard work to smart work. It connects people with things, learns machines to do the heavy lifting, and teaches children about Head Lice. Our engineers and focus on technology is what sets us apart. We never have to think about if something is too hard to realize. Nothing is too hard. Want to connect your phone to your bicycle light? Well, we have already done that. Want to know what pension is the best for your +5000 employee company? We made a nice software suite for AON Hewitt — they can give you the answer.",
+                "toolsTasks":[
+                    "Web Design","UX","UI","Wireframing","User testing"
+                ]
+            },
+            "logo": "",
+            "images": [
+                "",
+                ""
+            ],
+            "statisticInfo": {
+                "employees": "70",
+                "clients": "60",
+                "projects": "237",
+                "companyAge": "25"
+            },
+            "contact":{
+                "interested":"We are looking forward to discovering our next team member! We offer a unique & independent position in a killer team, startup environment with a big company benefits and security, and growth centric new business focus. Please send your short application and cv to job@job.dk. If you have any questions, please contact Rami Piik at rami@job.com.",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/dna-design/",
+                    "instagram":"https://www.instagram.com/dna-design/",
+                    "linkedIn":"https://www.linkedin.com/dna-design/",
+                    "phoneNumber":"+45 76 89 55 34",
+                    "email":"dna-design@dna-design.com",
+                    "address":"Holbækgade 34, 2300 Copenhagen",
+                    "website":"dna-design.dk/"
+                }
+            }
+        },
+        {
+            "id": "15", 
+            "companyName": "Signifly",
+            "postTitle": "E-Commerce",
+            "searchFilter": ["frontend","backend"],
+            "importantInfo": {
+                "deadline": "04.03.2019",
+                "created": "02.08.2018",
+                "duration": "3 months",
+                "location": "Copenhagen"
+            },
+            "internshipText": {
+                "introduction": "Signifly is always on the lookout for talented interns. We are always looking for talented teamplayers to join our team and push our cutting edge solutions even further. Our internships span from 3 - 6 months. As an intern at Abtion you will get flexible hours and free lunch. ",
+                "yourProfile": "We expect you to make things more concrete and nerdy, here are some of the technologies we use and expect you to be familiar with: Python (preferably also Django), Relational database (preferably PostgreSQL), ElasticSearch (nice to have), Redis (nice to have), Go (nice to have). We are not afraid to challenge the choice of technology in order to pick the right tools for the job and be productive. The successful candidate for this position has: A structured approach to problem-solving. Passion for shipping new products. A keen eye for good product design from a development perspective. Knowledge of design patterns. Self-motivation, Good English skills",
+                "aboutUs": "We are signifly, a creative technology company. We are a creative technology company. A colorful cocktail of thinkers, designers and engineers — shaken (not stirred) with passion and powers to push forward and make the world a better place to live, play and work. Our work transforms hard work to smart work. It connects people with things, learns machines to do the heavy lifting, and teaches children about Head Lice. Our engineers and focus on technology is what sets us apart. We never have to think about if something is too hard to realize. Nothing is too hard. Want to connect your phone to your bicycle light? Well, we have already done that. Want to know what pension is the best for your +5000 employee company? We made a nice software suite for AON Hewitt — they can give you the answer.",
+                "toolsTasks":[
+                    "Wordpress","PHP (Laravel, WordPress)","Web Design","Plugins"
+                ]
+            },
+            "logo": "",
+            "images": [
+                "",
+                ""
+            ],
+            "statisticInfo": {
+                "employees": "28",
+                "clients": "50",
+                "projects": "130",
+                "companyAge": "9"
+            },
+            "contact":{
+                "interested":"We are looking forward to discovering our next team member! We offer a unique & independent position in a killer team, startup environment with a big company benefits and security, and growth centric new business focus. Please send your short application and cv to job@job.dk. If you have any questions, please contact Rami Piik at rami@job.com.",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/signifly/",
+                    "instagram":"https://www.instagram.com/signifly/",
+                    "linkedIn":"https://www.linkedin.com/signifly/",
+                    "phoneNumber":"+45 76 89 55 34",
+                    "email":"signifly@signifly.com",
+                    "address":"lyneborggade 200, 2300 Copenhagen",
+                    "website":"signifly.com"
+                }
+            }
+        },
+        {
+            "id": "16", 
+            "companyName": "Havas",
+            "postTitle": "Are you into UX & UI?",
+            "searchFilter": ["UX","UI"],
+            "importantInfo": {
+                "deadline": "04.03.2019",
+                "created": "02.08.2018",
+                "duration": "3 months",
+                "location": "Copenhagen"
+            },
+            "internshipText": {
+                "introduction": "havas is always on the lookout for talented interns. We are always looking for talented teamplayers to join our team and push our cutting edge solutions even further. Our internships span from 3 - 6 months. As an intern at Abtion you will get flexible hours and free lunch. ",
+                "yourProfile": "We expect you to make things more concrete and nerdy, here are some of the technologies we use and expect you to be familiar with: Python (preferably also Django), Relational database (preferably PostgreSQL), ElasticSearch (nice to have), Redis (nice to have), Go (nice to have). We are not afraid to challenge the choice of technology in order to pick the right tools for the job and be productive. The successful candidate for this position has: A structured approach to problem-solving. Passion for shipping new products. A keen eye for good product design from a development perspective. Knowledge of design patterns. Self-motivation, Good English skills",
+                "aboutUs": "We are havas, a creative technology company. We are a creative technology company. A colorful cocktail of thinkers, designers and engineers — shaken (not stirred) with passion and powers to push forward and make the world a better place to live, play and work. Our work transforms hard work to smart work. It connects people with things, learns machines to do the heavy lifting, and teaches children about Head Lice. Our engineers and focus on technology is what sets us apart. We never have to think about if something is too hard to realize. Nothing is too hard. Want to connect your phone to your bicycle light? Well, we have already done that. Want to know what pension is the best for your +5000 employee company? We made a nice software suite for AON Hewitt — they can give you the answer.",
+                "toolsTasks":[
+                    "User expereince","User interface","CSS","Web design","iOS (Swift, React native)"
+                ]
+            },
+            "logo": "",
+            "images": [
+                "",
+                ""
+            ],
+            "statisticInfo": {
+                "employees": "34",
+                "clients": "22",
+                "projects": "90",
+                "companyAge": "2"
+            },
+            "contact":{
+                "interested":"We are looking forward to discovering our next team member! We offer a unique & independent position in a killer team, startup environment with a big company benefits and security, and growth centric new business focus. Please send your short application and cv to job@job.dk. If you have any questions, please contact Rami Piik at rami@job.com.",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/havas/",
+                    "instagram":"https://www.instagram.com/havas/",
+                    "linkedIn":"https://www.linkedin.com/havas/",
+                    "phoneNumber":"+45 76 89 55 34",
+                    "email":"havas@havas.com",
+                    "address":"Holbækgade 34, 2300 Copenhagen",
+                    "website":"dk.havas.com/"
+                }
+            }
+        },
+        {
+            "id": "17", 
+            "companyName": "Kontrapunkt",
+            "postTitle": "Web Design intern",
+            "searchFilter": ["webdesign"],
+            "importantInfo": {
+                "deadline": "04.03.2019",
+                "created": "02.08.2018",
+                "duration": "3 months",
+                "location": "Copenhagen"
+            },
+            "internshipText": {
+                "introduction": "Kontrapunkt is always on the lookout for talented interns. We are always looking for talented teamplayers to join our team and push our cutting edge solutions even further. Our internships span from 3 - 6 months. As an intern at Abtion you will get flexible hours and free lunch. ",
+                "yourProfile": "We expect you to make things more concrete and nerdy, here are some of the technologies we use and expect you to be familiar with: Python (preferably also Django), Relational database (preferably PostgreSQL), ElasticSearch (nice to have), Redis (nice to have), Go (nice to have). We are not afraid to challenge the choice of technology in order to pick the right tools for the job and be productive. The successful candidate for this position has: A structured approach to problem-solving. Passion for shipping new products. A keen eye for good product design from a development perspective. Knowledge of design patterns. Self-motivation, Good English skills",
+                "aboutUs": "We are kontrapunkt, a creative technology company. We are a creative technology company. A colorful cocktail of thinkers, designers and engineers — shaken (not stirred) with passion and powers to push forward and make the world a better place to live, play and work. Our work transforms hard work to smart work. It connects people with things, learns machines to do the heavy lifting, and teaches children about Head Lice. Our engineers and focus on technology is what sets us apart. We never have to think about if something is too hard to realize. Nothing is too hard. Want to connect your phone to your bicycle light? Well, we have already done that. Want to know what pension is the best for your +5000 employee company? We made a nice software suite for AON Hewitt — they can give you the answer.",
+                "toolsTasks":[
+                    "Ruby (on and off Rails)","Everything JS (Node, React, Vue, Angular, etc.)","PHP (Laravel, WordPress)","Android (Java, React native)","iOS (Swift, React native)"
+                ]
+            },
+            "logo": "",
+            "images": [
+                "",
+                ""
+            ],
+            "statisticInfo": {
+                "employees": "20",
+                "clients": "14",
+                "projects": "112",
+                "companyAge": "5"
+            },
+            "contact":{
+                "interested":"We are looking forward to discovering our next team member! We offer a unique & independent position in a killer team, startup environment with a big company benefits and security, and growth centric new business focus. Please send your short application and cv to job@job.dk. If you have any questions, please contact Rami Piik at rami@job.com.",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/kontrapunkt/",
+                    "instagram":"https://www.instagram.com/kontrapunkt/",
+                    "linkedIn":"https://www.linkedin.com/kontrapunkt/",
+                    "phoneNumber":"+45 76 89 55 34",
+                    "email":"kontrapunkt@kontrapunkt.com",
+                    "address":"Holbækgade 34, 2300 Copenhagen",
+                    "website":"www.kontrapunkt.com/"
+                }
+            }
+        },
+        {
+            "id": "18", 
+            "companyName": "Thankyoustudio",
+            "postTitle": "Database intern",
+            "searchFilter": ["database"],
+            "importantInfo": {
+                "deadline": "04.03.2019",
+                "created": "02.08.2018",
+                "duration": "3 months",
+                "location": "Copenhagen"
+            },
+            "internshipText": {
+                "introduction": "Thankyoustudio is always on the lookout for talented interns. We are always looking for talented teamplayers to join our team and push our cutting edge solutions even further. Our internships span from 3 - 6 months. As an intern at Abtion you will get flexible hours and free lunch. ",
+                "yourProfile": "We expect you to make things more concrete and nerdy, here are some of the technologies we use and expect you to be familiar with: Python (preferably also Django), Relational database (preferably PostgreSQL), ElasticSearch (nice to have), Redis (nice to have), Go (nice to have). We are not afraid to challenge the choice of technology in order to pick the right tools for the job and be productive. The successful candidate for this position has: A structured approach to problem-solving. Passion for shipping new products. A keen eye for good product design from a development perspective. Knowledge of design patterns. Self-motivation, Good English skills",
+                "aboutUs": "We are thankyoustudio, a creative technology company. We are a creative technology company. A colorful cocktail of thinkers, designers and engineers — shaken (not stirred) with passion and powers to push forward and make the world a better place to live, play and work. Our work transforms hard work to smart work. It connects people with things, learns machines to do the heavy lifting, and teaches children about Head Lice. Our engineers and focus on technology is what sets us apart. We never have to think about if something is too hard to realize. Nothing is too hard. Want to connect your phone to your bicycle light? Well, we have already done that. Want to know what pension is the best for your +5000 employee company? We made a nice software suite for AON Hewitt — they can give you the answer.",
+                "toolsTasks":[
+                    "Ruby (on and off Rails)","Everything JS (Node, React, Vue, Angular, etc.)","PHP (Laravel, WordPress)","Android (Java, React native)","iOS (Swift, React native)"
+                ]
+            },
+            "logo": "",
+            "images": [
+                "",
+                ""
+            ],
+            "statisticInfo": {
+                "employees": "67",
+                "clients": "55",
+                "projects": "200",
+                "companyAge": "5"
+            },
+            "contact":{
+                "interested":"We are looking forward to discovering our next team member! We offer a unique & independent position in a killer team, startup environment with a big company benefits and security, and growth centric new business focus. Please send your short application and cv to job@job.dk. If you have any questions, please contact Rami Piik at rami@job.com.",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/thankyoustudio/",
+                    "instagram":"https://www.instagram.com/thankyoustudio/",
+                    "linkedIn":"https://www.linkedin.com/thankyoustudio/",
+                    "phoneNumber":"+45 76 89 55 34",
+                    "email":"thankyoustudio@thankyoustudio.com",
+                    "address":"Holbækgade 34, 2300 Copenhagen",
+                    "website":"thankyoustudio.com/"
+                }
+            }
+        },
+        {
+            "id": "19", 
+            "companyName": "Headnet",
+            "postTitle": "Umbraco",
+            "searchFilter": ["frontend","backend","fullstack"],
+            "importantInfo": {
+                "deadline": "04.03.2019",
+                "created": "02.08.2018",
+                "duration": "3 months",
+                "location": "Copenhagen"
+            },
+            "internshipText": {
+                "introduction": "Headnet is always on the lookout for talented interns. We are always looking for talented teamplayers to join our team and push our cutting edge solutions even further. Our internships span from 3 - 6 months. As an intern at Abtion you will get flexible hours and free lunch. ",
+                "yourProfile": "We expect you to make things more concrete and nerdy, here are some of the technologies we use and expect you to be familiar with: Python (preferably also Django), Relational database (preferably PostgreSQL), ElasticSearch (nice to have), Redis (nice to have), Go (nice to have). We are not afraid to challenge the choice of technology in order to pick the right tools for the job and be productive. The successful candidate for this position has: A structured approach to problem-solving. Passion for shipping new products. A keen eye for good product design from a development perspective. Knowledge of design patterns. Self-motivation, Good English skills",
+                "aboutUs": "We are Headnet, a creative technology company. We are a creative technology company. A colorful cocktail of thinkers, designers and engineers — shaken (not stirred) with passion and powers to push forward and make the world a better place to live, play and work. Our work transforms hard work to smart work. It connects people with things, learns machines to do the heavy lifting, and teaches children about Head Lice. Our engineers and focus on technology is what sets us apart. We never have to think about if something is too hard to realize. Nothing is too hard. Want to connect your phone to your bicycle light? Well, we have already done that. Want to know what pension is the best for your +5000 employee company? We made a nice software suite for AON Hewitt — they can give you the answer.",
+                "toolsTasks":[
+                    "Umbraco",".NET","Web design","JavaScript","Razor"
+                ]
+            },
+            "logo": "",
+            "images": [
+                "",
+                ""
+            ],
+            "statisticInfo": {
+                "employees": "20",
+                "clients": "14",
+                "projects": "112",
+                "companyAge": "5"
+            },
+            "contact":{
+                "interested":"We are looking forward to discovering our next team member! We offer a unique & independent position in a killer team, startup environment with a big company benefits and security, and growth centric new business focus. Please send your short application and cv to job@job.dk. If you have any questions, please contact Rami Piik at rami@job.com.",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/headnet/",
+                    "instagram":"https://www.instagram.com/headnet/",
+                    "linkedIn":"https://www.linkedin.com/headnet/",
+                    "phoneNumber":"+45 76 89 55 34",
+                    "email":"headnet@headnet.com",
+                    "address":"Holbækgade 34, 2300 Copenhagen",
+                    "website":"headnet.com"
+                }
+            }
+        },
+        {
+            "id": "20", 
+            "companyName": "Checkmate",
+            "postTitle": "Wordpress develeper",
+            "searchFilter": ["frontend","backend"],
+            "importantInfo": {
+                "deadline": "04.03.2019",
+                "created": "02.08.2018",
+                "duration": "3 months",
+                "location": "Copenhagen"
+            },
+            "internshipText": {
+                "introduction": "Checkmate is always on the lookout for talented interns. We are always looking for talented teamplayers to join our team and push our cutting edge solutions even further. Our internships span from 3 - 6 months. As an intern at Abtion you will get flexible hours and free lunch. ",
+                "yourProfile": "We expect you to make things more concrete and nerdy, here are some of the technologies we use and expect you to be familiar with: Python (preferably also Django), Relational database (preferably PostgreSQL), ElasticSearch (nice to have), Redis (nice to have), Go (nice to have). We are not afraid to challenge the choice of technology in order to pick the right tools for the job and be productive. The successful candidate for this position has: A structured approach to problem-solving. Passion for shipping new products. A keen eye for good product design from a development perspective. Knowledge of design patterns. Self-motivation, Good English skills",
+                "aboutUs": "We are Checkmate, a creative technology company. We are a creative technology company. A colorful cocktail of thinkers, designers and engineers — shaken (not stirred) with passion and powers to push forward and make the world a better place to live, play and work. Our work transforms hard work to smart work. It connects people with things, learns machines to do the heavy lifting, and teaches children about Head Lice. Our engineers and focus on technology is what sets us apart. We never have to think about if something is too hard to realize. Nothing is too hard. Want to connect your phone to your bicycle light? Well, we have already done that. Want to know what pension is the best for your +5000 employee company? We made a nice software suite for AON Hewitt — they can give you the answer.",
+                "toolsTasks":[
+                    "WordPress","Everything JS (Node, React, Vue, Angular, etc.)","PHP (Laravel, WordPress)","Android (Java, React native)","iOS (Swift, React native)"
+                ]
+            },
+            "logo": "",
+            "images": [
+                "",
+                ""
+            ],
+            "statisticInfo": {
+                "employees": "5",
+                "clients": "14",
+                "projects": "112",
+                "companyAge": "5"
+            },
+            "contact":{
+                "interested":"We are looking forward to discovering our next team member! We offer a unique & independent position in a killer team, startup environment with a big company benefits and security, and growth centric new business focus. Please send your short application and cv to job@job.dk. If you have any questions, please contact Rami Piik at rami@job.com.",
+                "contactInfo":{
+                    "facebook":"https://www.facebook.com/checkmate/",
+                    "instagram":"https://www.instagram.com/checkmate/",
+                    "linkedIn":"https://www.linkedin.com/checkmate/",
+                    "phoneNumber":"+45 76 89 55 34",
+                    "email":"checkmate@checkmate.com",
+                    "address":"Holbækgade 34, 2300 Copenhagen",
+                    "website":"checkmate.com"
+                }
+            }
         }
     ]
 }

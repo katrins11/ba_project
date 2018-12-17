@@ -290,9 +290,12 @@ function getContactBoxData(snap) {
     var htmlInterested = '<p>'+snap.val().contact.interested+'</p>';
     interestedText.insertAdjacentHTML('beforeend', htmlInterested);
 
-    var interestedText = document.getElementById("interested");
-    var htmlInterested = '<p>'+snap.val().contact.interested+'</p>';
-    interestedText.insertAdjacentHTML('beforeend', htmlInterested);
+    var emailUs = document.getElementById("sendEmail");
+    var htmlEmailUs = '<a href="mailto:'+snap.val().contact.contactInfo.email+'">\
+                            <p>Email us</p>\
+                        </a>';
+    emailUs.innerHTML = '';
+    emailUs.insertAdjacentHTML('beforeend', htmlEmailUs);
 
     // GET CONTACT LIST
     var contactInfoText = document.getElementById("contact");
