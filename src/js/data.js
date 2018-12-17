@@ -305,6 +305,7 @@ function getContactBoxData(snap) {
     var htmlEmailUs = '<a href="mailto:'+snap.val().contact.contactInfo.email+'">\
                             <p>Email us</p>\
                         </a>';
+    emailUs.innerHTML = '';
     emailUs.insertAdjacentHTML('beforeend', htmlEmailUs);
 
     // GET CONTACT LIST
