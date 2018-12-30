@@ -14,6 +14,6 @@
   </div>
 
   <div class="resultscontainer" id="resultscontainer">
-    <div id="noSearchResault">No results found</div>
+    <div id="noSearchResault">No matching results found</div>
   </div>
 </section>
