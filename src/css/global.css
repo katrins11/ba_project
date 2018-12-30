@@ -147,7 +147,6 @@ h1 {
 .section-watch {
   opacity: 0;
   transform: translateY(100px);
-  /*transition: all 0.25s ease;*/
   transition: all 500ms cubic-bezier(0.340, 0.495, 0.370, 0.965);
 }
 
