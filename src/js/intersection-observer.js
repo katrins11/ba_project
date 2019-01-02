@@ -11,7 +11,7 @@ function observeOnScroll () {
     threshold: 1.0
   }
   
-  function callback(entries, observer) { 
+  function popUpEntries(entries, observer) { 
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('scroll-animation');
@@ -20,7 +20,7 @@ function observeOnScroll () {
     });
   };
   
-  var modualObserver = new IntersectionObserver(callback, options);
+  var modualObserver = new IntersectionObserver(popUpEntries, options);
   
 
   //*************** GENERAL OBSERVER **************//

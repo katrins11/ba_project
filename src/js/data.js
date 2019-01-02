@@ -172,6 +172,7 @@ function getPost(snapshot) {
 
     allCards.click(function() {
         var attrVal = $(this).attr('data-companyid');
+
         snapshot.forEach(snap => {
             if(snap.val().id == attrVal){
                 getHeroData(snap);
@@ -183,7 +184,6 @@ function getPost(snapshot) {
             }
         });
     });
-
 }
 
 //**************** GET HERO DATA *****************//
@@ -277,6 +277,7 @@ function getTextBoxData(snap) {
     var toolsTasksText = document.getElementById("tasks-tools");
     var htmlToolsTasks = '';
     var finalHtmlToolsTasks = '';
+
     for(var i = 0; i < snap.val().internshipText.toolsTasks.length; i++) {
         htmlToolsTasks = '<li>'+snap.val().internshipText.toolsTasks[i]+'</li>';
         finalHtmlToolsTasks += htmlToolsTasks;
