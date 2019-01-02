@@ -275,8 +275,8 @@ function getTextBoxData(snap) {
 
     // TOOLS & TASKS
     var toolsTasksText = document.getElementById("tasks-tools");
-    var htmlToolsTasks;
-    var finalHtmlToolsTasks;
+    var htmlToolsTasks = '';
+    var finalHtmlToolsTasks = '';
     for(var i = 0; i < snap.val().internshipText.toolsTasks.length; i++) {
         htmlToolsTasks = '<li>'+snap.val().internshipText.toolsTasks[i]+'</li>';
         finalHtmlToolsTasks += htmlToolsTasks;

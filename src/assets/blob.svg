@@ -1,0 +1,16 @@
+
+<svg width="81px" height="80px" viewBox="0 0 81 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="100%" gradientTransform="translate(0.500000,0.500000),scale(0.984113,1.000000),rotate(90.000000),scale(1.000000,0.504730),translate(-0.500000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFE60D" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1024.000000, -44.000000)" fill="url(#radialGradient-1)" fill-rule="nonzero">
+            <g transform="translate(1024.000000, 44.000000)">
+                <path d="M80.8730885,27.2950539 C78.8679961,43.4618698 58.4361045,51.2637661 44.9418326,60.352573 C31.9889356,69.0794364 35.7986112,79.3546142 26.9561537,79.9980695 C16.9707935,80.7018488 7.17992727,70.3462391 3.65096464,60.9357045 C-2.71921394,43.9042454 -1.40387332,18.4475426 12.8002013,7.11468509 C27.657936,-4.77114191 53.2629661,0.812844147 69.7448256,10.3239187 C75.5996955,13.7020594 81.6951764,20.5789885 80.8730885,27.2950539 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>
