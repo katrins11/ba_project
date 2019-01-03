@@ -6,14 +6,10 @@
     padding-top: 80px;
 
     h2, h3 {
-        font-size: 24px;
-        font-family: var(--montserrat);
         font-weigh: var(--font-semibold);
         margin-bottom: 40px;
     }
     p {
-        font-size: 14px;
-        font-family: var(--roboto);
         font-weigh: var(--font-light);
         line-height: 22px; 
     }
@@ -150,23 +146,18 @@
         }
     }
 
-    /* EFFECTS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+    /* *** EFFECTS *** */
     .guideSteps ul li div, .guideSteps ul li svg {
         visibility: hidden;
         opacity: 0;
         transition: all .5s ease-in-out;
     }
-
     .guideSteps ul li div, .guideSteps ul li svg {
         transform: translate3d(200px, 0, 0);
     }
-
     .guideSteps ul li.in-view div, .guideSteps ul li.in-view svg {
         transform: none;
         visibility: visible;
         opacity: 1;
     }
-
 }
