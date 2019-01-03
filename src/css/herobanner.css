@@ -39,7 +39,6 @@
     } 
 
     h1 {
-      font-family: var(--montserrat);
       font-weight: 700;
       font-size: 120px;
       letter-spacing: 2px;
@@ -71,7 +70,7 @@
 
   .arrow-down {
     position: absolute;
-    bottom: 10%;
+    bottom: 10px;
     left: 50%;
     right: 50%;
   }

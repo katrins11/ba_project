@@ -168,7 +168,6 @@ header {
       }
     }
     p {
-      font-family: var(--roboto);
       font-weight: 200;
       font-size: 9px;
       letter-spacing: 2px;

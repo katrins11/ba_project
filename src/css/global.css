@@ -14,11 +14,8 @@ section {
 
 /** Body text **/
 p {
-  font-size: 14px;
-  font-family: var(--roboto);
   font-weight: 200;
   line-height: 22px;
-  color: var(--color-black);
 
   &.card-text {
     font-size: 12px;
@@ -50,9 +47,6 @@ p {
 }
 
 h1 {
-  color: var(--color-black);
-  font-family: var(--montserrat);
-
   &.section-headline {
     font-weight: 700;
     font-size: 36px;
@@ -118,11 +112,7 @@ h1 {
     }
 }
 
-
-
-
 /** newest-posts**/
-
 .newest-posts {
 
   .section-headline {

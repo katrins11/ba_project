@@ -5,12 +5,12 @@
     if(basename($_SERVER['PHP_SELF']) == 'index.php') {
         $headlineBannerH1 = 'We connect candidates to companies';
         $headlineBannerP = 'We have an internship that boosts your career - no matter what level you are at.'; 
-        $headlineBannerImage = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80';   
+        $headlineBannerImage = 'https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80';   
     }
     else if(basename($_SERVER['PHP_SELF']) == 'guide.php') {
         $headlineBannerH1 = 'Want a bulletproof application? We will GUIDE you through it!';
         $headlineBannerP = 'When starting to think about application for internship there are many things you need to think about.<br>Take your time to make a good application by following these 8 simple steps.'; 
-        $headlineBannerImage = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80';   
+        $headlineBannerImage = 'https://images.unsplash.com/photo-1519377661616-bbec03d2bd68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80';   
     }
     else if(basename($_SERVER['PHP_SELF']) == 'about.php') {
         $headlineBannerH1 = 'Is it time to start thinking about internship applications?';

@@ -9,17 +9,3 @@
 .test {
   @mixin roboto;
 }
-
-
-/*@define-mixin montserrat --font-size --font-weight {
-  font-family: var(--montserrat);
-  font-weight: $font-weight;
-  font-size: $font-size;
-}*/
-
-/*@define-mixin font1 {
-    font-family: var(--roboto);
-    font-size: 40px;
-    color: green;
-}*/
-
