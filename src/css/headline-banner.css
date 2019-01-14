@@ -40,10 +40,12 @@
   }
   
   .left-text-box {
+    max-width: 50vw;
     position: absolute;
     background-color: var(--color-white);
     padding: 80px;
     @media (--mq-tablet) {
+      max-width: 90vw;
       background-color: rgba(255, 255, 255, 0.8);
       width: 90%;
       height: 90%;
