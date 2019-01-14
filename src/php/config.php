@@ -44,7 +44,7 @@
     $frontPostsHeadline = 'Reacently added internships!';
     
     /* *** *** HeroBanner *** *** */
-    $heroBannerHeadline = 'We connect candidates to business';
+    $heroBannerHeadline = 'Connecting candidates to business';
     
     /* *** *** FrontPost *** *** */
     $infoBoxHeadline = 'Company statistics';

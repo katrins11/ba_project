@@ -1,5 +1,6 @@
 /******* Headline-banner ********/
 .headline-banner {
+  background-color: var(--color-grey);
   width: 100vw;
   height: 50vh;
   position: relative;
@@ -40,10 +41,12 @@
   }
   
   .left-text-box {
+    max-width: 60vw;
     position: absolute;
-    background-color: var(--color-white);
+    background-color: var(--color-grey);
     padding: 80px;
     @media (--mq-tablet) {
+      max-width: 90vw;
       background-color: rgba(255, 255, 255, 0.8);
       width: 90%;
       height: 90%;

@@ -4,9 +4,6 @@
   width: 100%;
   background-color: var(--color-grey);
   height: 100vh;
-  @media (--mq-mobile) {
-    height: 40vh;
-  }
 
   .menu__logo {
     width: 100%;
@@ -40,7 +37,7 @@
 
     h1 {
       font-weight: 700;
-      font-size: 120px;
+      font-size: 100px;
       letter-spacing: 2px;
       color: transparent;
       -webkit-text-stroke-width: 2px;
@@ -55,13 +52,13 @@
         top: calc(50% - 150px);
       }
       @media (--mq-tablet) {
-        font-size: 100px;
+        font-size: 90px;
         max-width: 70%;
         left: 15%;
       }
 
       @media (--mq-mobile) {
-        font-size: 50px;
+        font-size: 40px;
         -webkit-text-stroke-width: 1.5px;
         top: calc(50% - 120px);
       }
@@ -70,7 +67,7 @@
 
   .arrow-down {
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     left: 50%;
     right: 50%;
   }

@@ -9,9 +9,13 @@
 }
 
 .frontPosts {
+  margin-bottom: 40px;
   .section-headline {
     margin-left: 80px;
     margin-bottom: 40px;
+    @media (--mq-mobile) { 
+      margin-left: 40px;
+    }
   }
 }
 
