@@ -76,7 +76,7 @@ function getCardInfo(snapshot) {
         let Allposts = document.getElementById('resultscontainer');
         // Get each item from list
         let postItem = Allposts.querySelectorAll('.eachPost');
-        //No resault
+        //No result
         var container = document.getElementById('resultscontainer');
         var noResultMessage = document.getElementById('noSearchResault');
         // Loop through list
@@ -294,7 +294,7 @@ function getContactBoxData(snap) {
     interestedText.insertAdjacentHTML('beforeend', htmlInterested);
 
     var emailUs = document.getElementById("sendEmail");
-    var htmlEmailUs = '<a href="mailto:'+snap.val().contact.contactInfo.email+'">\
+    var htmlEmailUs = '<a class="btn-inverted" href="mailto:'+snap.val().contact.contactInfo.email+'">\
                             <p>Email us</p>\
                         </a>';
     emailUs.innerHTML = '';
