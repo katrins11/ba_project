@@ -28,4 +28,8 @@
 
 .info-box-headline {
   margin: 0 40px 40px 80px;
+  @media (--mq-mobile) {
+    margin: 0 40px 40px 40px;
+  }
+
 }
