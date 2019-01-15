@@ -17,6 +17,7 @@ ref.on('value', gotData, errData);
 function gotData(snapshot) {
     var frontpage = document.getElementById("front-page");
     var overviewPage = document.getElementById("overview-page");
+    var compID;
     
     if(frontpage) {
         console.log("Your are on the FrontPage");
@@ -27,8 +28,8 @@ function gotData(snapshot) {
     else if(overviewPage) {
         console.log("Your are on the OverviewPage");
         getCardInfo(snapshot);
-        getCarouselImg(snapshot);
-        popUp();
+        // getCarouselImg(snapshot, compID);
+        popUp(snapshot);
         getPost(snapshot);
         mobileFilterMenu();
     }       
@@ -143,15 +144,23 @@ function getFrontCardInfo(snapshot) {
 };
 
 //**************** OWL CAROUSEL *****************//
-function getCarouselImg(snapshot, attrVal) {
+function getCarouselImg(snapshot, compID) {
     var carouselDiv = document.querySelector("#owlCarousel");
+    var carouselImg = '';
+    var carouselImages = '';
+
     snapshot.forEach(snap => {
-        if(snap.val().id == 4) {
+        console.log("compID in Carousel: ", compID);
+        if(snap.val().id == compID) {
+            console.log("snap val in Carousel: ", snap.val().id);
             for(var i = 0; i < snap.val().images.length; i++) {
-                var carouselImg = '<div class="item" style="background-image: url('+snap.val().images[i]+')">\
+                carouselImg = '<div class="item" style="background-image: url('+snap.val().images[i]+')">\
                                    </div>';
-                $(carouselDiv).append(carouselImg);
+                carouselImages += carouselImg;                
             }
+            // carouselDiv.innerHTML = '';
+            carouselDiv.insertAdjacentHTML('beforeend', carouselImages);
+            return;
         }
     });
 
@@ -346,12 +355,16 @@ function getContactBoxData(snap) {
 
 
 //**************** POP-UP MODAL *****************//
-function popUp() { 
+function popUp(snapshot) { 
     var eachPost = document.getElementsByClassName("inline");
     
     for (var i = 0; i < eachPost.length; i++) {
         eachPost[i].addEventListener('click', function(e){
 
+            compID = this.dataset.companyid;
+            //console.log("compID: ",compID);
+            getCarouselImg(snapshot, compID);
+            
             // MODAAL 
             $('.inline').modaal({
                 content_source: '#inline'
