@@ -150,12 +150,11 @@ function getCarouselImg(snapshot, compID) {
     var carouselImages = '';
 
     snapshot.forEach(snap => {
-        console.log("compID in Carousel: ", compID);
+        //console.log("compID in Carousel: ", compID);
+        //console.log("snap val in Carousel: ", snap.val().id);
         if(snap.val().id == compID) {
-            console.log("snap val in Carousel: ", snap.val().id);
             for(var i = 0; i < snap.val().images.length; i++) {
-                carouselImg = '<div class="item" style="background-image: url('+snap.val().images[i]+')">\
-                                   </div>';
+                carouselImg = '<div class="item" style="background-image: url('+snap.val().images[i]+')"></div>';
                 carouselImages += carouselImg;                
             }
             // carouselDiv.innerHTML = '';
