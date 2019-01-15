@@ -23,6 +23,10 @@
             justify-content: center;
             align-items: center;
             outline:0;
+            @media (--mq-tablet) {
+                display: none;
+            }
+
             &:hover {
                 background: transparent;
                 span {
