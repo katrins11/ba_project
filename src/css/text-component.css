@@ -93,11 +93,6 @@
     font-size: 14px;
   }
 
-  .section-headline {
-    @media (--mq-tablet) {
-      margin-bottom: 20px;
-    }
-  }
 }
 
 /******* Text component - Contact list ********/
