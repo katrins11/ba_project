@@ -36,6 +36,7 @@
     } 
 
     h1 {
+      max-width: 60%;
       font-weight: 700;
       font-size: 100px;
       letter-spacing: 2px;
@@ -43,12 +44,12 @@
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: var(--color-black);
       user-select: none;
-      max-width: calc(100% - 80px);
       z-index: 5;
       position: absolute;
       text-align: center;
 
       @media (--mq-large-desktop) {
+        max-width: 50%;
         top: calc(50% - 150px);
       }
       @media (--mq-tablet) {
