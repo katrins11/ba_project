@@ -30,7 +30,7 @@
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
     var headerHight = $('#headline-banner').height();
-    if (scroll >= headerHight) {
+    if (scroll >= (headerHight + 160)) {
         $('.guide .guide_overview').css('position','fixed');
     } else {
         $('.guide .guide_overview').css('position','absolute');
