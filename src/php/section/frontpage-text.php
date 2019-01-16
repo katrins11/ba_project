@@ -10,7 +10,7 @@
         </p>
         <?php ?>
       <?php if(basename($_SERVER['PHP_SELF']) == 'index.php') : ?>
-          <a href="/ba_project/build/about.php" class="inline-link">
+          <a href="/ba_project/build/about.php" class="inline-link" style="text-decoration: none;">
             <h1 class="link-text"><?php echo $frontPageTextHeadlineReadMore ?></h1>
             <svg width="31px" height="24px" viewBox="0 0 31 24" version="1.1">
               <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

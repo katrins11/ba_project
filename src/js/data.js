@@ -22,7 +22,7 @@ function gotData(snapshot) {
     if(frontpage) {
         console.log("Your are on the FrontPage");
         getFrontCardInfo(snapshot);
-        popUp();
+        popUp(snapshot);
         getPost(snapshot);
     }
     else if(overviewPage) {
@@ -187,7 +187,7 @@ function getPost(snapshot) {
                 getFirstInfoboxData(snap);
                 getSecondInfoboxData(snap);
                 getTextBoxData(snap); 
-                getCarouselImg(snap, attrVal);
+                //getCarouselImg(snap, attrVal);
                 getContactBoxData(snap);  
             }
         });

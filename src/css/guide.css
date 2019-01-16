@@ -47,7 +47,7 @@
                 color: var(--color-black);
                 --menu-item-color: var(--color-secondary-red);
                 @media (--mq-small-desktop) {
-                    margin: 2.5em 0;
+                    margin: 2em 0;
                 }
                 &:before {
                     content: counter(itemCounter,decimal-leading-zero);
